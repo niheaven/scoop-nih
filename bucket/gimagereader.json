@@ -1,0 +1,42 @@
+{
+    "version": "3.3.1",
+    "description": "A Gtk/Qt front-end to tesseract-ocr.",
+    "homepage": "https://github.com/manisandro/gImageReader",
+    "license": "GPL-3.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/manisandro/gImageReader/releases/download/v3.3.1/gImageReader_3.3.1_qt5_x86_64.exe#/dl.7z",
+            "hash": "05f7a16a0cc4e914ef84bcf1246bfab0636c15cc4a335220e7f8111d6a053f70"
+        },
+        "32bit": {
+            "url": "https://github.com/manisandro/gImageReader/releases/download/v3.3.1/gImageReader_3.3.1_qt5_i686.exe#/dl.7z",
+            "hash": "a363f282cf44e839c3163efa00d363a7372a84432b396f380c2a50241f45dd44"
+        }
+    },
+    "bin": [
+        [
+            "bin\\gimagereader-qt5.exe",
+            "gImageReader"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "bin\\gimagereader-qt5.exe",
+            "gImageReader"
+        ]
+    ],
+    "suggest": {
+        "tesseract-languages": "tesseract-languages"
+    },
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/manisandro/gImageReader/releases/download/v$version/gImageReader_version_qt5_x86_64.exe#/dl.7z"
+            },
+            "32bit": {
+                "url": "https://github.com/manisandro/gImageReader/releases/download/v$version/gImageReader_version_qt5_i686.exe#/dl.7z"
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+{
+    "version": "III",
+    "description": "Freeware suite of tools including a PE editor and a process viewer.",
+    "homepage": "https://ntcore.com/?page_id=388",
+    "license": "Freeware",
+    "url": "https://ntcore.com/files/ExplorerSuite.exe",
+    "hash": "94f4348ec573b05990b1e19542986e46dc30a87870739f5d5430b60072d5144d",
+    "innosetup": true,
+    "architecture": {
+        "64bit": {
+            "installer": {
+                "script": [
+                    "Get-ChildItem \"$dir\\*,1.*\" -Recurse | Rename-Item -NewName { $_.name -Replace ',1','' }",
+                    "Get-ChildItem \"$dir\\*,2.*\" -Recurse | Remove-Item -Force"
+                ]
+            },
+            "shortcuts": [
+                [
+                    "CFF Explorer.exe",
+                    "CFF Explorer"
+                ],
+                [
+                    "PE Detective.exe",
+                    "PE Detective"
+                ],
+                [
+                    "Signature Explorer.exe",
+                    "Signature Explorer"
+                ],
+                [
+                    "Task Explorer.exe",
+                    "Task Explorer"
+                ],
+                [
+                    "Task Explorer-x64.exe",
+                    "Task Explorer (x64)"
+                ]
+            ]
+        },
+        "32bit": {
+            "installer": {
+                "script": [
+                    "Get-ChildItem \"$dir\\*,2.*\" -Recurse | Rename-Item -NewName { $_.name -Replace ',1','' }",
+                    "Get-ChildItem \"$dir\\*,1.*\" -Recurse | Remove-Item -Force",
+                    "Remove-Item \"$dir\\Task Explorer-x64.exe\" -Force"
+                ]
+            },
+            "shortcuts": [
+                [
+                    "CFF Explorer.exe",
+                    "CFF Explorer"
+                ],
+                [
+                    "PE Detective.exe",
+                    "PE Detective"
+                ],
+                [
+                    "Signature Explorer.exe",
+                    "Signature Explorer"
+                ],
+                [
+                    "Task Explorer.exe",
+                    "Task Explorer"
+                ]
+            ]
+        }
+    }
+}

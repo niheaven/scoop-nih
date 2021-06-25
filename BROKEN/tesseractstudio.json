@@ -1,0 +1,27 @@
+{
+    "version": "1.6.2",
+    "description": "A Windows GUI of Tesseract 4.0 OCR engine.",
+    "homepage": "https://www.opait.com/tesseractstudio/",
+    "license": "https://www.opait.com/TesseractStudio/help/License.pdf",
+    "url": "https://www.opait.com/TesseractStudio/TesseractStudio32/1.6.2/TesseractStudio.msi",
+    "hash": "88e9484ab9c98ba3579c11d18c9029192de7db30ee0f632f5a78cb9dc133c832",
+    "pre_install": [
+        "Move-Item \"$dir\\System\\*\" \"$dir\" -Force",
+        "Move-Item \"$dir\\Opait Software\\Tesseract Studio\\*\" \"$dir\" -Force",
+        "Remove-Item \"$dir\\System\",\"$dir\\Opait Software\" -Force -Recurse"
+    ],
+    "bin": "TesseractStudio.exe",
+    "shortcuts": [
+        [
+            "TesseractStudio.exe",
+            "Tesseract Studio"
+        ]
+    ],
+    "suggest": {
+        "tesseract-languages": "tesseract-languages"
+    },
+    "checkver": "Version ([\\d.]+)",
+    "autoupdate": {
+        "url": "https://www.opait.com/TesseractStudio/TesseractStudio32/$version/TesseractStudio.msi"
+    }
+}

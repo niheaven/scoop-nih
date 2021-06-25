@@ -1,0 +1,30 @@
+{
+    "version": "1.0.0",
+    "description": "Command Line Interactive and Scriptable Application to access MEGA",
+    "homepage": "https://mega.nz/cmd",
+    "license": "GPL-3.0-or-later",
+    "url": "https://mega.nz/MEGAcmdSetup.exe#/dl.7z",
+    "hash": "9e15eac5bd9b5e1b98d01bd6ddf34e966fa93e85754875acbc1d2cd6e2c80d4a",
+    "bin": [
+        [
+        "MEGAClient.exe",
+        "mega"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "MEGAcmdShell.exe",
+            "MEGAcmd"
+        ],
+        [
+            "MEGAcmdServer.exe",
+            "MEGAcmdServer"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/meganz/MEGAcmd/"
+    },
+    "autoupdate": {
+        "url": "https://mega.nz/MEGAcmdSetup.exe#/dl.7z"
+    }
+}
