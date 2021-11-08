@@ -69,6 +69,28 @@
         "url": "https://download.gimp.org/mirror/pub/gimp/v$majorVersion.$minorVersion/windows/gimp-$matchHead-setup$matchTail.exe",
         "hash": {
             "url": "$baseurl/SHA256SUMS"
-        }
+        },
+        "bin": [
+            "bin\\gimp-console-$majorVersion.$minorVersion.exe",
+            [
+                "bin\\gimp-console-$majorVersion.$minorVersion.exe",
+                "gimp-console"
+            ],
+            [
+                "bin\\gimp-console-$majorVersion.$minorVersion.exe",
+                "gimp"
+            ],
+            "bin\\gimptool-$majorVersion.0.exe",
+            [
+                "bin\\gimptool-$majorVersion.0.exe",
+                "gimptool"
+            ]
+        ],
+        "shortcuts": [
+            [
+                "bin\\gimp-$majorVersion.$minorVersion.exe",
+                "GIMP"
+            ]
+        ]
     }
 }
