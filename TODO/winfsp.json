@@ -1,0 +1,60 @@
+{
+    "version": "1.10.22006",
+    "description": "Windows File System Proxy",
+    "homepage": "http://www.secfs.net/winfsp",
+    "license": "GPL-3.0-or-later",
+    "notes": "",
+    "url": "https://github.com/billziss-gh/winfsp/releases/download/v1.10/winfsp-1.10.22006.msi",
+    "hash": "ced6e21813cf60f2828cfc1eb0f5993325f4da56564b5afd1fdfa244830573db",
+    "extract_dir": "WinFsp",
+    "architecture": {
+        "64bit": {
+            "bin": [
+                [
+                    "bin\\fsptool-x64.exe",
+                    "fsptool"
+                ],
+                [
+                    "bin\\launchctl-x64.exe",
+                    "launchctl"
+                ],
+                [
+                    "bin\\launcher-x64.exe",
+                    "launcher"
+                ],
+                [
+                    "bin\\memfs-x64.exe",
+                    "memfs"
+                ]
+            ]
+        },
+        "32bit": {
+            "bin": [
+                [
+                    "fsptool-x86.exe",
+                    "fsptool"
+                ],
+                [
+                    "launchctl-x86.exe",
+                    "launchctl"
+                ],
+                [
+                    "launcher-x86.exe",
+                    "launcher"
+                ],
+                [
+                    "memfs-x86.exe",
+                    "memfs"
+                ]
+            ]
+        }
+    },
+    "post_install": "Get-ChildItem -Path \"$dir\" -Filter '*.duplicate*' -Recurse | Remove-Item -Force -ErrorAction SilentlyContinue",
+    "checkver": {
+        "github": "https://github.com/billziss-gh/winfsp",
+        "regex": "winfsp-((?<ver>[\\d.]+)\\.\\d+)\\.msi"
+    },
+    "autoupdate": {
+        "url": "https://github.com/billziss-gh/winfsp/releases/download/v$matchVer/winfsp-$version.msi"
+    }
+}
