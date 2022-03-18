@@ -1,12 +1,12 @@
 {
-    "version": "0.19.0",
+    "version": "0.19.1",
     "description": "Convert images and perform image operations from the command-line",
     "homepage": "https://github.com/foresterre/sic",
     "license": "Apache-2.0|MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/foresterre/sic/releases/download/v0.19.0/sic-0.19.0-x86_64-pc-windows-msvc.zip",
-            "hash": "09edc0cfe75058131816e0397c3cdfab59423d6b2846cec68da7d7b3bfe911e4"
+            "url": "https://github.com/foresterre/sic/releases/download/v0.19.1/sic-0.19.1-x86_64-pc-windows-msvc.zip",
+            "hash": "be3c1ce76d0257681ddb99bbbc0eb6fdd2d165a7dd94ccff039cf921e414aca0"
         }
     },
     "bin": "sic.exe",
