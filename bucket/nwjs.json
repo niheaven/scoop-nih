@@ -2,17 +2,17 @@
     "homepage": "https://nwjs.io/",
     "description": "An app runtime based on Chromium and NodeJS",
     "license": "MIT",
-    "version": "0.62.1",
+    "version": "0.63.0",
     "architecture": {
         "64bit": {
-            "url": "https://npm.taobao.org/mirrors/nwjs/v0.62.1/nwjs-v0.62.1-win-x64.zip",
-            "hash": "571d485f85f3f68339bb69683702b2d9f3286bdc9a1b026528e85ce68cae86f6",
-            "extract_dir": "nwjs-v0.62.1-win-x64"
+            "url": "https://npm.taobao.org/mirrors/nwjs/v0.63.0/nwjs-v0.63.0-win-x64.zip",
+            "hash": "cfaa6abfbe12f7df938380cd5a6ded0a9715c326cf417d78924c24e8128925c0",
+            "extract_dir": "nwjs-v0.63.0-win-x64"
         },
         "32bit": {
-            "url": "https://npm.taobao.org/mirrors/nwjs/v0.62.1/nwjs-v0.62.1-win-ia32.zip",
-            "hash": "1ca9c71ce0d5bf87255eff6046be5146b6a1eef54957ac6713ee2a8639020e6f",
-            "extract_dir": "nwjs-v0.62.1-win-ia32"
+            "url": "https://npm.taobao.org/mirrors/nwjs/v0.63.0/nwjs-v0.63.0-win-ia32.zip",
+            "hash": "6333762f76741399870dde05ca681f3f7f8b6ed62c6877f831eebc8a404733c1",
+            "extract_dir": "nwjs-v0.63.0-win-ia32"
         }
     },
     "bin": "nw.exe",
