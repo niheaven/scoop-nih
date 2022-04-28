@@ -1,9 +1,9 @@
 {
     "homepage": "https://github.com/gentilkiwi/mimikatz",
-    "version": "2.2.0-20210807",
+    "version": "2.2.0-20210810-2",
     "license": "CC-BY-4.0",
-    "url": "https://github.com/gentilkiwi/mimikatz/releases/download/2.2.0-20210807/mimikatz_trunk.7z",
-    "hash": "bad19a193019cf92068c5cc4f95906a4e54744349ba8e303e6aee4324e95002d",
+    "url": "https://github.com/gentilkiwi/mimikatz/releases/download/2.2.0-20210810-2/mimikatz_trunk.7z",
+    "hash": "912ddcb057ae0b41311be77a00ad2952ab1521c12fc712284a4fbfb58f1105be",
     "architecture": {
         "64bit": {
             "bin": "x64\\mimikatz.exe"
