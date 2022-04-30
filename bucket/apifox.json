@@ -1,0 +1,35 @@
+{
+    "version": "2.1.11",
+    "description": "Universal Platform for API development",
+    "homepage": "https://www.apifox.cn",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://cdn.apifox.cn/download/Apifox-windows-latest.zip",
+            "hash": "822f2f8fb9689de51671f63850148c7825f68ff7540ac03c4fc38a1bab511d00",
+            "pre_install": [
+                "Rename-Item \"$dir\\Apifox-*\" 'Apifox.exe'",
+                "Expand-7zipArchive \"$dir\\Apifox.exe\" \"$dir\" -Removal",
+                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+                "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Force -Recurse"
+            ]
+        }
+    },
+    "shortcuts": [
+        [
+            "Apifox.exe",
+            "Apifox"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.apifox.cn/help/app/changelog/",
+        "regex": "#</a> ([\\d.]+)</h2>"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://cdn.apifox.cn/download/Apifox-windows-latest.zip"
+            }
+        }
+    }
+}
