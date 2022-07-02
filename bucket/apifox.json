@@ -1,12 +1,12 @@
 {
-    "version": "2.1.26",
+    "version": "2.1.27",
     "description": "Universal Platform for API development",
     "homepage": "https://www.apifox.cn",
     "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://cdn.apifox.cn/download/Apifox-windows-latest.zip",
-            "hash": "3c8160928c9a23536f152f01e7ab219b88f6471a17241497e145c7120ec7f201",
+            "hash": "ca31fd52bd49d2e04dfa902ca176ff7390061c472f717b191aeb096f0f002e46",
             "pre_install": [
                 "Rename-Item \"$dir\\Apifox-*\" 'Apifox.exe'",
                 "Expand-7zipArchive \"$dir\\Apifox.exe\" \"$dir\" -Removal",
