@@ -1,5 +1,6 @@
 {
     "homepage": "https://github.com/gentilkiwi/mimikatz",
+    "description": "A little tool to play with Windows security",
     "version": "2.2.0-20210810-2",
     "license": "CC-BY-4.0",
     "url": "https://github.com/gentilkiwi/mimikatz/releases/download/2.2.0-20210810-2/mimikatz_trunk.7z",

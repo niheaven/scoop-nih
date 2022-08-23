@@ -1,0 +1,24 @@
+{
+    "homepage": "https://wave.h2o.ai/docs/wavedb",
+    "description": "SQLite with a HTTP interface",
+    "license": "Apache-2.0",
+    "version": "0.2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://h2o-wave.s3.amazonaws.com/releases/wavedb-0.2.0-windows-amd64.tar.gz",
+            "hash": "8caee04bbb0a55f7f9dba58ce0323f4ca71d8a0caeb54f4b9d819e12b61170db"
+        }
+    },
+    "bin": "wavedb.exe",
+    "checkver": {
+        "github": "https://github.com/h2oai/wave",
+        "regex": "wavedb-([\\d.]+)-windows-amd64"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://h2o-wave.s3.amazonaws.com/releases/wavedb-$version-windows-amd64.tar.gz"
+            }
+        }
+    }
+}

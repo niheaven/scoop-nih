@@ -17,10 +17,12 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/h2oai/wave/releases/download/v$version/wave-$version-windows-amd64.tar.gz",
+                "url": "https://h2o-wave.s3.amazonaws.com/releases/wave-$version-windows-amd64.tar.gz",
                 "extract_dir": "wave-$version-windows-amd64"
             }
         }
     },
-    "suggest": "wavedb"
+    "suggest": {
+        "wavedb": "nih/wavedb"
+    }
 }
