@@ -17,7 +17,7 @@ body:
   attributes:
     label: Package Name
     description: Name of package (install name) which has bug(s)
-    placeholder: ex. 7zip (not '7-Zip')
+    placeholder: e.g. 7zip (not '7-Zip')
   validations:
     required: true
 - type: textarea
@@ -76,10 +76,10 @@ body:
     placeholder: |
       PS> Get-Content ~\.config\scoop\config.json | ConvertFrom-Json
 
-      lastupdate             : 2022/1/25 14:11:23
-      SCOOP_REPO             : https://github.com/ScoopInstaller/Scoop
-      SCOOP_BRANCH           : master
-      MSIEXTRACT_USE_LESSMSI : True
+      last_update            : 2022/1/25 14:11:23
+      scoop_repo             : https://github.com/ScoopInstaller/Scoop
+      scoop_branch           : master
+      use_lessmsi            : True
       aria2-enabled          : True
       aria2-warning-enabled  : False
   validations:
@@ -94,9 +94,9 @@ body:
 
       Name                           Value
       ----                           -----
-      PSVersion                      7.2.1
+      PSVersion                      7.2.6
       PSEdition                      Core
-      GitCommitId                    7.2.1
+      GitCommitId                    7.2.6
       OS                             Microsoft Windows 10.0.22538
       Platform                       Win32NT
       PSCompatibleVersions           {1.0, 2.0, 3.0, 4.0…}
