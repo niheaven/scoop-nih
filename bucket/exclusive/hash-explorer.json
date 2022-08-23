@@ -7,7 +7,7 @@
     "hash": "f9b205b73e3891dfd6d3aa455f2c922da0803af2f84fd73ea9bcef520d48d006",
     "installer": {
         "script":[
-            "extract_inno \"$dir\\setup.exe\" \"$dir\" $true"
+            "Expand-InnoArchive \"$dir\\setup.exe\" -Removal"
         ]
     },
     "shortcuts": [

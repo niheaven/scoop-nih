@@ -1,16 +1,16 @@
 {
-    "homepage": "http://strawberryperl.com",
-    "description": "Strawberry Perl with extra PDL related modules and external libraries.",
     "version": "5.32.1.1",
-    "license": "Artistic-1.0-Perl|GPL-1.0-only",
+    "description": "Strawberry Perl with extra PDL related modules and external libraries.",
+    "homepage": "http://strawberryperl.com",
+    "license": "GPL-1.0-or-later|Artistic-1.0-Perl",
     "architecture": {
-        "32bit": {
-            "url": "http://strawberryperl.com/download/5.32.1.1/strawberry-perl-5.32.1.1-32bit-PDL.zip",
-            "hash": "sha1:b989bfccf7967564afd10301e712d2c4ebc7acb3"
-        },
         "64bit": {
             "url": "http://strawberryperl.com/download/5.32.1.1/strawberry-perl-5.32.1.1-64bit-PDL.zip",
             "hash": "sha1:281a9f000bbe834267ef0855195f1cd5acb0d72c"
+        },
+        "32bit": {
+            "url": "http://strawberryperl.com/download/5.32.1.1/strawberry-perl-5.32.1.1-32bit-PDL.zip",
+            "hash": "sha1:b989bfccf7967564afd10301e712d2c4ebc7acb3"
         }
     },
     "post_install": [
@@ -21,22 +21,24 @@
     ],
     "env_add_path": [
         "perl\\site\\bin",
-        "perl\\bin",
-        "c\\bin"
+        "perl\\bin"
     ],
-    "checkver": "Recommended version:</b></p>\\s*<a href=\"\\/download\\/([^\\/]+)\\/strawberry-perl-[\\d.]+-64bit.msi",
+    "checkver": {
+        "url": "http://strawberryperl.com/releases.html",
+        "regex": "strawberry-perl-([\\d.]+)-32bit-PDL\\.zip"
+    },
     "autoupdate": {
         "architecture": {
-            "32bit": {
-                "url": "http://strawberryperl.com/download/$version/strawberry-perl-$version-32bit-PDL.zip"
-            },
             "64bit": {
                 "url": "http://strawberryperl.com/download/$version/strawberry-perl-$version-64bit-PDL.zip"
+            },
+            "32bit": {
+                "url": "http://strawberryperl.com/download/$version/strawberry-perl-$version-32bit-PDL.zip"
             }
         },
         "hash": {
             "url": "http://strawberryperl.com/releases.html",
-            "find": "$basename\" onclick[\\s\\S]*?PDL[\\S\\s]*?([0-9a-f]{40})"
+            "regex": "(?sm)$basename\" onclick.*?PDL edition.*?$sha1"
         }
     }
 }
