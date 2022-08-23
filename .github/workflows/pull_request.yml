@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@main
       - name: PullRequestHandler
-        uses: ScoopInstaller/GithubActions@misc-fixes
+        uses: ScoopInstaller/GithubActions@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SCOOP_BRANCH: "feat-subdir-in-bucket"
