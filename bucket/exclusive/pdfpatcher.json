@@ -1,13 +1,13 @@
 {
-    "version": "1.0.0.4088",
+    "version": "1.0.0.4094",
     "description": "PDF 处理工具",
     "homepage": "https://pdfpatcher.cnblogs.com",
     "license": {
         "identifier": "Freeware",
         "url": "https://github.com/wmjordan/PDFPatcher/blob/master/%E6%8E%88%E6%9D%83%E5%8D%8F%E8%AE%AE.txt"
     },
-    "url": "https://github.com/wmjordan/PDFPatcher/files/9247128/PDFPatcher.1.0.0.4088.7z.zip",
-    "hash": "c6e6acd00da3fa349fee0b913940a55dc75eadf76f1514845c80642683e083f9",
+    "url": "https://github.com/wmjordan/PDFPatcher/files/9423065/PDFPatcher.1.0.0.4094.7z.zip",
+    "hash": "8e7dfe8f116b4d6acbfdea11c7dd5188c1a561e246359cd3ab36d7c275c20399",
     "pre_install": "if (!(Test-Path \"$persist_dir\\AppConfig.json\")) { New-Item \"$dir\\AppConfig.json\" -ItemType \"file\" -Value \"{}\" | Out-Null }",
     "bin": "PDFPatcher.exe",
     "shortcuts": [
