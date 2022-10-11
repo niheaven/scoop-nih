@@ -5,12 +5,18 @@
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://cdn.apifox.cn/download/Apifox-windows-latest.zip",
-            "hash": "ff78d056ba4dc2ce570ce91fa8952f5dd1e18d66e28bd0baf3756ec911782728",
+            "url": "http://cdn.apifox.cn/download/2.1.39/Apifox-2.1.39.exe#/dl.7z",
+            "hash": "sha512:c2e33c3a4cc560fe20a83d35e64ea29aae76f210f1237d992baf9b030749dd84e03453417312adacfb7cf26f773a6cc4a5b6a63b398a4aef73783053dc8ab757",
             "pre_install": [
-                "Rename-Item \"$dir\\Apifox-*\" 'Apifox.exe'",
-                "Expand-7zipArchive \"$dir\\Apifox.exe\" \"$dir\" -Removal",
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+                "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Force -Recurse"
+            ]
+        },
+        "32bit": {
+            "url": "https://cdn.apifox.cn/download/2.1.39/Apifox-windows-x86-2.1.39.exe#/dl.7z",
+            "hash": "sha512:1dddbad1efd984670804d2b5a68cb30514b3c997c8f243e6fb1cdc19623d1c7328443405a37ebe4a2dba342d2544fa174add64d744b1265325663d1a2ea37ffd",
+            "pre_install": [
+                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Force -Recurse"
             ]
         }
@@ -22,13 +28,24 @@
         ]
     ],
     "checkver": {
-        "url": "https://www.apifox.cn/help/app/changelog/",
-        "regex": "#</a> ([\\d.]+)</h2>"
+        "url": "https://cdn.apifox.cn/download/latest.yml?noCache=1",
+        "regex": "version: ([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://cdn.apifox.cn/download/Apifox-windows-latest.zip"
+                "url": "http://cdn.apifox.cn/download/$version/Apifox-$version.exe#/dl.7z",
+                "hash": {
+                    "url": "https://cdn.apifox.cn/download/latest.yml?noCache=1",
+                    "regex": "sha512: $base64"
+                }
+            },
+            "32bit": {
+                "url": "https://cdn.apifox.cn/download/$version/Apifox-windows-x86-$version.exe#/dl.7z",
+                "hash": {
+                    "url": "https://cdn.apifox.cn/download/x32/latest.yml?noCache=1",
+                    "regex": "sha512: $base64"
+                }
             }
         }
     }
