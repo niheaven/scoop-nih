@@ -11,7 +11,7 @@
     },
     "bin": "wavedb.exe",
     "checkver": {
-        "github": "https://github.com/h2oai/wave",
+        "url": "https://api.github.com/repos/h2oai/wave/releases/latest",
         "regex": "wavedb-([\\d.]+)-windows-amd64"
     },
     "autoupdate": {
