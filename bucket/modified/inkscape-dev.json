@@ -1,0 +1,50 @@
+{
+    "version": "1.3-dev_2022-10-18",
+    "description": "Professional vector graphics editor",
+    "homepage": "https://inkscape.org",
+    "license": "GPL-3.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://gitlab.com/inkscape/inkscape/-/jobs/3189048015/artifacts/raw/build/inkscape-1.3-dev_2022-10-18_131a0986-x64.7z",
+            "hash": "9ada6ca59e9d538f46c4f69dfcff873a73436e49837ba6e226666ac5e59603b7"
+        },
+        "32bit": {
+            "url": "https://gitlab.com/inkscape/inkscape/-/jobs/3179066061/artifacts/raw/build/inkscape-1.3-dev_2022-10-15_63886c36-x86.7z",
+            "hash": "550ee3c1231797c704cc3778c4b9f0fe6da0d20002d875761ac9649bec280ae2"
+        }
+    },
+    "extract_dir": "inkscape",
+    "bin": [
+        "bin\\inkscape.com",
+        "bin\\inkview.com"
+    ],
+    "shortcuts": [
+        [
+            "bin\\inkscape.exe",
+            "Inkscape Dev"
+        ]
+    ],
+    "checkver": {
+        "script": [
+            "$urls =  @()",
+            "'x32', 'x64' | ForEach-Object {",
+            "    $base_url = 'https://alpha.inkscape.org/snapshots/latest_master_'+ $_ + '.html'",
+            "    $dl_page = Invoke-WebRequest $base_url -UseBasicParsing",
+            "    $dl = $dl_page.links | Where-Object href -match '\\.7z$' | Select-Object -first 1 -expand href",
+            "    $urls += $dl",
+            "}",
+            "Write-Output ('urls:\"' + $urls + '\"')"
+        ],
+        "regex": "urls:\"(?<win32bit>.+inkscape-[\\d._\\-dev]+_\\w+-.+)\\s(?<win64bit>.+inkscape-(?<version>[\\d._\\-dev]+)_\\w+-.+)\""
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchWin64bit"
+            },
+            "32bit": {
+                "url": "$matchWin32bit"
+            }
+        }
+    }
+}
