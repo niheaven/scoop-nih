@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@main
         with:
           repository: ScoopInstaller/Scoop
-          ref: develop
+          ref: use-pester5
           path: 'scoop_core'
       - name: Init and Test
         shell: powershell
@@ -39,7 +39,7 @@ jobs:
         uses: actions/checkout@main
         with:
           repository: ScoopInstaller/Scoop
-          ref: develop
+          ref: use-pester5
           path: 'scoop_core'
       - name: Init and Test
         shell: pwsh
