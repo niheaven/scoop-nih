@@ -5,7 +5,7 @@
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "http://cdn.apifox.cn/download/2.1.39/Apifox-2.1.39.exe#/dl.7z",
+            "url": "https://cdn.apifox.cn/download/2.1.39/Apifox-2.1.39.exe#/dl.7z",
             "hash": "sha512:c2e33c3a4cc560fe20a83d35e64ea29aae76f210f1237d992baf9b030749dd84e03453417312adacfb7cf26f773a6cc4a5b6a63b398a4aef73783053dc8ab757",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
@@ -34,7 +34,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "http://cdn.apifox.cn/download/$version/Apifox-$version.exe#/dl.7z",
+                "url": "https://cdn.apifox.cn/download/$version/Apifox-$version.exe#/dl.7z",
                 "hash": {
                     "url": "https://cdn.apifox.cn/download/latest.yml?noCache=1",
                     "regex": "sha512: $base64"
