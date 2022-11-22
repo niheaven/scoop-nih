@@ -2,7 +2,7 @@
     "##": "Not ready for Windows",
     "homepage": "https://github.com/antonmedv/llama",
     "description": "Terminal file manager",
-    "version": "1.1.1",
+    "version": "1.2.0",
     "license": "MIT",
     "architecture": {
         "64bit": {
