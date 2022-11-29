@@ -1,19 +1,19 @@
 {
-    "version": "2.2.10",
+    "version": "2.2.7",
     "description": "Universal Platform for API development",
     "homepage": "https://www.apifox.cn",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://cdn.apifox.cn/download/2.2.10/Apifox-2.2.10.exe#/dl.7z",
-            "hash": "sha512:38a9a9b4bae7fd4a8deb70f67ca387b1ca54736d7dec69a468e4b3c39b13d1c6694d7bd5620a8710317ea2e7ef9e899532452916bf579d9d5d7d6eff94bf1042",
+            "url": "https://cdn.apifox.cn/download/2.2.7/Apifox-2.2.7.exe#/dl.7z",
+            "hash": "sha512:b36afe7f1b591d00b3ee00cc7eb098ac3ad54fc1beb957e6b850a0e4431f60cc5a6d574b480828a1bc21a1bfb1129676d00fb5d7ab33d982ffce73b3234d7ae0",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Force -Recurse"
             ]
         },
         "32bit": {
-            "url": "https://cdn.apifox.cn/download/2.2.10/Apifox-windows-x86-2.2.10.exe#/dl.7z",
+            "url": "https://cdn.apifox.cn/download/2.2.7/Apifox-windows-x86-2.2.7.exe#/dl.7z",
             "hash": "sha512:da90f585c6ca63001543cd58c9f143a2500c10c281da5b6edef48d69fc72847d331efb13da7291b1f45580b75576be8b795235d493ebabad5c4faa47614b5857",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\"",
