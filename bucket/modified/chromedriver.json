@@ -1,10 +1,10 @@
 {
-    "version": "107.0.5304.62",
+    "version": "108.0.5359.71",
     "homepage": "https://sites.google.com/a/chromium.org/chromedriver/",
     "description": "An open source tool for automated testing of webapps across many browsers",
     "license": "BSD-3-Clause",
-    "url": "http://cdn.npm.taobao.org/dist/chromedriver/107.0.5304.62/chromedriver_win32.zip",
-    "hash": "e1ea6a8ae5e123daf2ade7200a5d7edccd1cfb28c38ec447685f788bab4ed0de",
+    "url": "http://cdn.npm.taobao.org/dist/chromedriver/108.0.5359.71/chromedriver_win32.zip",
+    "hash": "0f5aae6cf8e5bf1c192c6d7eb7b4421059bbb66f9a95a6553526a825fea13271",
     "bin": "chromedriver.exe",
     "checkver": {
         "url": "http://cdn.npm.taobao.org/dist/chromedriver/LATEST_RELEASE",
