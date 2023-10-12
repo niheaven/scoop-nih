@@ -1,11 +1,11 @@
 {
-    "version": "14.137.0",
+    "version": "14.138.0",
     "description": "Command-line Client for TFS.",
     "homepage": "https://github.com/Microsoft/team-explorer-everywhere",
     "license": "MIT",
-    "url": "https://github.com/Microsoft/team-explorer-everywhere/releases/download/14.137.0/TEE-CLC-14.137.0.zip",
-    "hash": "b401bb351c7f687e0526b7bb27ce3f445afa3c622f7518056040073a3163cf31",
-    "extract_dir": "TEE-CLC-14.137.0",
+    "url": "https://github.com/Microsoft/team-explorer-everywhere/releases/download/14.138.0/TEE-CLC-14.138.0.zip",
+    "hash": "8024f2a13003deff6c5b1b0078c0447f9535a8055d280ec60189b94e6183e7e4",
+    "extract_dir": "TEE-CLC-14.138.0",
     "bin": "tf.cmd",
     "checkver": "github",
     "autoupdate": {
