@@ -1,20 +1,20 @@
 {
-    "version": "2.3.22",
+    "version": "2.3.23",
     "description": "All-in-one collaboration platform for API documentation, API debugging, API Mock and API test automation.",
     "homepage": "https://apifox.com",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://cdn.apifox.cn/download/2.3.22/Apifox-2.3.22.exe#/dl.7z",
-            "hash": "sha512:1f8a9203c69151965a947a71154d43a28766c9f8db6ceb68dd7dadec6042cf7be5a2b566454b7949fe203d7d7f8bf553fde657093a20991db694aa5c95266ad7",
+            "url": "https://cdn.apifox.cn/download/2.3.23/Apifox-2.3.23.exe#/dl.7z",
+            "hash": "sha512:7de525c8f4184b04b9d3b22488ca75fa9ed1a6898918df01ee6ee6e0dffccdb60720d62a929a661e37e22fec377c94b2a2706db52e2ad81acefbf7e774ebe6ed",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Force -Recurse"
             ]
         },
         "32bit": {
-            "url": "https://cdn.apifox.cn/download/2.3.22/Apifox-windows-x86-2.3.22.exe#/dl.7z",
-            "hash": "sha512:12b20b4acab0aace225b99e8854aa1a0962e284a3446158b31da4bacf2a4b749e5a912a952fe48b5f55255ea0f656cb212d33acfb97bd8654e725f6ad14033c6",
+            "url": "https://cdn.apifox.cn/download/2.3.23/Apifox-windows-x86-2.3.23.exe#/dl.7z",
+            "hash": "sha512:72832ded68064c795a6d27765701b8359fe00fa47af85aec30724d8cf0add8b5d27ccba67238055888042a25ad03a00b9028bc019325acd8db008c8fd752ffe3",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Force -Recurse"
