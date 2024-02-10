@@ -1,6 +1,6 @@
 {
     "homepage": "https://rustup.rs",
-    "version": "1.26.0",
+    "version": "1.27.0",
     "license": "MIT|Apache-2.0",
     "description": "Manage multiple rust installations with ease",
     "architecture": {
