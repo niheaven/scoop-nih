@@ -5,8 +5,8 @@
     "version": "1.5.2",
     "architecture": {
         "64bit": {
-            "url": "https://h2o-wave.s3.amazonaws.com/releases/wave-1.5.2-windows-amd64.tar.gz",
-            "hash": "d8c506a50d4ab38bc395cb60eaeaec06afe4714b9b084fd83b69a7d48f865ce4",
+            "url": "https://github.com/h2oai/wave/releases/download/v1.5.2/wave-1.5.2-windows-amd64.tar.gz",
+            "hash": "21b89d05f59ff544fa86d1b872b9a0e2184cdf646dcbd160e30efc90f3823ed4",
             "extract_dir": "wave-1.5.2-windows-amd64"
         }
     },
@@ -17,7 +17,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://h2o-wave.s3.amazonaws.com/releases/wave-$version-windows-amd64.tar.gz",
+                "url": "https://github.com/h2oai/wave/releases/download/v$version/wave-$version-windows-amd64.tar.gz",
                 "extract_dir": "wave-$version-windows-amd64"
             }
         }
