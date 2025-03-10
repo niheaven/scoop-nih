@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@main
       - name: PullRequestHandler
-        uses: ScoopInstaller/GithubActions@main
+        uses: o-l-a-v/ScoopInstaller--GithubActions@d014849bd39c9675af83c396ff0301125ee8cd0b
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SCOOP_BRANCH: develop
