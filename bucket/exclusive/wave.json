@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/h2oai/wave/releases/download/v1.6.2/wave-1.6.2-windows-amd64.tar.gz",
-            "hash": "6d32a6f1ac554cdd16d55af0c685f313c79e0ff7f7e1285e40dbe4660bae419f",
+            "hash": "f983c702c408f86b0f4db750641f37ebd4423295b0d7b4e258492958765353b4",
             "extract_dir": "wave-1.6.2-windows-amd64"
         }
     },
