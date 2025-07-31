@@ -1,13 +1,13 @@
 {
-    "version": "11.0.26",
+    "version": "11.0.27",
     "description": "The answer for all your LPs, QPs, SOCPs, SDPs, and MIPs",
     "homepage": "https://www.mosek.com/",
     "license": "Priority",
     "note": "MOSEK needs a license file to run. Please place your license file at $dir\\license\\mosek.lic",
     "architecture": {
         "64bit": {
-            "url": "https://download.mosek.com/stable/11.0.26/mosektoolswin64x86.zip",
-            "hash": "12265be643df3d8cd41f5c45597973c42147107c0c69c9be3db9d970993d4ee1",
+            "url": "https://download.mosek.com/stable/11.0.27/mosektoolswin64x86.zip",
+            "hash": "684ff28e94d73d5137f90df75cbad60409216d48a821fcda0afcc5c83a0c4e41",
             "extract_dir": "mosek\\11.0"
         }
     },
