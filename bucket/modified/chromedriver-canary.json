@@ -1,17 +1,17 @@
 {
-    "version": "140.0.7339.2",
+    "version": "141.0.7340.0",
     "description": "An open source tool for automated testing of webapps across many browsers",
     "homepage": "https://chromedriver.chromium.org/",
     "license": "BSD-3-Clause",
     "architecture": {
         "64bit": {
-            "url": "https://cdn.npmmirror.com/binaries/chrome-for-testing/140.0.7339.2/win64/chromedriver-win64.zip",
-            "hash": "10a6595694ec72e24773437def3d35af7a2569b07b379bdfb2b40872f7217f0e",
+            "url": "https://cdn.npmmirror.com/binaries/chrome-for-testing/141.0.7340.0/win64/chromedriver-win64.zip",
+            "hash": "fa42c99f271867c609210ecddccf0272234ce8472ad09255c2fff6262889ca0e",
             "extract_dir": "chromedriver-win64"
         },
         "32bit": {
-            "url": "https://cdn.npmmirror.com/binaries/chrome-for-testing/140.0.7339.2/win32/chromedriver-win32.zip",
-            "hash": "a420bd87bb609d582d41648d1b951ecfb9b4e99ffd8153c97c9d2921d7d44e67",
+            "url": "https://cdn.npmmirror.com/binaries/chrome-for-testing/141.0.7340.0/win32/chromedriver-win32.zip",
+            "hash": "6941cf2158ea52562238586983e0cf5add76a3e022a6db5b655765859fe08328",
             "extract_dir": "chromedriver-win32"
         }
     },
