@@ -1,10 +1,10 @@
 {
-    "version": "3.1.0",
+    "version": "3.2.0",
     "description": "A graph-focused data visualisation and interactive analysis application.",
     "homepage": "https://www.constellation-app.com/",
     "license": "Apache-2.0",
-    "url": "https://github.com/constellation-app/constellation/releases/download/v3.1.0/constellation-win-v3.1.0.zip",
-    "hash": "cee088db855e8de746dd862c47d23ccfb77b0cfce8c55a2ad81d05a26b3b6f7b",
+    "url": "https://github.com/constellation-app/constellation/releases/download/v3.2.0/constellation-win-v3.2.0.zip",
+    "hash": "ab4b6114f39bc50b91c538d52786c805155748eab7503056f01d3f737af65147",
     "extract_dir": "constellation",
     "architecture": {
         "64bit": {
