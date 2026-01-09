@@ -1,10 +1,10 @@
 {
     "homepage": "https://www.ortussolutions.com/products/commandbox",
     "description": "A standalone, native tool for Windows, Mac, and Linux that will provide you with a Command Line Interface (CLI) for developer productivity, tool interaction, package management, embedded CFML server, application scaffolding, and some sweet ASCII art",
-    "version": "6.3.0",
+    "version": "6.3.1",
     "license": "LGPL-3.0-or-later",
-    "url": "https://downloads.ortussolutions.com/ortussolutions/commandbox/6.3.0/commandbox-win-6.3.0.zip",
-    "hash": "a0eed085add0c85581fc328e84e015741ad0ecd6ceef3b063d71f0b5d6e4dd6d",
+    "url": "https://downloads.ortussolutions.com/ortussolutions/commandbox/6.3.1/commandbox-win-6.3.1.zip",
+    "hash": "272f0569609d4668299d16eace8b0bab3348475c1116b99d47f509739cfb8752",
     "bin": "box.exe",
     "checkver": "Download CommandBox v([\\d.]+)",
     "autoupdate": {
