@@ -1,0 +1,21 @@
+{
+    "version": "0.2.5",
+    "description": "CLI tool for receiving OpenTelemetry traces while working on your local machine",
+    "homepage": "https://github.com/CtrlSpice/otel-desktop-viewer",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/CtrlSpice/otel-desktop-viewer/releases/download/v0.2.5/otel-desktop-viewer_windows_amd64.zip",
+            "hash": "28b7e68cd2fbc363722e3639d567ad1ae3e062203e7bc636e07764cf9b642cb9"
+        }
+    },
+    "bin": "otel-desktop-viewer.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/CtrlSpice/otel-desktop-viewer/releases/download/v$version/otel-desktop-viewer_windows_amd64.zip"
+            }
+        }
+    }
+}
