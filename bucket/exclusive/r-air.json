@@ -1,16 +1,16 @@
 {
-    "version": "0.8.0",
+    "version": "0.8.1",
     "description": "R formatter and language server",
     "homepage": "https://posit-dev.github.io/air/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/posit-dev/air/releases/download/0.8.0/air-x86_64-pc-windows-msvc.zip",
-            "hash": "5b1a9dae3c124daef1f16ae60ebe8a85058a4cba92263d2678151ff8bdbbcf8d"
+            "url": "https://github.com/posit-dev/air/releases/download/0.8.1/air-x86_64-pc-windows-msvc.zip",
+            "hash": "f402beb440e86183161b03e6081f9ddd255f47132e8578f3d1b64d52166ea93e"
         },
         "arm64": {
-            "url": "https://github.com/posit-dev/air/releases/download/0.8.0/air-aarch64-pc-windows-msvc.zip",
-            "hash": "c40b7c465d1fccafa4241daefe0540d4a9297dbb3bcac77acf75dd311b867820"
+            "url": "https://github.com/posit-dev/air/releases/download/0.8.1/air-aarch64-pc-windows-msvc.zip",
+            "hash": "bd297dc7aca791b562d63a46e5554c5863d7b2ee28708d403c9e03589e573881"
         }
     },
     "bin": "air.exe",
