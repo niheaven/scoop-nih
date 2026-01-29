@@ -1,17 +1,17 @@
 {
-    "version": "146.0.7655.0",
+    "version": "146.0.7656.0",
     "homepage": "https://developer.chrome.google.cn/docs/chromium/headless",
     "description": "Run Chrome in an unattended environment, without any visible UI",
     "license": "BSD-3-Clause",
     "architecture": {
         "64bit": {
-            "url": "https://cdn.npmmirror.com/binaries/chrome-for-testing/146.0.7655.0/win64/chrome-headless-shell-win64.zip",
-            "hash": "cbc84c77bdae7c83ed9768562368e204b4625c2065aca69bbbaa739209740453",
+            "url": "https://cdn.npmmirror.com/binaries/chrome-for-testing/146.0.7656.0/win64/chrome-headless-shell-win64.zip",
+            "hash": "2e72a6d46e00930e774852d223d58c30ebee6191c0147cc95a28c22cfa1e372d",
             "extract_dir": "chrome-headless-shell-win64"
         },
         "32bit": {
-            "url": "https://cdn.npmmirror.com/binaries/chrome-for-testing/146.0.7655.0/win32/chrome-headless-shell-win32.zip",
-            "hash": "6c5c24476e743d6235278f172f38a7ef971aa2255e21dee1f362b3d7b8295c23",
+            "url": "https://cdn.npmmirror.com/binaries/chrome-for-testing/146.0.7656.0/win32/chrome-headless-shell-win32.zip",
+            "hash": "2b4b7967518095e2b3db8a4bdc620d7108afbd1939e98845565af35b72df46c5",
             "extract_dir": "chrome-headless-shell-win32"
         }
     },
