@@ -1,0 +1,28 @@
+{
+    "version": "1.13.1",
+    "description": "Professional PE file Explorer",
+    "homepage": "https://mzrst.com/",
+    "license": "Freeware",
+    "suggest": {
+        "vcredist": "extras/vcredist2022"
+    },
+    "url": "https://mzrst.com/puppy/PPEE(puppy)%201.13.1.zip",
+    "extract_dir": "PPEE(puppy) 1.13.1",
+    "hash": "b82a1cd2753bd7986aa260abc5dbfdea1c9ab1de89fbdc929ea456c17e71ce1a",
+    "bin": "PPEE.exe",
+    "shortcuts": [
+        [
+            "PPEE.exe",
+            "PPEE"
+        ]
+    ],
+    "checkver": "Current version: ([\\d.]+)",
+    "autoupdate": {
+        "url": "https://mzrst.com/puppy/PPEE(puppy)%20$version.zip",
+        "hash": {
+            "url": "https://mzrst.com/#about",
+            "regex": "SHA256: $sha256"
+        },
+        "extract_dir": "PPEE(puppy) $version"
+    }
+}
