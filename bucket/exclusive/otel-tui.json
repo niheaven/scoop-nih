@@ -1,16 +1,16 @@
 {
-    "version": "0.7.2",
+    "version": "0.7.3",
     "description": "Terminal OpenTelemetry viewer inspired by otel-desktop-viewer",
     "homepage": "https://github.com/ymtdzzz/otel-tui",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ymtdzzz/otel-tui/releases/download/v0.7.2/otel-tui_Windows_x86_64.zip",
-            "hash": "9c244429b91c815cd32630924a00a350b2a9c86bbd51823fe56273df87f49a96"
+            "url": "https://github.com/ymtdzzz/otel-tui/releases/download/v0.7.3/otel-tui_Windows_x86_64.zip",
+            "hash": "adec90498a719aa72d82453c144ac2a30dd75da1a72cd3d31984be81f6669bc3"
         },
         "arm64": {
-            "url": "https://github.com/ymtdzzz/otel-tui/releases/download/v0.7.2/otel-tui_Windows_arm64.zip",
-            "hash": "99bebd0e31ea3222bfd47623ce5ebffff0649ad69fe011e2581996e303462383"
+            "url": "https://github.com/ymtdzzz/otel-tui/releases/download/v0.7.3/otel-tui_Windows_arm64.zip",
+            "hash": "d7565a27888912e3200f270ddfc75c7b58eb58e7c9ab5192195f6a8eb46e0025"
         }
     },
     "bin": "otel-tui.exe",
