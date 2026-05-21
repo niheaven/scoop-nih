@@ -1,0 +1,23 @@
+{
+    "version": "3.5.2",
+    "description": "Fast, cross-platform, real-time token usage tracker and cost monitor",
+    "homepage": "https://github.com/Piebald-AI/splitrail",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Piebald-AI/splitrail/releases/download/v3.5.2/splitrail-v3.5.2-x86_64-pc-windows-msvc.zip",
+            "hash": "de25ab101ff1f3a7bca4c24ad5e1e9fdbf97a45ba2251cc8c35314b4bd902565",
+            "extract_dir": "splitrail-v3.5.2-x86_64-pc-windows-msvc"
+        }
+    },
+    "bin": "splitrail.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Piebald-AI/splitrail/releases/download/v$version/splitrail-v$version-x86_64-pc-windows-msvc.zip",
+                "extract_dir": "splitrail-v$version-x86_64-pc-windows-msvc"
+            }
+        }
+    }
+}
