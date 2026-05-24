@@ -1,12 +1,12 @@
 {
-    "version": "0.4.11",
+    "version": "0.4.12",
     "description": "Crystallize knowledge from AI conversations",
     "homepage": "https://github.com/ZengLiangYi/ChatCrystal",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ZengLiangYi/ChatCrystal/releases/download/v0.4.11/ChatCrystal.Setup.0.4.11.exe#/dl.7z",
-            "hash": "sha512:39fc32bdf0409b71a1a34429a36efe028a6f7fbdfeb9a86fc40f0b511be5ea7601b5557bf8884ddedfdfba79c7b8df6825a0c17c4e78208f8fce7d5dedc2b5b3",
+            "url": "https://github.com/ZengLiangYi/ChatCrystal/releases/download/v0.4.12/ChatCrystal.Setup.0.4.12.exe#/dl.7z",
+            "hash": "sha512:43c9b13a8a691d8d784b72eaa036dc110deb801bc71abd0e47474761d9be81fb6b442a8b3ef00caf2486109d1a6299f1271256359479f3c9639f3f54be8803a3",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninst*\" -Recurse"
