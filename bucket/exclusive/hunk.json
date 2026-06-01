@@ -1,0 +1,26 @@
+{
+    "version": "0.14.0",
+    "description": "Review-first terminal diff viewer for agentic coders",
+    "homepage": "https://github.com/modem-dev/hunk",
+    "license": "MIT",
+    "notes": [
+        "To set Hunk as your Git pager so git diff and git show open in Hunk automatically:",
+        "  git config --global core.pager \"hunk pager\""
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/modem-dev/hunk/releases/download/v0.14.0/hunkdiff-windows-x64.tar.gz",
+            "hash": "ca7b076c2cad5ae75995cdd203d9f241c62789313098b1dfc2a5cc761b9126e3",
+            "extract_dir": "hunkdiff-windows-x64"
+        }
+    },
+    "bin": "hunk.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/modem-dev/hunk/releases/download/v$version/hunkdiff-windows-x64.tar.gz"
+            }
+        }
+    }
+}
