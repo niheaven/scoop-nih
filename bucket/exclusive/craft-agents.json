@@ -1,12 +1,12 @@
 {
-    "version": "0.10.0",
+    "version": "0.10.1",
     "description": "Claude Code-like agent for Craft documents",
     "homepage": "https://github.com/craft-ai-agents/craft-agents-oss",
     "license": "AGPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/craft-ai-agents/craft-agents-oss/releases/download/v0.10.0/Craft-Agents-0.10.0-win-x64.exe#/dl.7z",
-            "hash": "42c95e667e619137d88490ee38e3f79503dc1dedaa7f22c031e99420d59e1f2c",
+            "url": "https://github.com/craft-ai-agents/craft-agents-oss/releases/download/v0.10.1/Craft-Agents-0.10.1-win-x64.exe#/dl.7z",
+            "hash": "1d6c0b03bcff2615bd4857c25882a43e8a3066ea8765a648addabab1924d6cb0",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninst*\" -Recurse"
