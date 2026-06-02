@@ -1,7 +1,7 @@
 {
     "version": "11.2.0",
     "description": "The answer for all your LPs, QPs, SOCPs, SDPs, and MIPs",
-    "homepage": "https://www.mosek.com/",
+    "homepage": "https://www.mosek.com",
     "license": "Priority",
     "note": "MOSEK needs a license file to run. Please place your license file at $dir\\license\\mosek.lic",
     "architecture": {

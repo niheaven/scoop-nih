@@ -1,7 +1,7 @@
 {
     "version": "0.0.12",
     "description": "Task-oriented AI Agent productivity platform",
-    "homepage": "https://pilotdeck.openbmb.cn/",
+    "homepage": "https://pilotdeck.openbmb.cn",
     "license": "AGPL-3.0-only",
     "architecture": {
         "64bit": {

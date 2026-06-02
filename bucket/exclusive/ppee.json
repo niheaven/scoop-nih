@@ -1,7 +1,7 @@
 {
     "version": "1.13.1",
     "description": "Professional PE file Explorer",
-    "homepage": "https://mzrst.com/",
+    "homepage": "https://mzrst.com",
     "license": "Freeware",
     "suggest": {
         "vcredist": "extras/vcredist2022"

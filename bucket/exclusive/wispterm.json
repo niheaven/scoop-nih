@@ -1,7 +1,7 @@
 {
     "version": "1.6.0",
     "description": "A cross-platform terminal workspace for remote development and AI agents, powered by libghostty-vt.",
-    "homepage": "https://phantty.cc-remote.app/",
+    "homepage": "https://phantty.cc-remote.app",
     "license": "MIT",
     "architecture": {
         "64bit": {

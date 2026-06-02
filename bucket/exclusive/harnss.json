@@ -1,7 +1,7 @@
 {
     "version": "0.21.5",
     "description": "Open-source, desktop client/UI build to harness Claude Code, Codex and any other Agent accepting Agent Client Protocol.",
-    "homepage": "https://harnss.app/",
+    "homepage": "https://harnss.app",
     "license": "MIT",
     "architecture": {
         "64bit": {

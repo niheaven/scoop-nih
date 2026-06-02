@@ -1,7 +1,7 @@
 {
     "version": "0.7.3",
     "description": "Lightweight Terminal-first AI-native dev workspace",
-    "homepage": "https://terax.app/",
+    "homepage": "https://terax.app",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {

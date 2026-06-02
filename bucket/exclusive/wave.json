@@ -1,5 +1,5 @@
 {
-    "homepage": "https://wave.h2o.ai/",
+    "homepage": "https://wave.h2o.ai",
     "description": "Realtime Web Apps and Dashboards for Python and R",
     "license": "Apache-2.0",
     "version": "1.8.7",
