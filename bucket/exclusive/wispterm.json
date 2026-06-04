@@ -1,12 +1,12 @@
 {
-    "version": "1.10.0",
+    "version": "1.11.0",
     "description": "A cross-platform terminal workspace for remote development and AI agents, powered by libghostty-vt.",
     "homepage": "https://phantty.cc-remote.app",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/xuzhougeng/wispterm/releases/download/v1.10.0/wispterm-windows-portable-webview2-v1.10.0.zip",
-            "hash": "3e154efa3170e6af638a976ffac110f74e50845b18f579633d3d07708ba80a52"
+            "url": "https://github.com/xuzhougeng/wispterm/releases/download/v1.11.0/wispterm-windows-portable-webview2-v1.11.0.zip",
+            "hash": "b011e2486d7aa6833504c66a38073e94ecdea7e3bb182b57f9adcabb6b093e33"
         }
     },
     "bin": "wispterm.exe",
