@@ -9,7 +9,7 @@
             "hash": "sha512:51ea4329dac40a54308f65a4912ec97bd266e89ad80025152e28f2913eff6ba0743511f12864b85ca7224de8c20c89590780e0a9250e25aa4bbc2a9ced1433ac",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
-                "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninst*\" -Recurse"
+                "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\" -Recurse"
             ]
         }
     },

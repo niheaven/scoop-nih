@@ -9,7 +9,7 @@
             "hash": "9abe49e2bfd6e065b0f3512fe8f9fcfd9cb3b1f8ac548958febc497f206018b5",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
-                "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninst*\" -Recurse"
+                "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\" -Recurse"
             ]
         },
         "arm64": {
@@ -17,7 +17,7 @@
             "hash": "a8f0b3db0a664b001547d822e64b3a7cd18d092938d2fcf58396b10b44afebd6",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-arm64.7z\" \"$dir\" -Removal",
-                "Remove-Item \"$dir\\`$*\" -Recurse"
+                "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\" -Recurse"
             ]
         }
     },
