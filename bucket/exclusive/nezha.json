@@ -1,0 +1,36 @@
+{
+    "version": "0.4.1",
+    "description": "Code Editor for the AI Agents Era.",
+    "homepage": "https://nezha.hanshutx.com",
+    "license": "GPL-3.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/hanshuaikang/nezha/releases/download/v0.4.1/NeZha_0.4.1_x64-setup.exe#/dl.7z",
+            "hash": "8101c67e8c8fe1b997acf23dd2679840bbc45a9aa6cc42bc734ed29110c9ba4f"
+        },
+        "arm64": {
+            "url": "https://github.com/hanshuaikang/nezha/releases/download/v0.4.1/NeZha_0.4.1_arm64-setup.exe#/dl.7z",
+            "hash": "d05419de8c3c8e44e1c1ec8e6021eed2db3486e75f83fb355e510259249f856b"
+        }
+    },
+    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\*.nsi\" -Recurse",
+    "shortcuts": [
+        [
+            "NeZha.exe",
+            "NeZha"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/hanshuaikang/nezha"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/hanshuaikang/nezha/releases/download/v$version/NeZha_$version_x64-setup.exe#/dl.7z"
+            },
+            "arm64": {
+                "url": "https://github.com/hanshuaikang/nezha/releases/download/v$version/NeZha_$version_arm64-setup.exe#/dl.7z"
+            }
+        }
+    }
+}
