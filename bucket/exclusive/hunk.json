@@ -1,5 +1,5 @@
 {
-    "version": "0.15.1",
+    "version": "0.15.3",
     "description": "Review-first terminal diff viewer for agentic coders",
     "homepage": "https://github.com/modem-dev/hunk",
     "license": "MIT",
@@ -9,8 +9,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/modem-dev/hunk/releases/download/v0.15.1/hunkdiff-windows-x64.tar.gz",
-            "hash": "5eac09d31ce0c9cc58f181787715049a97553d9fc1a13f3d3d48707466adbb0b",
+            "url": "https://github.com/modem-dev/hunk/releases/download/v0.15.3/hunkdiff-windows-x64.tar.gz",
+            "hash": "84e0dfd64828a6de8f77aa602ea2ad42854c152f7a6a7aa2c776f7e732b8cecf",
             "extract_dir": "hunkdiff-windows-x64"
         }
     },
