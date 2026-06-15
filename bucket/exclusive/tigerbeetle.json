@@ -1,0 +1,23 @@
+{
+    "version": "0.17.6",
+    "description": "The financial transactions database designed for mission critical safety and performance.",
+    "homepage": "https://tigerbeetle.com",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/tigerbeetle/tigerbeetle/releases/download/0.17.6/tigerbeetle-x86_64-windows.zip",
+            "hash": "42086112e14b22e31d320d7125f9ee76e44044c18b5272cda037b5a49b56cc4d"
+        }
+    },
+    "bin": "tigerbeetle.exe",
+    "checkver": {
+        "github": "https://github.com/tigerbeetle/tigerbeetle"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/tigerbeetle/tigerbeetle/releases/download/$version/tigerbeetle-x86_64-windows.zip"
+            }
+        }
+    }
+}
