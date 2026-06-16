@@ -1,12 +1,12 @@
 {
-    "version": "3.8.6",
+    "version": "3.8.7",
     "description": "The context intelligence layer for AI agents",
     "homepage": "https://leanctx.com",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/yvgude/lean-ctx/releases/download/v3.8.6/lean-ctx-x86_64-pc-windows-msvc.zip",
-            "hash": "a6ace14f9179c2983de8be4e8a7cea519bc8879072b9e909d0e214d322455959"
+            "url": "https://github.com/yvgude/lean-ctx/releases/download/v3.8.7/lean-ctx-x86_64-pc-windows-msvc.zip",
+            "hash": "d813bfff9140e8d035fb826229b2ee0462054cd3db17da56462badefaa7acefa"
         }
     },
     "bin": "lean-ctx.exe",
