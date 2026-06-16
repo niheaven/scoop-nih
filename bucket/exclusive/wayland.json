@@ -1,20 +1,20 @@
 {
-    "version": "0.9.9",
+    "version": "0.10.0",
     "description": "The AI Agent That Perceives. Reasons. Acts. Evolves.",
     "homepage": "https://getwayland.com",
     "license": "AGPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/FerroxLabs/wayland/releases/download/v0.9.9/Wayland-0.9.9-win-x64.exe#/dl.7z",
-            "hash": "3998f0be11d8727dcf2a3a8ccf8cfb08e1623e7dd70eff76b369fd9e0c016297",
+            "url": "https://github.com/FerroxLabs/wayland/releases/download/v0.10.0/Wayland-0.10.0-win-x64.exe#/dl.7z",
+            "hash": "6201efd4e3a744f2e05f3e4e14873b40f0b923ef56a4636bb954ed5acf513eac",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\" -Recurse"
             ]
         },
         "arm64": {
-            "url": "https://github.com/FerroxLabs/wayland/releases/download/v0.9.9/Wayland-0.9.9-win-arm64.exe#/dl.7z",
-            "hash": "7a22e0c92d914721ad10601b3f736d60c0acc697405c7884b6d1698bb267bfce",
+            "url": "https://github.com/FerroxLabs/wayland/releases/download/v0.10.0/Wayland-0.10.0-win-arm64.exe#/dl.7z",
+            "hash": "5ba944cb48ebcf2e1d9b6e84a79731171539e9fa556088c88b8164277603ed2a",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-arm64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\" -Recurse"
