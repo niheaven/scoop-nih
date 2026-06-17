@@ -1,16 +1,16 @@
 {
-    "version": "1.0.18",
+    "version": "1.0.19",
     "description": "The ultimate agentic AI control experience for developers.",
     "homepage": "https://smtg-ai.github.io/claude-squad/",
     "license": "AGPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/smtg-ai/claude-squad/releases/download/v1.0.18/claude-squad_1.0.18_windows_amd64.zip",
-            "hash": "007423b2fbdf59952abf508339f772f741cdffb5b4c66d94cf0e9ceece8de71c"
+            "url": "https://github.com/smtg-ai/claude-squad/releases/download/v1.0.19/claude-squad_1.0.19_windows_amd64.zip",
+            "hash": "bad221b9304caa03a99ed2a01b5849613d01e0a25e0fbee2c3efe513cec88228"
         },
         "arm64": {
-            "url": "https://github.com/smtg-ai/claude-squad/releases/download/v1.0.18/claude-squad_1.0.18_windows_arm64.zip",
-            "hash": "edd2f26128439ee42f79e524cd8ad415b0559e29e5aa5021d2acc97cf034e84a"
+            "url": "https://github.com/smtg-ai/claude-squad/releases/download/v1.0.19/claude-squad_1.0.19_windows_arm64.zip",
+            "hash": "5235a530572ed3d446452c77ef8bf09dc7c7eee699cd6237135517f3b7030b84"
         }
     },
     "bin": [
