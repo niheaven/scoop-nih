@@ -1,16 +1,16 @@
 {
-    "version": "0.2.1",
+    "version": "0.3.0",
     "description": "A native installer for AI agents",
     "homepage": "https://agencyagents.app",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/msitarzewski/agency-agents-app/releases/download/v0.2.1/Agency_Agents_0.2.1_x64-setup.exe#/dl.7z",
-            "hash": "c3d08e62762ae1d714f89227a56daf1d4092c15595af0047284d0348184d1bcb"
+            "url": "https://github.com/msitarzewski/agency-agents-app/releases/download/v0.3.0/Agency_Agents_0.3.0_x64-setup.exe#/dl.7z",
+            "hash": "4792ac9b998f3c2d89276ad437a57938a283c29d182a4bfff9c6c33f74caf3f2"
         },
         "arm64": {
-            "url": "https://github.com/msitarzewski/agency-agents-app/releases/download/v0.2.1/Agency_Agents_0.2.1_arm64-setup.exe#/dl.7z",
-            "hash": "a6560ee3ee8e8a9cbfdad66c7973ff346d3426ed739f8f9c4d56d82c98e2399f"
+            "url": "https://github.com/msitarzewski/agency-agents-app/releases/download/v0.3.0/Agency_Agents_0.3.0_arm64-setup.exe#/dl.7z",
+            "hash": "f5927b1668e7ff66f28374975ed0b60dabfd4f29bfac4ba57fc8a09a1207682e"
         }
     },
     "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\*.nsi\" -Recurse",
