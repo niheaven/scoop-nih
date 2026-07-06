@@ -1,0 +1,35 @@
+{
+    "version": "2.0.0-rc.4",
+    "description": "A native connected terminal for AI agent development",
+    "homepage": "https://codux.dux.cn",
+    "license": "GPL-3.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/duxweb/codux/releases/download/v2.0.0-rc.4/codux-2.0.0-rc.4-windows-x86_64-setup.exe#/dl.7z",
+            "hash": "6950f3e855dc4536e937faf4491137621a720073eace2ed9936442086489ffa5",
+            "pre_install": [
+                "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall.exe\", \"$dir\\*.nsi\" -Recurse"
+            ]
+        }
+    },
+    "shortcuts": [
+        [
+            "Codux.exe",
+            "Codux"
+        ]
+    ],
+    "post_install": "New-Item -Path \"$env:APPDATA\\Codux\" -Target \"$dir\\data\" -ItemType Junction -Force | Out-Null",
+    "post_uninstall": "Remove-Item \"$env:APPDATA\\Codux\" -Force -Recurse",
+    "persist": "data",
+    "checkver": {
+        "github": "https://github.com/duxweb/codux",
+        "regex": "v([\\w.-]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/duxweb/codux/releases/download/v$version/codux-$version-windows-x86_64-setup.exe#/dl.7z"
+            }
+        }
+    }
+}

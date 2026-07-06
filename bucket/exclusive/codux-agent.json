@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0-rc.4",
+    "description": "A native connected terminal for AI agent development (Headless host)",
+    "homepage": "https://codux.dux.cn",
+    "license": "GPL-3.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/duxweb/codux/releases/download/v2.0.0-rc.4/codux-agent-2.0.0-rc.4-windows-x86_64.exe#/codux-agent.exe",
+            "hash": "9c8c501d0185adbe22a34cd5c4008555179f1809c183f1e32acf6d5e0ad6827a"
+        }
+    },
+    "bin": "codux-agent.exe",
+    "checkver": {
+        "github": "https://github.com/duxweb/codux",
+        "regex": "v([\\w.-]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/duxweb/codux/releases/download/v$version/codux-agent-$version-windows-x86_64.exe#/codux-agent.exe"
+            }
+        }
+    }
+}
