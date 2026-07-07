@@ -1,12 +1,12 @@
 {
-    "version": "0.8.1",
+    "version": "0.8.3",
     "description": "Native all-in-one workspace for databases, SSH, SFTP, port forwarding, terminals, remote desktop, monitoring, and AI",
     "homepage": "https://feigecode.github.io/onetcli/",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/feigeCode/onetcli/releases/download/v0.8.1/onetcli-x86_64-pc-windows-msvc.zip",
-            "hash": "b52f7150eaa673e0ed7af456d9950e219fbf36835b0e4c5d62be283cbbe79105"
+            "url": "https://github.com/feigeCode/onetcli/releases/download/v0.8.3/onetcli-x86_64-pc-windows-msvc.zip",
+            "hash": "2cdcadf0ff10c77df2b93c9268807d03c1d9d4e351bffb95ea1155f1604924c5"
         },
         "arm64": {
             "url": "https://github.com/nubjs/nub/releases/download/v0.2.9/nub-win32-arm64.zip",
