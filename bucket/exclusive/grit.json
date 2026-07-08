@@ -1,0 +1,29 @@
+{
+    "version": "0.5.0",
+    "description": "Reimplementing Git in Rust. Like a boss.",
+    "homepage": "https://grit-scm.com",
+    "license": "GPL-2.0-only,MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/gitbutlerapp/grit/releases/download/v0.5.0/grit-x86_64-pc-windows-msvc.zip",
+            "hash": "704486ed158d4db26373536123c9b065c3e6499a0e69d37ad4e2c2f43aeb7447"
+        }
+    },
+    "bin": [
+        "grit.exe",
+        [
+            "grit.exe",
+            "git"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/gitbutlerapp/grit"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/gitbutlerapp/grit/releases/download/v$version/grit-x86_64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}
