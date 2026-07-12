@@ -1,12 +1,12 @@
 {
-    "version": "0.3.25",
+    "version": "0.3.32",
     "description": "All-in-One Desktop Agent Skills Utility",
     "homepage": "https://www.luochang.ink/skill-zoo",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/luochang212/skill-zoo/releases/download/v0.3.25/Skill-Zoo-v0.3.25-Windows-Portable.zip",
-            "hash": "ef11b8d53904fb1bda290619f0988f576bd953061bc642c651659c23489d4eab",
+            "url": "https://github.com/luochang212/skill-zoo/releases/download/v0.3.32/Skill-Zoo-v0.3.32-Windows-Portable.zip",
+            "hash": "5228c31975afa4f559cf3b9e4715ee7bcb7cb5c343d2bd5b1677504885e55168",
             "extract_dir": "skill-zoo-portable"
         }
     },
