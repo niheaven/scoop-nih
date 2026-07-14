@@ -1,0 +1,34 @@
+{
+    "version": "0.1.2",
+    "description": "VS Code rebuilt on Tauri",
+    "homepage": "https://github.com/Sidenai/sidex",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Sidenai/sidex/releases/download/v0.1.2/SideX_0.1.2_x64-setup.exe#/dl.7z",
+            "hash": "1a97d028f53343f8212721f0b876249afcd6fda312d58ab4cff7cb197a33f87a"
+        },
+        "arm64": {
+            "url": "https://github.com/Sidenai/sidex/releases/download/v0.1.2/SideX_0.1.2_arm64-setup.exe#/dl.7z",
+            "hash": "c1bd93309e1c686b919f3e3d51ed5c761ee7589143b7fa10d210faab7f0e88af"
+        }
+    },
+    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\*.nsi\" -Recurse",
+    "shortcuts": [
+        [
+            "SideX.exe",
+            "SideX"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Sidenai/sidex/releases/download/v$version/SideX_$version_x64-setup.exe#/dl.7z"
+            },
+            "arm64": {
+                "url": "https://github.com/Sidenai/sidex/releases/download/v$version/SideX_$version_arm64-setup.exe#/dl.7z"
+            }
+        }
+    }
+}
