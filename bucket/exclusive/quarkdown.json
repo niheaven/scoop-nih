@@ -1,0 +1,35 @@
+{
+    "version": "2.4.0",
+    "description": "A modern Markdown-based typesetting system",
+    "homepage": "https://github.com/iamgio/quarkdown",
+    "license": "GPL-3.0-only",
+    "depends": "nodejs-lts",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/iamgio/quarkdown/releases/download/v2.4.0/quarkdown-windows-x64.zip",
+            "hash": "1f08b6ccb39da876c7dc9e756506668f1d7fa3adb1f0d7085d767798e91e6d2b"
+        }
+    },
+    "extract_dir": "quarkdown",
+    "bin": "bin\\quarkdown.bat",
+    "post_install": [
+        "Write-Host 'Installing Puppeteer as a dependency...'",
+        "npm install puppeteer --prefix \"$dir\\lib\"",
+        "Get-ChildItem -Path \"$dir\\lib\"",
+        "Remove-Item -Path \"$dir\\bin\\quarkdown\" -Force -ErrorAction SilentlyContinue",
+        "Move-Item -Path \"$dir\\bin\\quarkdown.bat\" -Destination \"$dir\\bin\\_quarkdown.bat\"",
+        "Set-Content -Path \"$dir\\bin\\quarkdown.bat\" -Value @(",
+        "  '@echo off',",
+        "  'set APPS_DIR=%~dp0..\\..\\..',",
+        "  'set PATH=%APPS_DIR%\\nodejs-lts\\current;%PATH%',",
+        "  'set QD_NPM_PREFIX=%~dp0..\\lib',",
+        "  '\"%~dp0_quarkdown\" %*'",
+        ")"
+    ],
+    "checkver": {
+        "github": "https://github.com/iamgio/quarkdown"
+    },
+    "autoupdate": {
+        "url": "https://github.com/iamgio/quarkdown/releases/download/v$version/quarkdown-windows-x64.zip"
+    }
+}
