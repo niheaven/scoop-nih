@@ -5,21 +5,21 @@
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/AnalyseDeCircuit/oxideterm/releases/download/v2.0.3/OxideTerm_2.0.3_windows_x64-setup.exe#/dl.7z",
-            "hash": "36cb40562ca60b2096c072a1dcc79ae0a493f407313944800dade6841d65b179",
-            "pre_install": "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\" -Recurse"
+            "url": "https://github.com/AnalyseDeCircuit/oxideterm/releases/download/v2.0.3/OxideTerm_2.0.3_windows_x64_portable.zip",
+            "hash": "e26bf6cd3d88839bfc8554f98d3097f22235670b80a131b464e9bec9f069e38f",
+            "extract_dir": "OxideTerm_2.0.3_windows_x64_portable",
+            "bin": "resources\\cli-bin\\x86_64-pc-windows-msvc\\oxideterm.exe"
         },
         "arm64": {
-            "url": "https://github.com/AnalyseDeCircuit/oxideterm/releases/download/v2.0.3/OxideTerm_2.0.3_windows_arm64-setup.exe#/dl.7z",
-            "hash": "f7fcf6dd59fca27990a03747a78298ec241dd3381ee2a37fda4cf237ee5eec43",
-            "pre_install": "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\" -Recurse"
+            "url": "https://github.com/AnalyseDeCircuit/oxideterm/releases/download/v2.0.3/OxideTerm_2.0.3_windows_arm64_portable.zip",
+            "hash": "3814301de93476a17a623515fe33b2a793e888a9d8ed05dae9222ab343bbff76",
+            "extract_dir": "OxideTerm_2.0.3_windows_arm64_portable",
+            "bin": "resources\\cli-bin\\aarch64-pc-windows-msvc\\oxideterm.exe"
         }
     },
-    "post_install": "New-Item -Path \"$dir\\portable\" | Out-Null",
-    "bin": "cli-bin\\oxt.exe",
     "shortcuts": [
         [
-            "oxideterm.exe",
+            "oxideterm-native.exe",
             "OxideTerm"
         ]
     ],
@@ -30,10 +30,12 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/AnalyseDeCircuit/oxideterm/releases/download/v$version/OxideTerm_$version_windows_x64-setup.exe#/dl.7z"
+                "url": "https://github.com/AnalyseDeCircuit/oxideterm/releases/download/v$version/OxideTerm_$version_windows_x64_portable.zip",
+                "extract_dir": "OxideTerm_$version_windows_x64_portable"
             },
             "arm64": {
-                "url": "https://github.com/AnalyseDeCircuit/oxideterm/releases/download/v$version/OxideTerm_$version_windows_arm64-setup.exe#/dl.7z"
+                "url": "https://github.com/AnalyseDeCircuit/oxideterm/releases/download/v$version/OxideTerm_$version_windows_arm64_portable.zip",
+                "extract_dir": "OxideTerm_$version_windows_arm64_portable"
             }
         }
     }
