@@ -1,0 +1,39 @@
+{
+    "version": "2.2.10",
+    "description": "Your Chief Agent Operator, organizing your agents into 7x24 operations by hiring, scheduling, and reporting on your entire AI team.",
+    "homepage": "https://lobehub.com",
+    "license": {
+        "identifier": "Apache-2.0",
+        "url": "https://github.com/lobehub/lobehub/blob/canary/LICENSE"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/lobehub/lobehub/releases/download/v2.2.10/LobeHub-2.2.10-setup.exe#/dl.7z",
+            "hash": "sha512:e9c93810c4e9187ad7f925c371e443ee12cb8fc6fbb0d2e7ded986af277cc67d9b963a25c62743134fcff6577f57a04dcf68c98f61f156704b51be757cdb1fd5",
+            "pre_install": [
+                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+                "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\`$R0\", \"$dir\\[NSIS].nsi\" -Recurse"
+            ]
+        }
+    },
+    "shortcuts": [
+        [
+            "LobeHub.exe",
+            "LobeHub"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/lobehub/lobehub"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/lobehub/lobehub/releases/download/v$version/LobeHub-$version-setup.exe#/dl.7z"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/latest.yml",
+            "regex": "sha512:\\s+$base64"
+        }
+    }
+}
