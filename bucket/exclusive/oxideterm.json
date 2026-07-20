@@ -1,19 +1,19 @@
 {
-    "version": "2.0.6",
+    "version": "2.0.7",
     "description": "AI-native workspace for local shells and remote machines.",
     "homepage": "https://oxideterm.app",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/AnalyseDeCircuit/oxideterm/releases/download/v2.0.6/OxideTerm_2.0.6_windows_x64_portable.zip",
-            "hash": "030fe66e3b7174421be818701980878069bdbd9f07c6c510e27bbf53be1d092a",
-            "extract_dir": "OxideTerm_2.0.6_windows_x64_portable",
+            "url": "https://github.com/AnalyseDeCircuit/oxideterm/releases/download/v2.0.7/OxideTerm_2.0.7_windows_x64_portable.zip",
+            "hash": "4696371c87e4b325f9a1cc83e0e57704b499b16fd08d6ffe2d49e1f48dfce20a",
+            "extract_dir": "OxideTerm_2.0.7_windows_x64_portable",
             "bin": "resources\\cli-bin\\x86_64-pc-windows-msvc\\oxideterm.exe"
         },
         "arm64": {
-            "url": "https://github.com/AnalyseDeCircuit/oxideterm/releases/download/v2.0.6/OxideTerm_2.0.6_windows_arm64_portable.zip",
-            "hash": "66cb5e597c5ce9edeb43530814182fc4152792fcd476941df5f6a965c8e5ca6b",
-            "extract_dir": "OxideTerm_2.0.6_windows_arm64_portable",
+            "url": "https://github.com/AnalyseDeCircuit/oxideterm/releases/download/v2.0.7/OxideTerm_2.0.7_windows_arm64_portable.zip",
+            "hash": "ea9039c9ee4497b757ea0083dc14b624c15788693c407802ac877fcf24571205",
+            "extract_dir": "OxideTerm_2.0.7_windows_arm64_portable",
             "bin": "resources\\cli-bin\\aarch64-pc-windows-msvc\\oxideterm.exe"
         }
     },
