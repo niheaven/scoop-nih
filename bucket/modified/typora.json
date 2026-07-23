@@ -1,5 +1,5 @@
 {
-    "version": "1.13.4",
+    "version": "1.14.6",
     "description": "A minimal Markdown editor and reader",
     "homepage": "https://typoraio.cn",
     "license": {
@@ -11,16 +11,16 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://downloads.typoraio.cn/windows/typora-setup-x64-1.13.4.exe",
-            "hash": "4f38ae1a7a7a56160d62a9779c1c90c5b5ff87e764faec1dc3e1a75c2fb98ea9"
+            "url": "https://downloads.typoraio.cn/windows/typora-setup-x64-1.14.6.exe",
+            "hash": "8ba0106792bee94003c619a0e19152381904f5b35757838a9bac9c5a596d1c8e"
         },
         "32bit": {
-            "url": "https://downloads.typoraio.cn/windows/typora-setup-ia32-1.13.4.exe",
-            "hash": "7d0b5c268fdb884f79196ac4b32b3da4c00e2d075163f91147af711bd9dc6f04"
+            "url": "https://downloads.typoraio.cn/windows/typora-setup-ia32-1.14.6.exe",
+            "hash": "feff5951f9375936d628cda44523bc81a02814e67416e4f5de6e35f8c43b8710"
         },
         "arm64": {
-            "url": "https://downloads.typoraio.cn/windows/typora-setup-arm64-1.13.4.exe",
-            "hash": "e7e8905b3fab6b990ef5a4437e3a867a6cde314968163362a087bb19100132df"
+            "url": "https://downloads.typoraio.cn/windows/typora-setup-arm64-1.14.6.exe",
+            "hash": "ebd7930be240cf0d8c196127399d6ca05f9491783b3866b14728ca5c4ad2d6de"
         }
     },
     "innosetup": true,
