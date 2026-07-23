@@ -1,12 +1,12 @@
 {
-    "version": "1.4.150",
+    "version": "1.4.152",
     "description": "The next-gen IDE for working with a fleet of parallel agents.",
     "homepage": "https://onorca.dev",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/stablyai/orca/releases/download/v1.4.150/orca-windows-setup.exe#/dl.7z",
-            "hash": "sha512:48972d52e5ccfa70ac0592f56d90e70da013f80b68cb56d902e87902b35df395055d7cb50bd7f24d972d2f6ab8bb603113c2a231ccd7ad06154969012063ec05",
+            "url": "https://github.com/stablyai/orca/releases/download/v1.4.152/orca-windows-setup.exe#/dl.7z",
+            "hash": "sha512:cbe0157d4d5fb5b07e0e0578559103388ae9829d5dcf4564f491bd9322e0772a84cc87c467865c735147dd7bc591e3d050dc434204880303cbbd15332bb18e00",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\`$R0\", \"$dir\\[NSIS].nsi\" -Recurse"
