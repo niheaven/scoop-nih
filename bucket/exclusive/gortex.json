@@ -1,12 +1,12 @@
 {
-    "version": "0.61.3",
+    "version": "0.61.4",
     "description": "High-performance and efficient code-intelligence engine for AI agents and IDE",
     "homepage": "https://gortex.dev",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/zzet/gortex/releases/download/v0.61.3/gortex_windows_amd64.zip",
-            "hash": "9ce88507e49e5fec39d4fb843adbce8529e5c4a28a1bc31e43303667b21125b4"
+            "url": "https://github.com/zzet/gortex/releases/download/v0.61.4/gortex_windows_amd64.zip",
+            "hash": "3e2ce930f59c256da58cefc4f0efc08d48973e6c4ed5bfedffbaf984d59985b1"
         }
     },
     "bin": "gortex.exe",
