@@ -1,5 +1,5 @@
 {
-    "version": "2.2.11",
+    "version": "2.2.12",
     "description": "Your Chief Agent Operator, organizing your agents into 7x24 operations by hiring, scheduling, and reporting on your entire AI team.",
     "homepage": "https://lobehub.com",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/lobehub/lobehub/releases/download/v2.2.11/LobeHub-2.2.11-setup.exe#/dl.7z",
-            "hash": "sha512:ad4873d27c2508bb7765a839e0a682ee06b16eb24c19f7c2b5b8e0666127d26ada9135c0477b7b673126809fc17dee5e8c73730239f26a4a016b1efa31053ee3",
+            "url": "https://github.com/lobehub/lobehub/releases/download/v2.2.12/LobeHub-2.2.12-setup.exe#/dl.7z",
+            "hash": "sha512:022ed0307fe01cb9c64670c5e22857388e38e8520d938b67c0d2ec4347d1c930ee33a49b4bad1f43aebd34a1bb3c6c38a502691858473453a992f45c4e9183f2",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\`$R0\", \"$dir\\[NSIS].nsi\" -Recurse"
