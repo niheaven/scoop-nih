@@ -1,16 +1,16 @@
 {
-    "version": "0.4.6",
+    "version": "0.4.7",
     "description": "Code Editor for the AI Agents Era.",
     "homepage": "https://nezha.hanshutx.com",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/hanshuaikang/nezha/releases/download/v0.4.6/NeZha_0.4.6_x64-setup.exe#/dl.7z",
-            "hash": "20e8540a5bdbc59f7119cf9b3097a4dc4f73a8ef10aff1f363e0c5e9e6ff3d7c"
+            "url": "https://github.com/hanshuaikang/nezha/releases/download/v0.4.7/NeZha_0.4.7_x64-setup.exe#/dl.7z",
+            "hash": "602c2f20c540ceb928fee46b1dee4be3f4b662aa721aa0e0a84ed5a5c94824ad"
         },
         "arm64": {
-            "url": "https://github.com/hanshuaikang/nezha/releases/download/v0.4.6/NeZha_0.4.6_arm64-setup.exe#/dl.7z",
-            "hash": "bf4d1ac7455911fdc27af110f02f65d0b214425e876d71480393ef1e044bcafc"
+            "url": "https://github.com/hanshuaikang/nezha/releases/download/v0.4.7/NeZha_0.4.7_arm64-setup.exe#/dl.7z",
+            "hash": "faccb94ee27a7cb7204e4ec18e4854461e63fa5ab028e9cc313b1edbb9317806"
         }
     },
     "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\*.nsi\" -Recurse",
