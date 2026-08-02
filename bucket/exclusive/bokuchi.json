@@ -1,15 +1,13 @@
 {
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A lightweight, cross-platform Markdown editor",
     "homepage": "https://bokuchi.com",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Bokuchi-Editor/bokuchi/releases/download/v1.0.0/Bokuchi_1.0.0_x64-setup.exe#/dl.7z",
-            "hash": "3d2335d7d5968a631fd3fe10cba3cb666aa1714e08418a354cbe3cd2cb1a60ff",
-            "pre_install": [
-                "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\", \"$dir\\uninstall.exe\" -Recurse"
-            ]
+            "url": "https://github.com/Bokuchi-Editor/bokuchi/releases/download/v1.0.1/Bokuchi_1.0.1_x64-setup.exe#/dl.7z",
+            "hash": "8a8855c99e5a591240a0ddd8a2b18cd79c22937828f2ead35d4e1bab4870f838",
+            "pre_install": "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\", \"$dir\\uninstall.exe\" -Recurse"
         }
     },
     "shortcuts": [
