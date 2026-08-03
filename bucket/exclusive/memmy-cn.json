@@ -1,0 +1,39 @@
+{
+    "version": "1.0.4",
+    "description": "A personal AI agent & local memory hub for all AI agents (China)",
+    "homepage": "https://memmy.cn",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/MemTensor/memmy-agent/releases/download/v1.0.4/Memmy-1.0.4-win32-x64-cn-signed.exe#/dl.7z",
+            "hash": "5b6081be04047bd06520e120fe7e8e5086bc878d968c727ccb12a09f50522c39",
+            "pre_install": [
+                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+                "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\" -Recurse"
+            ]
+        }
+    },
+    "bin": [
+        "resources\\cli\\memmy.cmd",
+        "resources\\cli\\memmy-memory.cmd"
+    ],
+    "shortcuts": [
+        [
+            "Memmy.exe",
+            "Memmy"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/MemTensor/memmy-agent"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/MemTensor/memmy-agent/releases/download/v$version/Memmy-$version-win32-x64-cn-signed.exe#/dl.7z"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/SHA256SUMS.txt"
+        }
+    }
+}
