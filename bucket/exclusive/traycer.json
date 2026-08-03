@@ -1,0 +1,44 @@
+{
+    "version": "1.1.9",
+    "description": "Nerve Center for Agentic Coding",
+    "homepage": "https://traycer.ai",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/traycerai/traycer/releases/download/desktop-v1.1.9/traycer-desktop-windows-x64.exe#/dl.7z",
+            "hash": "sha512:4f7ebd327bce2c20ad417d7cee8b9d319b08fc9bd5925d9ca9c11a2af0ffaff33a6d6cd8f8a4d298d1f1bc04d9ccbd8b88d6e4a8b60c6be09b30505936c4d463",
+            "pre_install": [
+                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+                "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\" -Recurse"
+            ]
+        }
+    },
+    "bin": "resources\\cli\\win32-x64\\traycer.exe",
+    "shortcuts": [
+        [
+            "Traycer.exe",
+            "Traycer"
+        ]
+    ],
+    "post_install": [
+        "New-Item -ItemType Junction -Force \"$env:USERPROFILE\\.traycer\" -Target \"$dir\\data\" | Out-Null",
+        "New-Item -ItemType Directory -Force \"$dir\\data\\cli\" | Out-Null",
+        "New-Item -ItemType HardLink -Force \"$dir\\data\\cli\\bin\\traycer.exe\" -Target \"$dir\\resources\\cli\\win32-x64\\traycer.exe\" | Out-Null"
+    ],
+    "persist": "data",
+    "checkver": {
+        "github": "https://github.com/traycerai/traycer",
+        "regex": "desktop-v([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/traycerai/traycer/releases/download/desktop-v$version/traycer-desktop-windows-x64.exe#/dl.7z"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/latest.yml",
+            "regex": "sha512:\\s+$base64"
+        }
+    }
+}
