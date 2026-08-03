@@ -1,0 +1,32 @@
+{
+    "version": "1.0.18",
+    "description": "A cross-platform, instant-rendering desktop Markdown editor",
+    "homepage": "https://milkup.dev",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Auto-Plugin/milkup/releases/download/v1.0.18/milkup.Setup.1.0.18.exe#/dl.7z",
+            "hash": "b275cba8b0e62b3e1f4531346c0be6ef6e3c8a031f133ea6d12c184edf808e98",
+            "pre_install": [
+                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+                "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\" -Recurse"
+            ]
+        }
+    },
+    "shortcuts": [
+        [
+            "milkup.exe",
+            "milkup"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/Auto-Plugin/milkup"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Auto-Plugin/milkup/releases/download/v$version/milkup.Setup.$version.exe#/dl.7z"
+            }
+        }
+    }
+}
