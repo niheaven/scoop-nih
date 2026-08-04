@@ -1,0 +1,34 @@
+{
+    "version": "0.38.4",
+    "description": "CLI / Framework for Agent Skills",
+    "homepage": "https://microsoft.github.io/waza",
+    "license": "MIT",
+    "suggest": {
+        "Github Copilot": "copilot-cli"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/microsoft/waza/releases/download/v0.38.4/waza-windows-amd64.exe#/waza.exe",
+            "hash": "17f12d9bc6c71c895714e119cc0b83bffd82e2eb8062d778f3f644480c60ac3c"
+        },
+        "arm64": {
+            "url": "https://github.com/microsoft/waza/releases/download/v0.38.4/waza-windows-arm64.exe#/waza.exe",
+            "hash": "38b1163404480f112f04b815c3aac75b383032cf0880bf03d03e413b3508a603"
+        }
+    },
+    "bin": "waza.exe",
+    "checkver": {
+        "url": "https://github.com/microsoft/waza/releases",
+        "regex": "/tag/v([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/microsoft/waza/releases/download/v$version/waza-windows-amd64.exe#/waza.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/microsoft/waza/releases/download/v$version/waza-windows-arm64.exe#/waza.exe"
+            }
+        }
+    }
+}
