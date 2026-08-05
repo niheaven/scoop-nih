@@ -1,0 +1,30 @@
+{
+    "version": "2.5.5",
+    "description": "WYSIWYG Markdown editor with native AI",
+    "homepage": "https://markra.app",
+    "license": "AGPL-3.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/markrahq/markra/releases/download/v2.5.5/Markra_2.5.5_windows_x64_portable.zip",
+            "hash": "dddf829741bd1c274a1dd989b5d9c36b63104f004fd1f749d6c4e0aabd377a75"
+        }
+    },
+    "extract_dir": "Markra",
+    "bin": "Markra.exe",
+    "shortcuts": [
+        [
+            "Markra.exe",
+            "Markra"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/markrahq/markra"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/markrahq/markra/releases/download/v$version/Markra_$version_windows_x64_portable.zip"
+            }
+        }
+    }
+}
