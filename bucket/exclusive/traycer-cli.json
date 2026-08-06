@@ -1,12 +1,12 @@
 {
-    "version": "1.1.9",
+    "version": "1.1.10",
     "description": "Nerve Center for Agentic Coding (CLI)",
     "homepage": "https://traycer.ai",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/traycerai/traycer/releases/download/cli-v1.1.9/traycer-cli-windows-x64.exe#/traycer.exe",
-            "hash": "e3ef944a1478b9a8ee6692eadbca14d5f64a0a6fa577fae21a3a8b4963ef64bf",
+            "url": "https://github.com/traycerai/traycer/releases/download/cli-v1.1.10/traycer-cli-windows-x64.exe#/traycer.exe",
+            "hash": "54d990eef01710163b93e10da8c4ddc5691cf2ac5f8506f4838493dce1619091",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\`$R0\", \"$dir\\*.nsi\" -Recurse"
