@@ -1,12 +1,12 @@
 {
-    "version": "1.1.9",
+    "version": "1.1.10",
     "description": "Nerve Center for Agentic Coding",
     "homepage": "https://traycer.ai",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/traycerai/traycer/releases/download/desktop-v1.1.9/traycer-desktop-windows-x64.exe#/dl.7z",
-            "hash": "sha512:4f7ebd327bce2c20ad417d7cee8b9d319b08fc9bd5925d9ca9c11a2af0ffaff33a6d6cd8f8a4d298d1f1bc04d9ccbd8b88d6e4a8b60c6be09b30505936c4d463",
+            "url": "https://github.com/traycerai/traycer/releases/download/desktop-v1.1.10/traycer-desktop-windows-x64.exe#/dl.7z",
+            "hash": "sha512:cc0d602c203f6312bcb29ddf560647e6f21a3ea1a762682318d8fa0443d925c752243903b4c310d04ca2dcb321ea5a7d8ec95e81fa11dfab8383b910839d7dcc",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\" -Recurse"
