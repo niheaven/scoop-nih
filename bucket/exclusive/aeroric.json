@@ -1,16 +1,16 @@
 {
-    "version": "1.3.9",
+    "version": "1.4.1",
     "description": "Desktop Workspace for AI Coding Agents",
     "homepage": "https://github.com/Aho1ic/Aeroric",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Aho1ic/Aeroric/releases/download/v1.3.9/Aeroric_1.3.9_x64-setup.exe#/dl.7z",
-            "hash": "93f2dfeb9a67c9d63e83371ec56937fc02d5430781d5093f3ed8023608a184a8"
+            "url": "https://github.com/Aho1ic/Aeroric/releases/download/v1.4.1/Aeroric_1.4.1_x64-setup.exe#/dl.7z",
+            "hash": "6320c8fa670d0206d374d944f44531c44ef85024e7f6035d91c91a9103f14d9c"
         },
         "arm64": {
-            "url": "https://github.com/Aho1ic/Aeroric/releases/download/v1.3.9/Aeroric_1.3.9_arm64-setup.exe#/dl.7z",
-            "hash": "e0f9f8e1868236ac5a0740d13872898c5c5065990ea5cf93e39c0b5018b231fe"
+            "url": "https://github.com/Aho1ic/Aeroric/releases/download/v1.4.1/Aeroric_1.4.1_arm64-setup.exe#/dl.7z",
+            "hash": "8c5bc3326b90b123bdf0e7e8e9704cffe90951f810270e8cfa34aeb0d47a6fc7"
         }
     },
     "pre_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\uninstall.exe\", \"$dir\\*.nsi\" -Recurse",
