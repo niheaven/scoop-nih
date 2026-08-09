@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/ys-ll/uniterm/releases/download/v1.7.0/uniterm-windows-amd64-portable-v1.7.0.zip",
-            "hash": "1f5f3cda6c96dd859b64308a2a8c8e18591a436fda9bf8d0d79c08db22ef2042"
+            "hash": "f04b214f74b40f52e5f5e8780bd69ce586976a583ccba40fca311a8555ff999c"
         }
     },
     "shortcuts": [
