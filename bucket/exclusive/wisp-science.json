@@ -1,0 +1,29 @@
+{
+    "version": "1.4.0",
+    "description": "The open-source, local-first AI research workbench.",
+    "homepage": "https://wispscience.com",
+    "license": "AGPL-3.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/xuzhougeng/wisp-science/releases/download/v1.4.0/wisp-science_1.4.0_x64-setup.exe#/dl.7z",
+            "hash": "f6ac29258fb97bef14b5ad8918b4133dc929497b3cee9205da90b54fb817cc08",
+            "pre_install": "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\", \"$dir\\uninstall.exe\" -Recurse"
+        }
+    },
+    "shortcuts": [
+        [
+            "wisp-tauri.exe",
+            "Wisp Science"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/xuzhougeng/wisp-science"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/xuzhougeng/wisp-science/releases/download/v1.4.0/wisp-science_1.4.0_x64-setup.exe#/dl.7z"
+            }
+        }
+    }
+}
