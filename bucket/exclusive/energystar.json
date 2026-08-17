@@ -14,13 +14,5 @@
             "EnergyStar.exe",
             "EnergyStar"
         ]
-    ],
-    "checkver": "github",
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://github.com/imbushuo/EnergyStar/releases/download/$version-signed/Release.amd64.zip"
-            }
-        }
-    }
+    ]
 }
