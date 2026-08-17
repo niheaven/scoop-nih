@@ -18,7 +18,7 @@
     },
     "checkver": {
         "github": "https://github.com/gentilkiwi/mimikatz",
-        "regex": "releases/tag/([\\d.-]*)"
+        "regex": "([\\d.-]*)"
     },
     "autoupdate": {
         "url": "https://github.com/gentilkiwi/mimikatz/releases/download/$version/mimikatz_trunk.7z"
