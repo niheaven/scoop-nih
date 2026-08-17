@@ -1,12 +1,12 @@
 {
-    "version": "0.10.5",
+    "version": "0.10.6",
     "description": "The fastest and most efficient code intelligence engine for AI coding agents",
     "homepage": "https://deusdata.github.io/codebase-memory-mcp/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/DeusData/codebase-memory-mcp/releases/download/v0.10.5/codebase-memory-mcp-ui-windows-amd64.zip",
-            "hash": "1e5ba3cca69194b9229f89a0cafe4a6538ba9e0040d892d57bf472e992420273"
+            "url": "https://github.com/DeusData/codebase-memory-mcp/releases/download/v0.10.6/codebase-memory-mcp-ui-windows-amd64.zip",
+            "hash": "e4dd1b75368313710cbe7a7992bc8d37c9318fc961a1ae81fa7f668a6d690828"
         }
     },
     "bin": "codebase-memory-mcp.exe",
