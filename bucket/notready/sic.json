@@ -1,7 +1,7 @@
 {
     "version": "0.23.0",
-    "description": "Convert images and perform image operations from the command-line",
-    "homepage": "https://github.com/foresterre/sic",
+    "description": "Accessible image processing and conversion from the terminal.",
+    "homepage": "https://github.com/foresterre/imagineer",
     "license": "Apache-2.0|MIT",
     "architecture": {
         "64bit": {
