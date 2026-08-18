@@ -1,0 +1,36 @@
+{
+    "version": "1.8.2",
+    "description": "The Agent Native Markdown Editor",
+    "homepage": "http://colamd.com",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/marswaveai/ColaMD/releases/download/v1.8.2/ColaMD.Setup.1.8.2.exe#/dl.7z",
+            "hash": "sha512:b5720dd006efddb20f0fab17ab01d7c57416bbfb0e3ac4c1e57ea36b5649d2e15f3c8efe40e8cfdf0a4f3092761daa8d8dd5a5eec3df455cfc2160b455adafe7",
+            "pre_install": [
+                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+                "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\" -Recurse"
+            ]
+        }
+    },
+    "shortcuts": [
+        [
+            "ColaMD.exe",
+            "ColaMD"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/marswaveai/ColaMD"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/marswaveai/ColaMD/releases/download/v$version/ColaMD.Setup.$version.exe#/dl.7z"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/latest.yml",
+            "regex": "sha512:\\s+$base64"
+        }
+    }
+}
