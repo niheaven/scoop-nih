@@ -1,0 +1,43 @@
+{
+    "version": "1.18.4",
+    "description": "Desktop and web interface for OpenCode AI agent",
+    "homepage": "https://openchamber.dev",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/openchamber/openchamber/releases/download/v1.18.4/OpenChamber-1.18.4-win-x64.exe#/dl.7z",
+            "hash": "d10c4e784b1ebbe4fc6ca5ed3bac88002d732af6c6ecc086d6a0b73f88891510",
+            "pre_install": [
+                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+                "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\" -Recurse"
+            ]
+        },
+        "arm64": {
+            "url": "https://github.com/openchamber/openchamber/releases/download/v1.18.4/OpenChamber-1.18.4-win-arm64.exe#/dl.7z",
+            "hash": "8fbfe3bcf2490cf2072d6a637693b8cf8707758b258ad9e4e91e95624e96d3dc",
+            "pre_install": [
+                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-arm64.7z\" \"$dir\"",
+                "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\" -Recurse"
+            ]
+        }
+    },
+    "shortcuts": [
+        [
+            "OpenChamber.exe",
+            "OpenChamber"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/openchamber/openchamber"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/openchamber/openchamber/releases/download/v$version/OpenChamber-$version-win-x64.exe#/dl.7z"
+            },
+            "arm64": {
+                "url": "https://github.com/openchamber/openchamber/releases/download/v$version/OpenChamber-$version-win-arm64.exe#/dl.7z"
+            }
+        }
+    }
+}
