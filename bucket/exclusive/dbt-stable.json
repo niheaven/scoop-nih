@@ -1,12 +1,12 @@
 {
-    "version": "2.0.0-preview.209",
+    "version": "2.0.0-preview.210",
     "description": "The open standard for modern, AI-ready data transformation",
     "homepage": "https://www.getdbt.com",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://public.cdn.getdbt.com/fs/cli/fs-v2.0.0-preview.209-x86_64-pc-windows-msvc.zip",
-            "hash": "b79204ed2a58bcaecff284ce8e4079ce9dd8d51e695cbe03109331a7b97a0032"
+            "url": "https://public.cdn.getdbt.com/fs/cli/fs-v2.0.0-preview.210-x86_64-pc-windows-msvc.zip",
+            "hash": "d3bda0f201dc31eba73cebfae87dc5d63218d69ccd44de6ab3c7110034a31e63"
         }
     },
     "bin": [
