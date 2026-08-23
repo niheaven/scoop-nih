@@ -1,0 +1,29 @@
+{
+    "version": "2026.8.1",
+    "description": "Open Source Project Planner",
+    "homepage": "https://open-aec.com/open-planner-studio/",
+    "license": "LGPL-3.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.8.1/Open.Planner.Studio_2026.8.1_x64-setup.exe#/dl.7z",
+            "hash": "b72ab86f71b0f4e24a2faf7016a319e49c35d56c57dadaddcbbcde02f62d6c23"
+        }
+    },
+    "post_install": "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\" -Recurse",
+    "shortcuts": [
+        [
+            "open-planner-studio.exe",
+            "Open Planner Studio"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/OpenAEC-Foundation/open-planner-studio"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v$version/Open.Planner.Studio_$version_x64-setup.exe#/dl.7z"
+            }
+        }
+    }
+}
