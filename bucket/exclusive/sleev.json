@@ -1,0 +1,42 @@
+{
+    "version": "1.7.5",
+    "description": "Context-management gateway for AI coding agents",
+    "homepage": "https://sleev.ai",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://sleev.ai/eula"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://storage.googleapis.com/sleeve-releases/cli/1.7.5/sleev-win32-x64.zip",
+            "hash": "dcb2113030558a44b72bc44b091b0d2afa0bca1ca42a75dde562ea2b61f0909b"
+        },
+        "arm64": {
+            "url": "https://storage.googleapis.com/sleeve-releases/cli/1.7.5/sleev-win32-arm64.zip",
+            "hash": "13304a38653fce3f1d5fae3fa9c3156ab377aebd2c743dfdff7542469356fb3b"
+        }
+    },
+    "bin": "sleev.exe",
+    "checkver": {
+        "url": "https://storage.googleapis.com/sleeve-releases/cli/stable.json",
+        "jsonpath": "$.version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://storage.googleapis.com/sleeve-releases/cli/$version/sleev-win32-x64.zip",
+                "hash": {
+                    "url": "https://storage.googleapis.com/sleeve-releases/cli/stable.json",
+                    "jsonpath": "$.artifacts.win32-x64.sha256"
+                }
+            },
+            "arm64": {
+                "url": "https://storage.googleapis.com/sleeve-releases/cli/$version/sleev-win32-arm64.zip",
+                "hash": {
+                    "url": "https://storage.googleapis.com/sleeve-releases/cli/stable.json",
+                    "jsonpath": "$.artifacts.win32-arm64.sha256"
+                }
+            }
+        }
+    }
+}
