@@ -1,20 +1,20 @@
 {
-    "version": "2.1.60",
+    "version": "2.1.61",
     "description": "A free, open-source, Cowork app with AI Agents",
     "homepage": "https://www.aionui.com",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://static.aionui.com/releases/2.1.60/AionUi-2.1.60-win-x64.exe#/dl.7z",
-            "hash": "sha512:8b31ac34b52051005e967f2e6471fb8cb87bb2ae7bffc3fd9b4c09427be6152e8dd113e26c8d121707927346fb2efb99883adf060ef65c2d766bc2f88c7d871a",
+            "url": "https://static.aionui.com/releases/2.1.61/AionUi-2.1.61-win-x64.exe#/dl.7z",
+            "hash": "sha512:eef93a5f22067dd50eb32c01daba6d3e80cd63b81768ac1cabe2afa5c9a58545919d7ef36bf2ed127a7e09da76ab903cbb416dfc0d97ee3435927d1b276a46a9",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\" -Recurse"
             ]
         },
         "arm64": {
-            "url": "https://static.aionui.com/releases/2.1.60/AionUi-2.1.60-win-arm64.exe#/dl.7z",
-            "hash": "3d7a27111542e5344bd5020abf81d37072a3366e5309beccf5529e75164563d8",
+            "url": "https://static.aionui.com/releases/2.1.61/AionUi-2.1.61-win-arm64.exe#/dl.7z",
+            "hash": "cd7f03422c5a9eeb62fea5dae975a9a58fb5030e0d60f3a624234849549d18ea",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-arm64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\" -Recurse"
