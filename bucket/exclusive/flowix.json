@@ -1,0 +1,37 @@
+{
+    "version": "1.2.2",
+    "description": "The Markdown notebook where your words seamlessly become durable context for AI agents.",
+    "homepage": "https://flowix-memo.com",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://download.flowix-memo.com/v1.2.2/Flowix_1.2.2_x64-setup.exe#/dl.7z",
+            "hash": "be5b38c253490991c7061ca47a73771b59b5cd96c705853705cad95b9d46989b",
+            "pre_install": [
+                "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\uninstall.exe\" -Recurse"
+            ]
+        }
+    },
+    "bin": [
+        [
+            "flowix-cli.exe",
+            "flowix"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "Flowix.exe",
+            "Flowix"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/text2future/flowix"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://download.flowix-memo.com/v$version/Flowix_$version_x64-setup.exe#/dl.7z"
+            }
+        }
+    }
+}
