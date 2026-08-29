@@ -1,13 +1,13 @@
 {
-    "version": "1.35.4",
+    "version": "1.36.0",
     "description": "Agent terminal control CLI for WispTerm",
     "homepage": "https://wispterm.com",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/xuzhougeng/wispterm/releases/download/v1.35.4/wisptermctl-v1.35.4.zip",
-            "hash": "dacbff866505b990f1b1c15e10852b10fe6abd1c71b9bc4270481b8d0b05b615",
-            "extract_dir": "wisptermctl-v1.35.4\\windows-x86_64"
+            "url": "https://github.com/xuzhougeng/wispterm/releases/download/v1.36.0/wisptermctl-v1.36.0.zip",
+            "hash": "92e10e844ddd21dcd13af0dcca886e80392feca7fa2cb931fe46c3d11778f394",
+            "extract_dir": "wisptermctl-v1.36.0\\windows-x86_64"
         }
     },
     "bin": "wisptermctl.exe",
