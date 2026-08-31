@@ -1,20 +1,20 @@
 {
-    "version": "0.6.1",
+    "version": "0.7.0",
     "description": "Orchestrate multiple coding agents from desktop and mobile",
     "homepage": "https://paseo.sh",
     "license": "AGPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/getpaseo/paseo/releases/download/v0.6.1/Paseo-Setup-0.6.1-x64.exe#/dl.7z",
-            "hash": "9d520187d1373f5638816e1f4cb0c9a509286e2e071dbc026b47eb907bd0c649",
+            "url": "https://github.com/getpaseo/paseo/releases/download/v0.7.0/Paseo-Setup-0.7.0-x64.exe#/dl.7z",
+            "hash": "5cf6efbe10a3a655bdbb1d0b8d88ae38016ed85d11c1d7099cb372922f764568",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\" -Recurse"
             ]
         },
         "arm64": {
-            "url": "https://github.com/getpaseo/paseo/releases/download/v0.6.1/Paseo-Setup-0.6.1-arm64.exe#/dl.7z",
-            "hash": "b4b265e67150ff25fc1fabbfac652a27230895e64667b1a5697b67041c2a0385",
+            "url": "https://github.com/getpaseo/paseo/releases/download/v0.7.0/Paseo-Setup-0.7.0-arm64.exe#/dl.7z",
+            "hash": "5f7ccdd54a016c6ffe098d78e298bdec7f8addb50e82b34a2bf7a7a4efa97db6",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-arm64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\" -Recurse"
