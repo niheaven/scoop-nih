@@ -5,7 +5,7 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/marswaveai/ColaMD/releases/download/v2.0.1/ColaMD.Setup.2.0.1.exe#/dl.7z",
+            "url": "https://github.com/marswaveai/ColaMD/releases/download/v2.0.1/ColaMD-Setup-2.0.1.exe#/dl.7z",
             "hash": "sha512:beacfa2da4bd8c6bdff814bc4069cc69ef5f2fa1607394fb65ac4e77e820a9f8238e4236f283826875cd50f76f36282f604e6a9e9942e56b29fdcc5e19edb85e",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
@@ -25,7 +25,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/marswaveai/ColaMD/releases/download/v$version/ColaMD.Setup.$version.exe#/dl.7z"
+                "url": "https://github.com/marswaveai/ColaMD/releases/download/v$version/ColaMD-Setup-$version.exe#/dl.7z"
             }
         },
         "hash": {
