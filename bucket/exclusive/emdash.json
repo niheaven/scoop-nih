@@ -1,12 +1,12 @@
 {
-    "version": "1.2.2",
+    "version": "1.2.3",
     "description": "Open-source agentic development environment",
     "homepage": "https://emdash.sh",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/generalaction/emdash/releases/download/v1.2.2/emdash-x64.exe#/dl.7z",
-            "hash": "a50160d34d9e264bbb539e2d40d168dc4d519aa462e16af1778c4b77b2873168",
+            "url": "https://github.com/generalaction/emdash/releases/download/v1.2.3/emdash-x64.exe#/dl.7z",
+            "hash": "f0bd31337dd8101b8baf79044420f325ffe534bfb0e12e30c423c19e5444590a",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\" -Recurse"
