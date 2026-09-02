@@ -1,20 +1,20 @@
 {
-    "version": "2.28.0",
+    "version": "2.29.0",
     "description": "Smart tmux session manager",
     "homepage": "https://github.com/joshmedeski/sesh",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/joshmedeski/sesh/releases/download/v2.28.0/sesh_Windows_x86_64.zip",
-            "hash": "3a5bbb54935c14d03b5e98c6f81728cff3367eb294423ae831ae12ec94a12982"
+            "url": "https://github.com/joshmedeski/sesh/releases/download/v2.29.0/sesh_Windows_x86_64.zip",
+            "hash": "89f6ec3a8bb498820f8b72a9c37dd996c1b9794e672e6999a230884e5103f068"
         },
         "32bit": {
-            "url": "https://github.com/joshmedeski/sesh/releases/download/v2.28.0/sesh_Windows_i386.zip",
-            "hash": "f29f40d1dc9eeecd2a14ed635125e003247b4bbcd6cd5fd646ab4709595b3607"
+            "url": "https://github.com/joshmedeski/sesh/releases/download/v2.29.0/sesh_Windows_i386.zip",
+            "hash": "efd799f3867897bbbb2bd5fa3436086608066ec25ccdaafc01188fc6a12eba58"
         },
         "arm64": {
-            "url": "https://github.com/joshmedeski/sesh/releases/download/v2.28.0/sesh_Windows_arm64.zip",
-            "hash": "d948708f392ab4e3846f1332647544d30851e9457a6a4729224cb7c077d637e0"
+            "url": "https://github.com/joshmedeski/sesh/releases/download/v2.29.0/sesh_Windows_arm64.zip",
+            "hash": "1358cab4fdf4263a61c22345cc0886237c8a56f555a3e6436ca5b92aef4a8399"
         }
     },
     "bin": "sesh.exe",
