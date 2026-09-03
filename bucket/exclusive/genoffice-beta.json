@@ -1,12 +1,12 @@
 {
-    "version": "0.8.1039",
+    "version": "0.8.1158",
     "description": "AI office suite with built-in AI agents",
     "homepage": "https://genoffice.ai",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://cdn1.genspark.ai/user-upload-image/client/genoffice/GenOfficeSetup-v0.8.1039.exe#/dl.7z",
-            "hash": "sha512:c26aec0028877c2177c33c219bb2371f7c8787c7111409352fbb3b5b2af9beac2c6c0e7740e1d6bf0d7fdf30f922e65e4a46efd5b2b25686bf39df42e026907b",
+            "url": "https://cdn1.genspark.ai/user-upload-image/client/genoffice/GenOfficeSetup-v0.8.1158.exe#/dl.7z",
+            "hash": "sha512:641914d060b6e6ee37b6c8ab81f983488032277a58947ea8a46bfe170774859dc45d789a4ab248ce0bc81e094173befb7539b172c21db7f0ce5e7e4d3d87fd6a",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\" -Recurse"
