@@ -1,12 +1,12 @@
 {
-    "version": "0.6.2",
+    "version": "0.6.3",
     "description": "The ultimate agentic AI control experience for developers.",
     "homepage": "https://piebald.ai",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Piebald-AI/piebald-issues/releases/download/v0.6.2/piebald-portable-windows-x64.zip",
-            "hash": "14f47344d46e6dc2c0ddac240d44e578d3c63e3efa979ec3725482a0de9cf0c4"
+            "url": "https://github.com/Piebald-AI/piebald-issues/releases/download/v0.6.3/piebald-portable-windows-x64.zip",
+            "hash": "979440cf8a4ab08fa1e8ef4ccec0230208319160372b8c63c04210935e3e2093"
         }
     },
     "bin": "piebald.exe",
