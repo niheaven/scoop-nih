@@ -1,0 +1,35 @@
+{
+    "version": "0.10.3",
+    "description": "End-to-end local AI solution for building applications that run entirely on the user's device.",
+    "homepage": "https://www.foundrylocal.ai",
+    "license": {
+        "type": "Microsoft Software License Terms",
+        "url": "https://github.com/microsoft/foundry-local/blob/main/LICENSE"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/microsoft/foundry-local/releases/download/cli-preview-0.10.3/foundry-0.10.3-win-x64-winml.msix#/dl.7z",
+            "hash": "86a01c52265bd9c9167c1f8a04f34621a2a63ec5c8276166c2eecc8c6a56553f"
+        },
+        "arm64": {
+            "url": "https://github.com/microsoft/foundry-local/releases/download/cli-preview-0.10.3/foundry-0.10.3-win-arm64-winml.msix#/dl.7z",
+            "hash": "04051808bc41e0e2252aabe95d02cbe143a3ffdbdc39347eabaabc8be113d8b8"
+        }
+    },
+    "pre_install": "Remove-Item -Path \"$dir\\*\" -Exclude '*.exe', '*.dll' -Recurse -Force",
+    "bin": "foundry.exe",
+    "checkver": {
+        "url": "https://github.com/microsoft/foundry-local/releases",
+        "regex": "/cli-preview-([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/microsoft/foundry-local/releases/download/cli-preview-$version/foundry-$version-win-x64-winml.msix#/dl.7z"
+            },
+            "arm64": {
+                "url": "https://github.com/microsoft/foundry-local/releases/download/cli-preview-$version/foundry-$version-win-arm64-winml.msix#/dl.7z"
+            }
+        }
+    }
+}
