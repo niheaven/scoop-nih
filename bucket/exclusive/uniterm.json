@@ -1,12 +1,12 @@
 {
-    "version": "1.9.1",
+    "version": "1.9.2",
     "description": "A modern cross-platform terminal emulator with a built-in autonomous AI Agent",
     "homepage": "https://uniterm.net",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ys-ll/uniterm/releases/download/v1.9.1/uniterm-windows-amd64-portable-v1.9.1.zip",
-            "hash": "db728546b60e796ea0b8fd110202f6eabbde93f1c1d3236d08dc102d6d4d189a"
+            "url": "https://github.com/ys-ll/uniterm/releases/download/v1.9.2/uniterm-windows-amd64-portable-v1.9.2.zip",
+            "hash": "3267ee57a06757097883f13fc12416d8421c7f82fe811aa5ee8047f9e88e09c7"
         }
     },
     "shortcuts": [
@@ -15,8 +15,16 @@
             "uniTerm"
         ]
     ],
-    "post_install": "New-Item -Path \"$env:APPDATA\\uniTerm\" -Target \"$dir\\data\" -ItemType Junction -Force | Out-Null",
-    "post_uninstall": "Remove-Item \"$env:APPDATA\\uniTerm\" -Force -Recurse",
+    "post_install": [
+        "$bsJson = \"$dir\\data\\bootstrap.json\"",
+        "$bootstrap = if (Test-Path $bsJson) { Get-Content $bsJson -Raw | ConvertFrom-Json } else { @{} }",
+        "$bootstrap.type = 'portable'",
+        "$bootstrap | ConvertTo-Json -Compress | Set-Content $bsJson -Encoding ASCII",
+        "$settingsJson = \"$dir\\data\\settings.json\"",
+        "$settings = if (Test-Path $settingsJson) { Get-Content $settingsJson -Raw | ConvertFrom-Json } else { @{} }",
+        "$settings.autoCheckUpdate = $false",
+        "$settings | ConvertTo-Json -Compress -Depth 10 | Set-Content $settingsJson -Encoding ASCII"
+    ],
     "persist": "data",
     "checkver": {
         "github": "https://github.com/ys-ll/uniterm"
