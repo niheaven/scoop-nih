@@ -1,12 +1,12 @@
 {
-    "version": "0.5.22",
+    "version": "0.5.23",
     "description": "A hive mind communication platform",
     "homepage": "https://github.com/block/buzz",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/block/buzz/releases/download/desktop-v0.5.22/Buzz_0.5.22_x64-setup_alpha-unsigned.exe#/dl.7z",
-            "hash": "c76aa32e75faa20aee5d8cd1c1c2c00265bc94166c3cb6a88455a6819e9ec289"
+            "url": "https://github.com/block/buzz/releases/download/desktop-v0.5.23/Buzz_0.5.23_x64-setup_alpha-unsigned.exe#/dl.7z",
+            "hash": "b9116e0a4a171a2ec2e72a46698d176ac1f2013ad66bce326a97e5e7c32d1553"
         }
     },
     "pre_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\uninstall.exe\", \"$dir\\*.nsi\" -Recurse",
