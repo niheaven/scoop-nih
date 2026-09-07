@@ -3,7 +3,7 @@
     "description": "End-to-end local AI solution for building applications that run entirely on the user's device.",
     "homepage": "https://www.foundrylocal.ai",
     "license": {
-        "type": "Microsoft Software License Terms",
+        "identifier": "Microsoft Software License Terms",
         "url": "https://github.com/microsoft/foundry-local/blob/main/LICENSE"
     },
     "architecture": {
