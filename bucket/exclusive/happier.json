@@ -1,0 +1,33 @@
+{
+    "version": "0.2.11",
+    "description": "An open-source, end-to-end encrypted, cross-device companion app and client for your AI coding agents.",
+    "homepage": "https://happier.dev",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/happier-dev/happier/releases/download/ui-desktop-v0.2.11/happier-ui-desktop-windows-x86_64-v0.2.11.exe#/dl.7z",
+            "hash": "9ee5faffba19b6ac6a291530da69852e9bc2dddd610dff0e5930345acf752870",
+            "pre_install": "Remove-Item \"$dir\\`$*\", \"$dir\\uninstall.exe\" -Recurse"
+        }
+    },
+    "shortcuts": [
+        [
+            "app.exe",
+            "Happier"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/happier-dev/happier/releases/download/ui-desktop-stable/latest.json",
+        "jsonpath": "$.version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/happier-dev/happier/releases/download/ui-desktop-v$version/happier-ui-desktop-windows-x86_64-v$version.exe#/dl.7z"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/checksums-happier-ui-desktop-v$version.txt"
+        }
+    }
+}
