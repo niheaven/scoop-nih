@@ -1,12 +1,12 @@
 {
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "A 'do-anything' AI assistant that lives in your terminal.",
     "homepage": "https://github.com/twowb/znaide",
     "license": "AGPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/twowb/znaide/releases/download/v1.0.2/znaide-windows-x64-v1.0.2.exe#/znaide.exe",
-            "hash": "05bf985dd3112bc61363836d1e08b1a3881220f95730b971389301429b7e6816"
+            "url": "https://github.com/twowb/znaide/releases/download/v1.0.3/znaide-windows-x64-v1.0.3.exe#/znaide.exe",
+            "hash": "29dfe90a9f5946e4ca184c48f8fa2743e2bc55167a6e670e95fdb65980c66992"
         }
     },
     "bin": "znaide.exe",
