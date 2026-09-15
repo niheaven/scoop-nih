@@ -1,11 +1,11 @@
 {
-    "version": "0.10.463",
+    "version": "0.10.470",
     "description": "AI office suite with built-in AI agents",
     "homepage": "https://genoffice.ai",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://cdn1.genspark.ai/user-upload-image/client/genoffice/GenOfficeSetup-v0.10.463.exe#/dl.7z",
+            "url": "https://cdn1.genspark.ai/user-upload-image/client/genoffice/GenOfficeSetup-v0.10.470.exe#/dl.7z",
             "hash": "sha512:cc441155ddd56593ae12bae177de5a991676fbde5fcef79251bcd585d7207a808776a19125542fcab93453f9e063a0509edebc4eade6634b9a31df7125f30529",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
