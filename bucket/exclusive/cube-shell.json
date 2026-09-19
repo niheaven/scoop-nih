@@ -1,0 +1,33 @@
+{
+    "version": "3.5.0",
+    "description": "A remote operations and management tool for Linux servers",
+    "homepage": "https://github.com/Cubeiic-HanXuan/cube-shell-cpp",
+    "license": "LGPL-3.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Cubeiic-HanXuan/cube-shell-cpp/releases/download/V3.5.0/cube-shell-3.5.0-windows-x86_64.zip",
+            "hash": "ec92b65258d44c3640e64bac0ff649cff216564ed395f5f11f00d52027cde47c"
+        },
+        "arm64": {
+            "url": "https://github.com/Cubeiic-HanXuan/cube-shell-cpp/releases/download/V3.5.0/cube-shell-3.5.0-windows-arm64.zip",
+            "hash": "f90bcba81aef4aec85797de34e07282ff06fb2c51c9c262fdd1fcceb55e6db83"
+        }
+    },
+    "shortcuts": [
+        [
+            "bin\\cube-shell.exe",
+            "Cube Shell"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Cubeiic-HanXuan/cube-shell-cpp/releases/download/V3.5.0/cube-shell-3.5.0-windows-x86_64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/Cubeiic-HanXuan/cube-shell-cpp/releases/download/V3.5.0/cube-shell-3.5.0-windows-arm64.zip"
+            }
+        }
+    }
+}
