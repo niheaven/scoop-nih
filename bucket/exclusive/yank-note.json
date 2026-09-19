@@ -1,12 +1,12 @@
 {
-    "version": "3.92.1",
+    "version": "3.93.0",
     "description": "A highly extensible Markdown editor",
     "homepage": "https://yank-note.com",
     "license": "AGPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/purocean/yn/releases/download/v3.92.1/Yank-Note-win-x64-3.92.1.exe#/dl.7z",
-            "hash": "sha512:353b76d52a4b6be5b9af32f58edb00c21c04b3e661b78af891d13165c127bbbc1abc67aae39151e9dc3230b99eaa9e17c0286292985e5135b397ff228b62ae82",
+            "url": "https://github.com/purocean/yn/releases/download/v3.93.0/Yank-Note-win-x64-3.93.0.exe#/dl.7z",
+            "hash": "sha512:989ebe3a9cda6de5a11aff34e78cedda6cb74c03402cafbd558673983c6595624f5cd2270d3c6bbe82d3cdacef6a63200f4cc781db670e1080e2b58f2f7f3c80",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\" -Recurse"
