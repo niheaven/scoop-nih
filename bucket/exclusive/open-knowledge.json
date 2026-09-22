@@ -1,20 +1,20 @@
 {
-    "version": "0.77.1",
+    "version": "0.77.4",
     "description": "Beautiful, AI-native markdown IDE and LLM wiki",
     "homepage": "https://openknowledge.ai",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/inkeep/open-knowledge/releases/download/v0.77.1/OpenKnowledge-Setup-x64.exe#/dl.7z",
-            "hash": "sha512:5318ecb35099fa17e503a4283536d2732f00982711f4b256dd8eee75034cf0f600a15efe4434b80d898cd6cd7d52d0bee76584fffe8adf7013636942fd2e6055",
+            "url": "https://github.com/inkeep/open-knowledge/releases/download/v0.77.4/OpenKnowledge-Setup-x64.exe#/dl.7z",
+            "hash": "sha512:a8e9e77d264fa071baff9a7f1245b867cc8641acb412cecd5b49fd7172d8924f7d794523e2e667545ece568df9f6f1f6b98b5248ea1804bb8cad9eb5488e17d3",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.zip\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\", \"$dir\\Uninst*\" -Recurse"
             ]
         },
         "arm64": {
-            "url": "https://github.com/inkeep/open-knowledge/releases/download/v0.77.1/OpenKnowledge-Setup-arm64.exe#/dl.7z",
-            "hash": "sha512:b608af190b669d8fc719c8a255682402f0deb5491b170d79326a3ef97686bbfe408eec0bdbc21d338eb29661e1b0e89af0de6c07f5cf953723ff80398565d1c8",
+            "url": "https://github.com/inkeep/open-knowledge/releases/download/v0.77.4/OpenKnowledge-Setup-arm64.exe#/dl.7z",
+            "hash": "sha512:748ac8d746af33d53c483e533515175b47f0a248422fd80e75eb1b83573aa3bd8aee240414e5c0f0a7943f7fe3520b974bae778fb65d201494c2738ac9aaa44f",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-arm64.zip\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\", \"$dir\\Uninst*\" -Recurse"
