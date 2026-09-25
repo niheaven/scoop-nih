@@ -1,5 +1,5 @@
 {
-    "version": "1.8.3",
+    "version": "1.8.4",
     "description": "Context-management gateway for AI coding agents",
     "homepage": "https://sleev.ai",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://storage.googleapis.com/sleeve-releases/cli/1.8.3/sleev-win32-x64.zip",
-            "hash": "997ede579ee9e47f441a474126fcf5c8a38bd1265af4d4b0cd36ab06988679d7"
+            "url": "https://storage.googleapis.com/sleeve-releases/cli/1.8.4/sleev-win32-x64.zip",
+            "hash": "d2206afe788d89ff9835106cc5c2cf0bf84d0e26c4939b9621634e51a3e91da6"
         },
         "arm64": {
-            "url": "https://storage.googleapis.com/sleeve-releases/cli/1.8.3/sleev-win32-arm64.zip",
-            "hash": "99a676d031a177835fd04c13aa4256ff88357f975e5a53e4bf9c6d302bc63aa1"
+            "url": "https://storage.googleapis.com/sleeve-releases/cli/1.8.4/sleev-win32-arm64.zip",
+            "hash": "10c916bdbafddd53b6b4a63fd6a989acc0bf26d71caaffb43973e3426f1918ee"
         }
     },
     "bin": "sleev.exe",
