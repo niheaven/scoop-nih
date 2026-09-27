@@ -1,0 +1,38 @@
+{
+    "homepage": "https://www.yuque.com/",
+    "description": "Professional note and document repositories",
+    "version": "4.2.4.1336",
+    "license": {
+        "identifier": "EULA",
+        "url": "https://www.yuque.com/terms"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://app.nlark.com/yuque-desktop/4.2.4.1336/BJ1979da138532447ea1c6e490994bfef4/Yuque-4.2.4.1336.exe#/Yuque_4.2.4.1336.7z",
+            "hash": "a0746a1da6fce09bd69dacee31fbd36e7656ab1ccfa6681bb3bd6c53d687888d",
+            "installer": {
+                "script": [
+                    "Expand-7zipArchive \"$dir\\`$PLUGINSDIR/app-64.7z\" \"$dir\" -Removal",
+                    "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse"
+                ]
+            }
+        }
+    },
+    "shortcuts": [
+        [
+            "语雀.exe",
+            "语雀"
+        ]
+    ],
+    "checkver": {
+        "url": "https://app.nlark.com/yuque-desktop/v5/public/windows-stable.json",
+        "regex": "/(?<code>[a-zA-Z0-9]+)/Yuque-([\\d.]+).exe"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://app.nlark.com/yuque-desktop/$version/$matchCode/Yuque-$version.exe#/Yuque_$version.7z"
+            }
+        }
+    }
+}
