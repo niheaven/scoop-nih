@@ -1,0 +1,36 @@
+{
+    "version": "3.2026.927",
+    "description": "One app to open 350+ file formats - images, documents, code, video, audio, archives and more.",
+    "homepage": "https://openfiles.pansysoft.app",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/pansysoft/openfiles.desktop/releases/download/3.2026.927/OpenFiles.Setup.3.2026.927.exe#/dl.7z",
+            "hash": "sha512:90dbbf4ea1be78754d6fdbdd899a61ea6f33f940dc12b528fec66abf89435a0dea293f0a592b117bd2bd73318f39cbece2cf17bba242d09866989579cf2f7b70",
+            "pre_install": [
+                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+                "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\" -Recurse"
+            ]
+        }
+    },
+    "shortcuts": [
+        [
+            "OpenFiles.exe",
+            "OpenFiles"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/pansysoft/openfiles.desktop"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/pansysoft/openfiles.desktop/releases/download/$version/OpenFiles.Setup.$version.exe#/dl.7z"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/latest.yml",
+            "regex": "sha512:\\s+$base64"
+        }
+    }
+}
