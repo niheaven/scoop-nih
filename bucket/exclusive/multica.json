@@ -1,5 +1,5 @@
 {
-    "version": "0.5.3",
+    "version": "0.6.0",
     "description": "Make humans and AI agents work as one team",
     "homepage": "https://multica.ai",
     "license": {
@@ -8,16 +8,16 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/multica-ai/multica/releases/download/v0.5.3/multica-desktop-0.5.3-windows-x64.exe#/dl.7z",
-            "hash": "sha512:af5ef15d11a72ff30e188c51d5a0fdd82f294317b3fa047f4dcc613df71027b9a4816011adda494186e0d10f30e765c586ba220bdb1c941d9e8a8632dcd1be6e",
+            "url": "https://github.com/multica-ai/multica/releases/download/v0.6.0/multica-desktop-0.6.0-windows-x64.exe#/dl.7z",
+            "hash": "sha512:a67b80c745e945c9af8dfa7464dec71c58a8bcf01e2a124b53f040aca0666396b859e43754e31e74fc9728023b5d2a38f68c3d2f7261e028d07d675b3a9887d5",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\" -Recurse"
             ]
         },
         "arm64": {
-            "url": "https://github.com/multica-ai/multica/releases/download/v0.5.3/multica-desktop-0.5.3-windows-arm64.exe#/dl.7z",
-            "hash": "sha512:4bab702d975ebd7c900a377942aab968a34d8c2a76e8900630374d44428904d397d6b28ae3be4b436684719bfca470cb23bb3af1d43b44150c3fb039362ef22f",
+            "url": "https://github.com/multica-ai/multica/releases/download/v0.6.0/multica-desktop-0.6.0-windows-arm64.exe#/dl.7z",
+            "hash": "sha512:1c20315d15101c4d32a110c115fcba931b067861c8657d5a57b1a871d790508aa90fe8afc477093914a39e4276caf17f86e0a214a0298d3f5f1f61e4750560e9",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-arm64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\" -Recurse"
