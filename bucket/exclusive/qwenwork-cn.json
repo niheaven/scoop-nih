@@ -1,0 +1,43 @@
+{
+    "version": "1.2.5-26092902",
+    "description": "All-in-One AI Productivity Platform",
+    "homepage": "https://qwenwork.cn",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://terms.alicdn.com/legal-agreement/terms/b_end_product_protocol/20260708175856831/20260708175856831.html"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://assets.qwenwork.cn/cicd/qwenworkcn/builds/260929/rel/e500f04e14dbbc8c603e87a8f69e6857/qwenworkcn_1.2.5-26092902_x64-update-package.7z",
+            "hash": "dfe67a6af124b078614a9573c34931aedaf649ba5166d8788ed4fec37edf280b",
+            "extract_dir": "app"
+        }
+    },
+    "shortcuts": [
+        [
+            "QwenWorkCN.exe",
+            "千问办公"
+        ]
+    ],
+    "checkver": {
+        "script": [
+            "$uuid = [guid]::NewGuid().ToString()",
+            "$body = @{}",
+            "$body.appInfo = @{name = 'qwenworkcn'; version = '1.0.0'; arch = 10; channel = 'stable'}",
+            "$body.osInfo = @{type = 0}",
+            "$body.hardwareInfo = @{machineId = $uuid}",
+            "$body.userInfo = @{uuid = $uuid}",
+            "$body.checkType = 0",
+            "$response = Invoke-RestMethod -Uri 'https://clientupgrade.qwenwork.cn/upgrade/query' -Method POST -ContentType 'application/json' -Body ($body | ConvertTo-Json)",
+            "Write-Output $response.upgradeInfo.version $response.upgradeInfo.resources.url $response.upgradeInfo.resources.sha512"
+        ],
+        "regex": "^(\\S+)\\s+(?<url>\\S+)\\s+(?<hash>\\S+)$"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchUrl"
+            }
+        }
+    }
+}
