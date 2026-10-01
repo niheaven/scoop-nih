@@ -1,0 +1,34 @@
+{
+    "version": "1.2.3",
+    "description": "A control plane with a durable state kernel for long-horizon agents and teams.",
+    "homepage": "https://loopx-project.github.io/loopx/",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/loopx-project/loopx/releases/download/v1.2.3/LoopX_1.2.3_x64-setup.exe#/dl.7z",
+            "hash": "dba1613b5927459e0bccf8e82f5afec5dff0593db367d92d0e872a8d80bfa66c",
+            "pre_install": [
+                "Remove-Item \"$dir\\`$*\", \"$dir\\uninstall.exe\" -Recurse"
+            ]
+        }
+    },
+    "shortcuts": [
+        [
+            "loopx-control-plane.exe",
+            "LoopX"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/loopx-project/loopx"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/loopx-project/loopx/releases/download/v$version/LoopX_$version_x64-setup.exe#/dl.7z"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/DESKTOP-SHA256SUMS"
+        }
+    }
+}
