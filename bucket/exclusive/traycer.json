@@ -25,6 +25,7 @@
         "New-Item -ItemType Directory -Force \"$dir\\data\\cli\" | Out-Null",
         "New-Item -ItemType HardLink -Force \"$dir\\data\\cli\\bin\\traycer.exe\" -Target \"$dir\\resources\\cli\\win32-x64\\traycer.exe\" | Out-Null"
     ],
+    "pre_uninstall": "Remove-Item \"$env:USERPROFILE\\.traycer\" -Recurse -Force",
     "persist": "data",
     "checkver": {
         "github": "https://github.com/traycerai/traycer",
