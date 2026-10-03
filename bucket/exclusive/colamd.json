@@ -1,12 +1,12 @@
 {
-    "version": "2.7.2",
+    "version": "2.7.3",
     "description": "The Agent Native Markdown Editor",
     "homepage": "http://colamd.com",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/marswaveai/ColaMD/releases/download/v2.7.2/ColaMD-Setup-2.7.2.exe#/dl.7z",
-            "hash": "sha512:6f4d3159b0ddd9912c113d8103e0175a352d39ff293a3d2f818644f6b8048e0ccd9083a8697b21bee801e45071ce9aa5f4df357cde91396abbde8e066da0a319",
+            "url": "https://github.com/marswaveai/ColaMD/releases/download/v2.7.3/ColaMD-Setup-2.7.3.exe#/dl.7z",
+            "hash": "sha512:a84a540414fc026dae56a6cca8d3b9dd1417c5e03a0f5e167ca9889fe771123eb85a938e62b410c2718e5b576be983b7ba9bc2a6e74f7e2bbfb75563138c1bf0",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\" -Recurse"
