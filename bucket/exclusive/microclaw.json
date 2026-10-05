@@ -1,12 +1,12 @@
 {
-    "version": "0.7.0",
+    "version": "0.8.0",
     "description": "Agentic AI assistant for modern chat surfaces, built in Rust.",
     "homepage": "https://microclaw.ai",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/microclaw/microclaw/releases/download/v0.7.0/microclaw-0.7.0-x86_64-windows-msvc.zip",
-            "hash": "5cacfb1068890a6269aae0694e9b1fe489eb7123f747d8d29a18720a00d2c117"
+            "url": "https://github.com/microclaw/microclaw/releases/download/v0.8.0/microclaw-0.8.0-x86_64-windows-msvc.zip",
+            "hash": "e001c696740dda311533061db14f7fac0b6cc43518123cdab18615387eb820a7"
         }
     },
     "bin": "microclaw.exe",
