@@ -1,12 +1,12 @@
 {
-    "version": "0.3.0",
+    "version": "0.3.1",
     "description": "AI that gets your everyday tasks done.",
     "homepage": "https://openworker.com",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/andrewyng/openworker/releases/download/v0.3.0/OpenWorker-windows-setup.exe#/dl.7z",
-            "hash": "dd30bd766ca734f412ce988f33e996871e05dbb047c803e57f0ab872b7a07aad",
+            "url": "https://github.com/andrewyng/openworker/releases/download/v0.3.1/OpenWorker-windows-setup.exe#/dl.7z",
+            "hash": "fab613ed5565708140ff93514a85a49077f46b9d067bbcddec484f32fc9f896b",
             "pre_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\*.nsi\", \"$dir\\uninstall.exe\" -Recurse"
         }
     },
