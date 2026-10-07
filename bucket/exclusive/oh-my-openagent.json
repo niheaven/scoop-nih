@@ -1,16 +1,16 @@
 {
-    "version": "5.1.22",
+    "version": "5.1.23",
     "description": "Your tool for real work. But it's an agent.",
     "homepage": "https://omo.dev",
     "license": "SUL-1.0",
     "architecture": {
         "64bit": {
-            "url": "https://get.omo.dev/v/5.1.22/omo-windows-x64.exe#/omo.exe",
-            "hash": "79e3af23fea0df9cc880fdf4d7b69affd96bf397b1e1d32487d0a09c572ac2c6"
+            "url": "https://get.omo.dev/v/5.1.23/omo-windows-x64.exe#/omo.exe",
+            "hash": "195771ac70af187418babac3d0f39cee0c6145ba5a75dd9e68df26445a7e9d37"
         },
         "arm64": {
-            "url": "https://get.omo.dev/v/5.1.22/omo-windows-arm64.exe#/omo.exe",
-            "hash": "f07b04122658e8ddb4a8d8bb9666423c41452fa1cdcee53c79719bf1e41582fb"
+            "url": "https://get.omo.dev/v/5.1.23/omo-windows-arm64.exe#/omo.exe",
+            "hash": "d1150fc49c2dd9ae9a72896e6940c36304dd1fce5a7ff9e2cdcd10a514609c84"
         }
     },
     "bin": "omo.exe",
