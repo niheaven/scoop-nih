@@ -10,6 +10,8 @@
         }
     },
     "bin": "wispterm.exe",
+    "pre_install": "if (! (Test-Path \"$persist_dir\\wispterm.conf\")) { New-Item \"$dir\\wispterm.conf\" | Out-Null }",
+    "persist": "wispterm.conf",
     "checkver": {
         "github": "https://github.com/xuzhougeng/wispterm"
     },
