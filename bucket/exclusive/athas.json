@@ -1,16 +1,16 @@
 {
-    "version": "0.15.1",
+    "version": "0.16.1",
     "description": "A lightweight, cross-platform code editor",
     "homepage": "https://athas.dev",
     "license": "AGPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/athasdev/athas/releases/download/v0.15.1/Athas_0.15.1_x64-setup.exe#/dl.7z",
-            "hash": "67da9671e42ba132f1e09656b75238de260b7478337b8030cd6afb70d6f0423c"
+            "url": "https://github.com/athasdev/athas/releases/download/v0.16.1/Athas_0.16.1_x64-setup.exe#/dl.7z",
+            "hash": "42c5c960e61f3b9bf8a8df1fd3cf53ec0a6e5a85764a2bb65dd522275cffdbc8"
         },
         "arm64": {
-            "url": "https://github.com/athasdev/athas/releases/download/v0.15.1/Athas_0.15.1_arm64-setup.exe#/dl.7z",
-            "hash": "23fd6a6faac9522e30b290770dbacbe9ea664324012b71a5b332afe9c667427c"
+            "url": "https://github.com/athasdev/athas/releases/download/v0.16.1/Athas_0.16.1_arm64-setup.exe#/dl.7z",
+            "hash": "f6a22de600571028efd03d2c3f667565aba133d811b950f34fc2d2a39fab46d3"
         }
     },
     "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse",
