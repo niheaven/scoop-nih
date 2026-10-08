@@ -1,12 +1,12 @@
 {
-    "version": "3.2026.1001",
+    "version": "3.2026.1008",
     "description": "One app to open 350+ file formats - images, documents, code, video, audio, archives and more.",
     "homepage": "https://openfiles.pansysoft.app",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/pansysoft/openfiles.desktop/releases/download/3.2026.1001/OpenFiles.Setup.3.2026.1001.exe#/dl.7z",
-            "hash": "sha512:2a8c3ead46b64a4e2ae5ea3f58311ce27e38b52af57c68ffc7847222b8bc63ed6add431140da57bc8bb8fde84abb2dba92780e9cd11bf030ca9b0ece20a538e9",
+            "url": "https://github.com/pansysoft/openfiles.desktop/releases/download/3.2026.1008/OpenFiles.Setup.3.2026.1008.exe#/dl.7z",
+            "hash": "sha512:184a9a8b880bcabd501df48899bc5aa491267787cbe30dbb3668fffb78cbd456f82975dea750e8b4a4bc9dc37381795664e8ca3de0f158ad6112b0cb3911fe41",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\" -Recurse"
