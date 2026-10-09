@@ -1,13 +1,13 @@
 {
-    "version": "0.2.15",
+    "version": "0.2.16",
     "description": "A guided installer + local orchestration CLI for Happier.",
     "homepage": "https://happier.dev",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/happier-dev/happier/releases/download/stack-v0.2.15/hstack-v0.2.15-windows-x64.tar.gz",
-            "hash": "a7fa86d5e5f81599d76de5c505b5b4a149edd32bef107ada8951f18812b91807",
-            "extract_dir": "hstack-v0.2.15-windows-x64"
+            "url": "https://github.com/happier-dev/happier/releases/download/stack-v0.2.16/hstack-v0.2.16-windows-x64.tar.gz",
+            "hash": "cca5d18feb8f19ee2c20d47b6ffb7bad9aebce0894ca7e348dc1b46635208f36",
+            "extract_dir": "hstack-v0.2.16-windows-x64"
         }
     },
     "bin": "hstack.exe",
