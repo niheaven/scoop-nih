@@ -15,7 +15,6 @@
     "post_install": [
         "Write-Host 'Installing Puppeteer as a dependency...'",
         "npm install puppeteer --prefix \"$dir\\lib\"",
-        "Get-ChildItem -Path \"$dir\\lib\"",
         "Remove-Item -Path \"$dir\\bin\\quarkdown\" -Force -ErrorAction SilentlyContinue",
         "Move-Item -Path \"$dir\\bin\\quarkdown.bat\" -Destination \"$dir\\bin\\_quarkdown.bat\"",
         "Set-Content -Path \"$dir\\bin\\quarkdown.bat\" -Value @(",
