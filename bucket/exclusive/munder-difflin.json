@@ -1,0 +1,36 @@
+{
+    "version": "0.5.5",
+    "description": "Agent harness to run an office of your clones",
+    "homepage": "https://munderdiffl.in",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/HarnessMD/munder-difflin/releases/download/v0.5.5/Munder-Difflin-0.5.5-win-x64-setup.exe#/dl.7z",
+            "hash": "sha512:8e129835ce87376881e998221c1c373280017f37333e5a65390509ebaabea765653fc823f10799dde10fea20397f967d5e62f5b97059f9be3297b54dc25bb289",
+            "pre_install": [
+                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+                "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\", \"$dir\\Uninst*\" -Recurse"
+            ]
+        }
+    },
+    "shortcuts": [
+        [
+            "Munder Difflin.exe",
+            "Munder Difflin"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/HarnessMD/munder-difflin"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/HarnessMD/munder-difflin/releases/download/v$version/Munder-Difflin-$version-win-x64-setup.exe#/dl.7z"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/latest.yml",
+            "regex": "sha512:\\s*$base64"
+        }
+    }
+}
