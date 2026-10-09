@@ -1,5 +1,5 @@
 {
-    "version": "2.3.87416",
+    "version": "2.3.82600",
     "description": "A free, open-source, Cowork app with AI Agents",
     "homepage": "https://www.trae.cn/ide",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/app/releases/stable/2.3.87416/win32/TraeCode_CN-Setup-x64.exe",
-            "hash": "c6cadc2681bc5ad4e2a117967fe422f08c71fa4eff2107611f37d5c2b15b4a4e",
+            "url": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/app/releases/stable/2.3.82600/win32/TraeCode_CN-Setup-x64.exe",
+            "hash": "94b1ad7d8374bbc0a6643da8f0e51f5d7d454edcc1924a828780281074d2345b",
             "extract_dir": "{code_GetDestDir}"
         }
     },
