@@ -1,13 +1,13 @@
 {
-    "version": "0.2.15",
+    "version": "0.2.16",
     "description": "An open-source, end-to-end encrypted, cross-device companion app and client for your AI coding agents. (CLI)",
     "homepage": "https://happier.dev",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/happier-dev/happier/releases/download/cli-v0.2.15/happier-v0.2.15-windows-x64.tar.gz",
-            "hash": "e93dba7c0fd8753f14da6f231c4c1289c33dd3ba564af37357f274728dee382a",
-            "extract_dir": "happier-v0.2.15-windows-x64"
+            "url": "https://github.com/happier-dev/happier/releases/download/cli-v0.2.16/happier-v0.2.16-windows-x64.tar.gz",
+            "hash": "ed7e5b2103a868e429f4f4511835de717ff7ff5818bfb3d22f1b76f00a5a9a83",
+            "extract_dir": "happier-v0.2.16-windows-x64"
         }
     },
     "bin": "happier.exe",
