@@ -1,0 +1,41 @@
+{
+    "version": "0.11.0",
+    "description": "A treemap for finding and removing what fills your disk",
+    "homepage": "https://github.com/tobi/disktree",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/tobi/disktree/releases/download/v0.11.0/disktree-0.11.0-x86_64-windows.zip",
+            "hash": "1518cb5dde00deefc03c05d8a347d4674f7b6a120d9176a14482757883b6fbe7",
+            "extract_dir": "disktree-0.11.0-x86_64-windows"
+        },
+        "arm64": {
+            "url": "https://github.com/tobi/disktree/releases/download/v0.11.0/disktree-0.11.0-aarch64-windows.zip",
+            "hash": "08e3ac215e8eaded2afea37b98d1ede0178e7332589b40609c9039354cbbf50a",
+            "extract_dir": "disktree-0.11.0-aarch64-windows"
+        }
+    },
+    "bin": "disktree.exe",
+    "shortcuts": [
+        [
+            "disktree.exe",
+            "disktree"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/tobi/disktree/releases/download/v$version/disktree-$version-x86_64-windows.zip",
+                "extract_dir": "disktree-$version-x86_64-windows"
+            },
+            "arm64": {
+                "url": "https://github.com/tobi/disktree/releases/download/v$version/disktree-$version-aarch64-windows.zip",
+                "extract_dir": "disktree-$version-aarch64-windows"
+            }
+        },
+        "hash": {
+            "url": "$url.sha256"
+        }
+    }
+}
