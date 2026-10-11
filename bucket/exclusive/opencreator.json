@@ -1,0 +1,36 @@
+{
+    "version": "3.2.5",
+    "description": "The open-source AI workspace & Skills for creators",
+    "homepage": "https://www.open-creator.ai/en/",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/krillinai/OpenCreator/releases/download/v3.2.5/OpenCreator-3.2.5-win-x64.exe#/dl.7z",
+            "hash": "sha512:7ce07b70423cbf983eddc0ee5aff313dd1fb51c0be64a3ec4b9eb2613da4c40421028088436518a52c1a3986d8a82ff304bb2391e69653b9069718939ed180f1",
+            "pre_install": [
+                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.zip\" \"$dir\"",
+                "Remove-Item \"$dir\\`$*\", \"$dir\\Uninst*\" -Recurse"
+            ]
+        }
+    },
+    "shortcuts": [
+        [
+            "OpenCreator.exe",
+            "OpenCreator"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/krillinai/OpenCreator"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/krillinai/OpenCreator/releases/download/v$version/OpenCreator-$version-win-x64.exe#/dl.7z"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/latest.yml",
+            "regex": "(?s)$basename.*?$base64"
+        }
+    }
+}
