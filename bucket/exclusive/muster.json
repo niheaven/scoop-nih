@@ -1,0 +1,28 @@
+{
+    "version": "0.1.6",
+    "description": "A native Windows terminal workspace built with Tauri 2 + Rust + React + xterm.js",
+    "homepage": "https://github.com/JinMXu/Muster",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/JinMXu/Muster/releases/download/v0.1.6/Muster_0.1.6_x64-setup.exe#/dl.7z",
+            "hash": "a9c8c96351b243da728b16e2c027c9c543738be4a68aed096c8748d729f98ea9",
+            "pre_install": "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\", \"$dir\\uninstall.exe\" -Recurse"
+        }
+    },
+    "bin": "muster.exe",
+    "shortcuts": [
+        [
+            "muster.exe",
+            "Muster"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/JinMXu/Muster/releases/download/v$version/Muster_$version_x64-setup.exe#/dl.7z"
+            }
+        }
+    }
+}
