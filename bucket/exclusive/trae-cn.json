@@ -1,0 +1,34 @@
+{
+    "version": "3.4.2",
+    "description": "Integrated platform that supports the entire development lifecycle.",
+    "homepage": "https://www.trae.cn/ide",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.trae.cn/terms-of-service"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/app/releases/stable/2.3.91092/win32/TRAE_CN-Setup-x64.exe",
+            "hash": "def5cde2e82963316248cc7c189c4f00e78576b01fd2a5bb03db257292e0ba50",
+            "extract_dir": "{code_GetDestDir}"
+        }
+    },
+    "innosetup": true,
+    "shortcuts": [
+        [
+            "Trae CN.exe",
+            "TRAE CN"
+        ]
+    ],
+    "checkver": {
+        "url": "https://api.trae.cn/icube/api/v1/native/version/trae/cn/latest",
+        "regex": "(?s)stable/(?<build>[\\d.]+)/win32/TRAE_CN-Setup-x64\\.exe.*?version\".*?\"([\\d.]+)\""
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/app/releases/stable/$matchBuild/win32/TRAE_CN-Setup-x64.exe"
+            }
+        }
+    }
+}
