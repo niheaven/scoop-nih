@@ -1,12 +1,12 @@
 {
-    "version": "1.2.1",
+    "version": "1.2.2",
     "description": "A personal AI agent & local memory hub for all AI agents",
     "homepage": "https://memmy.bot",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/MemTensor/memmy-agent/releases/download/v1.2.1/Memmy-1.2.1-win32-x64-intl-signed.exe#/dl.7z",
-            "hash": "3fe05fe343d9a55868b82313e74b2a29da38e8ec21b77f08def6b0f85834f883",
+            "url": "https://github.com/MemTensor/memmy-agent/releases/download/v1.2.2/Memmy-1.2.2-win32-x64-intl-signed.exe#/dl.7z",
+            "hash": "11e5519af1b0b67f8ee1e41881977fdf4be350f1c0455b8672936ddc99be12b7",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\" -Recurse"
