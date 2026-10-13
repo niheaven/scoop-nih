@@ -1,12 +1,12 @@
 {
-    "version": "0.7.3",
+    "version": "0.8.1",
     "description": "Visual skill manager for AI agents",
     "homepage": "https://skillsgate.ai",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/skillsgate/skillsgate/releases/download/desktop-v0.7.3/SkillsGate-Setup-0.7.3.exe#/dl.7z",
-            "hash": "sha512:41722dfed4a6c2e4a0e9bb47b34e680107ef6a2926c855097420a4ed32056eec9809b5b1b01f6a381b4aafd2a4ed3692abd1a852aab978f0c2f130f874bbf2ba",
+            "url": "https://github.com/skillsgate/skillsgate/releases/download/desktop-v0.8.1/SkillsGate-Setup-0.8.1.exe#/dl.7z",
+            "hash": "sha512:22da77342f9da6da1eba091971fadef5a90d6cbe826c57e178f18c22ccc1af5a88cb37ce1a06c204c49e15d830d1909855d77846dc5741bd44df06ee84e73892",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\", \"$dir\\Uninst*\" -Recurse"
