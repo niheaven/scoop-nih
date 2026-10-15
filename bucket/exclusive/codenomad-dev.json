@@ -1,0 +1,33 @@
+{
+    "version": "0.20.1-dev-20261015-b4be76c9",
+    "description": "The command center that puts AI coding on steroids.",
+    "homepage": "https://github.com/NeuralNomadsAI/CodeNomad",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/NeuralNomadsAI/CodeNomad/releases/download/v0.20.1-dev-20261015-b4be76c9/CodeNomad-Tauri-windows-x64-0.20.1-dev-20261015-b4be76c9.exe",
+            "hash": "b650b3e94369068ea0db9d59da075dcb6a8c2b7df203aeb87c09653381a03f1b",
+            "pre_install": [
+                "Get-Item \"$dir\\nsis\\CodeNomad_*_x64-setup.exe\" | Expand-7zipArchive -DestinationPath \"$dir\"",
+                "Remove-Item \"$dir\\nsis\", \"$dir\\`$*\", \"$dir\\uninst*\" -Recurse"
+            ]
+        }
+    },
+    "shortcuts": [
+        [
+            "codenomad-tauri.exe",
+            "CodeNomad"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/NeuralNomadsAI/CodeNomad/tags",
+        "regex": "tag/v([\\d.]+-dev-\\d{8}-\\w{8})"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/NeuralNomadsAI/CodeNomad/releases/download/v$version/CodeNomad-Tauri-windows-x64-$version.exe"
+            }
+        }
+    }
+}
