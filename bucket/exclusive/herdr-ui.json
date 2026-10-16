@@ -5,13 +5,13 @@
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/penso/herdr-gpui/releases/download/v20261014.1/Herdr-20261014.1-x86_64-pc-windows-msvc.zip",
-            "hash": "sha512:62ce2b47863c13959cf8224b623a571d1248fb2bfc70e3cec973e453f2add669d95776d7977e1d7a2c8ad27a0c3b0cf1da6dc8dd8e3924286cb0775b93beaf62",
+            "url": "https://github.com/penso/herdr-gpui/releases/download/v20261016.1/Herdr-20261016.1-x86_64-pc-windows-msvc.zip",
+            "hash": "sha512:fe7c17063f01e316b88e1fcff3b266795795d2c1b215ad473651feb7d43a83a952f7b86efe658f8399ccd204be521c74ceb5ab61d7feb6d642394df7ee8c22b1",
             "extract_dir": "Herdr-20261016.1-x86_64-pc-windows-msvc"
         },
         "arm64": {
-            "url": "https://github.com/penso/herdr-gpui/releases/download/v20261014.1/Herdr-20261014.1-aarch64-pc-windows-msvc.zip",
-            "hash": "sha512:5d2052cecea063ae26f99911fd88257b00f73903949919483d00ef7cff71bc42deb89ec32116007923daf99b32368815740f36c0a7fd1ccedb11e502761b777f",
+            "url": "https://github.com/penso/herdr-gpui/releases/download/v20261016.1/Herdr-20261016.1-aarch64-pc-windows-msvc.zip",
+            "hash": "sha512:4fab281b90032d0725bbf42435b596db82a4decd9c96bf43f0f435b41b745b96fe783bdcb6768672b0ee7ee723ba313644198d9da9c1df6857bc9904e13e6bb5",
             "extract_dir": "Herdr-20261016.1-aarch64-pc-windows-msvc"
         }
     },
@@ -34,11 +34,11 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/penso/herdr-gpui/releases/download/v20261014.1/Herdr-20261014.1-x86_64-pc-windows-msvc.zip",
+                "url": "https://github.com/penso/herdr-gpui/releases/download/v$version/Herdr-$version-x86_64-pc-windows-msvc.zip",
                 "extract_dir": "Herdr-$version-x86_64-pc-windows-msvc"
             },
             "arm64": {
-                "url": "https://github.com/penso/herdr-gpui/releases/download/v20261014.1/Herdr-20261014.1-aarch64-pc-windows-msvc.zip",
+                "url": "https://github.com/penso/herdr-gpui/releases/download/v$version/Herdr-$version-aarch64-pc-windows-msvc.zip",
                 "extract_dir": "Herdr-$version-aarch64-pc-windows-msvc"
             }
         },
