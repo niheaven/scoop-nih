@@ -1,0 +1,23 @@
+{
+    "version": "0.6.0",
+    "description": "A modern, high-performance native file & directory comparison and merge suite (CLI only)",
+    "homepage": "https://andychao217.github.io/FileCompare",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/andychao217/FileCompare/releases/download/v0.6.0/wincmp-0.6.0-windows-x64.zip",
+            "hash": "b9c19813475afe91a2b8a35bedd27cdbb7a4d3232cb4d3bd4a25b7f8dbbd990d"
+        }
+    },
+    "bin": "wincmp.exe",
+    "checkver": {
+        "github": "https://github.com/andychao217/FileCompare"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/andychao217/FileCompare/releases/download/v0.6.0/wincmp-0.6.0-windows-x64.zip"
+            }
+        }
+    }
+}
