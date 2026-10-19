@@ -2,7 +2,10 @@
     "version": "11.2.6",
     "description": "The answer for all your LPs, QPs, SOCPs, SDPs, and MIPs",
     "homepage": "https://www.mosek.com",
-    "license": "Priority",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.mosek.com/products/license-agreement/"
+    },
     "note": "MOSEK needs a license file to run. Please place your license file at $dir\\license\\mosek.lic",
     "architecture": {
         "64bit": {
