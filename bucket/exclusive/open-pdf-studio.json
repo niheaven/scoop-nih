@@ -1,12 +1,12 @@
 {
-    "version": "2026.42.13",
+    "version": "2026.43.0",
     "description": "Crystallize knowledge from AI conversations",
     "homepage": "https://open-aec.com/open-pdf-studio/",
     "license": "LGPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v2026.42.13/Open.PDF.Studio_2026.42.13_x64-setup.exe#/dl.7z",
-            "hash": "075df76889203bfaafb8a860c2593599d41d0c8ad0dd062dee63d61e8423dcbc"
+            "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/download/v2026.43.0/Open.PDF.Studio_2026.43.0_x64-setup.exe#/dl.7z",
+            "hash": "8766f431795da79ccb5f79b1dd7e11c2a093543565937884e7d9eb357df29394"
         }
     },
     "post_install": "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\" -Recurse",
