@@ -1,12 +1,12 @@
 {
-    "version": "0.25.0",
+    "version": "0.26.0",
     "description": "The open-source Claude Design alternative",
     "homepage": "https://open-design.ai",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/nexu-io/open-design/releases/download/open-design-v0.25.0/open-design-0.25.0-win-x64-setup.exe#/dl.7z",
-            "hash": "2a916de71015f55445aa2982f189ecc927b74c1cb8a0b48d6b10878172efc7a8",
+            "url": "https://github.com/nexu-io/open-design/releases/download/open-design-v0.26.0/open-design-0.26.0-win-x64-setup.exe#/dl.7z",
+            "hash": "4c0697a53177753072593b44133f44cca76421a102a4da1b4229d5e643569b00",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\payload-base.7z\" \"$dir\"",
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\payload-overlay.7z\" \"$dir\"",
