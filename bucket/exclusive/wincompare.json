@@ -1,5 +1,5 @@
 {
-    "version": "0.6.0",
+    "version": "0.7.0",
     "description": "A modern, high-performance native file & directory comparison and merge suite",
     "homepage": "https://andychao217.github.io/FileCompare",
     "license": "MIT",
