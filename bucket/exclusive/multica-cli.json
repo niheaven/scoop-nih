@@ -1,5 +1,5 @@
 {
-    "version": "0.6.5",
+    "version": "0.7.0",
     "description": "Make humans and AI agents work as one team (CLI)",
     "homepage": "https://multica.ai",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/multica-ai/multica/releases/download/v0.6.5/multica-cli-0.6.5-windows-amd64.zip",
-            "hash": "a8a5d3aeadb90c1a19def05f107b345aedc6d6ba255fef88397f245e61b41031"
+            "url": "https://github.com/multica-ai/multica/releases/download/v0.7.0/multica-cli-0.7.0-windows-amd64.zip",
+            "hash": "7526f5bd2e673fdc62b2d44e356e17830a0fc17b3b80a1d4365633c28b7eecd9"
         },
         "arm64": {
-            "url": "https://github.com/multica-ai/multica/releases/download/v0.6.5/multica-cli-0.6.5-windows-arm64.zip",
-            "hash": "4ff3a77aea1191bfa024fb6ed29a17609975a70365bff6efcaa297f643f3a964"
+            "url": "https://github.com/multica-ai/multica/releases/download/v0.7.0/multica-cli-0.7.0-windows-arm64.zip",
+            "hash": "000ed8d5fc3e55c27cce7a5471027706d8b24ee7e32ac44450ca07ed96ee1f3a"
         }
     },
     "bin": "multica.exe",
