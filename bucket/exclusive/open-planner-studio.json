@@ -1,12 +1,12 @@
 {
-    "version": "2026.10.0",
+    "version": "2026.43.0",
     "description": "Open Source Project Planner",
     "homepage": "https://open-aec.com/open-planner-studio/",
     "license": "LGPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.10.0/Open.Planner.Studio_2026.10.0_x64-setup.exe#/dl.7z",
-            "hash": "64cfb563942f102151751fb6654312eb484dd63186460dd4fd4b857666ca6b2a"
+            "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/download/v2026.43.0/Open.Planner.Studio_2026.43.0_x64-setup.exe#/dl.7z",
+            "hash": "210d0c2dc68f27e67f92b1fdf341524545dad253e0053cd1ad3ba27d9876685d"
         }
     },
     "post_install": "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\" -Recurse",
