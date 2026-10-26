@@ -1,5 +1,5 @@
 {
-    "version": "1.4.0-26102405",
+    "version": "1.4.0-26102503",
     "description": "All-in-One AI Productivity Platform",
     "homepage": "https://qwenwork.cn",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://assets.qwenwork.cn/cicd/qwenworkcn/builds/261024/rel/dead9f040e9d4a933ff41a3586fb0272/qwenworkcn_1.4.0-26102405_x64-update-package.7z",
-            "hash": "22699c674da188f9902a8d2a9cf9f577b7f6cfff81c519abe9fff6fa51f1a481",
+            "url": "https://assets.qwenwork.cn/cicd/qwenworkcn/builds/261025/rel/96ef6ba9afab3d485d9ea6ff2d48d046/qwenworkcn_1.4.0-26102503_x64-update-package.7z",
+            "hash": "e3c3c2d23774dec707c6ed6625b88618272313cc227601b1860f927aeea3b9e4",
             "extract_dir": "app"
         }
     },
