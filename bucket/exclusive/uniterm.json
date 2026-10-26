@@ -1,12 +1,12 @@
 {
-    "version": "1.11.1",
+    "version": "1.11.2",
     "description": "A modern cross-platform terminal emulator with a built-in autonomous AI Agent",
     "homepage": "https://uniterm.net",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ys-ll/uniterm/releases/download/v1.11.1/uniterm-windows-amd64-portable-v1.11.1.zip",
-            "hash": "22110ce0aba0f370d9db52880d709e1af07814f4d612ecace8f3392beb4eec8a"
+            "url": "https://github.com/ys-ll/uniterm/releases/download/v1.11.2/uniterm-windows-amd64-portable-v1.11.2.zip",
+            "hash": "761336fef7ae314c74425d601f5c1fe4e254dc9964e133c3b374f4f97840a8d2"
         }
     },
     "shortcuts": [
