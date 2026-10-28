@@ -1,18 +1,18 @@
 {
-    "version": "20261020.1",
+    "version": "20261028.1",
     "description": "Native client for Herdr on macOS, Linux, and Windows, built with Rust and GPUI.",
     "homepage": "https://herdrui.dev",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/penso/herdr-gpui/releases/download/v20261020.1/Herdr-20261020.1-x86_64-pc-windows-msvc.zip",
-            "hash": "sha512:13ed73c1e92d312ea80808be7516bfd64ce5c78c040150015836378bffa03f86a7c4ac823a1e26878c0a7481d3d6da107c987b1bdad7e7b8512a1087684fadf9",
-            "extract_dir": "Herdr-20261020.1-x86_64-pc-windows-msvc"
+            "url": "https://github.com/penso/herdr-gpui/releases/download/v20261028.1/Herdr-20261028.1-x86_64-pc-windows-msvc.zip",
+            "hash": "sha512:d039adee30adf9a7d4fce38f55ecb4b083024f767988b1f2e95190e05f8322cc7474b68f752963bacb0c80a61e0b69e9da47204a480486dd93872fbd1cc09a96",
+            "extract_dir": "Herdr-20261028.1-x86_64-pc-windows-msvc"
         },
         "arm64": {
-            "url": "https://github.com/penso/herdr-gpui/releases/download/v20261020.1/Herdr-20261020.1-aarch64-pc-windows-msvc.zip",
-            "hash": "sha512:7ae43539a633f333ead12bd103dc42c4622824a2aa2726f09f876a110a4517c078625bd256db70c5942ffac974ab26bdd084fe8df8085fba558e19e26e2a5823",
-            "extract_dir": "Herdr-20261020.1-aarch64-pc-windows-msvc"
+            "url": "https://github.com/penso/herdr-gpui/releases/download/v20261028.1/Herdr-20261028.1-aarch64-pc-windows-msvc.zip",
+            "hash": "sha512:904efb603629b80baa598cc607b83c2441e84c8d98edfc41b4a28ff08e530d09be920ee7ca20019c9f66211b6f61520677da347401caa463dd89b1eae8816960",
+            "extract_dir": "Herdr-20261028.1-aarch64-pc-windows-msvc"
         }
     },
     "bin": [
