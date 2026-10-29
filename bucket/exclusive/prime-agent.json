@@ -13,8 +13,7 @@
     "bin": "prime-agent.exe",
     "env_set": {
         "PRIME_AGENT_CODING_AGENT_DIR": "$dir\\agent",
-        "PRIME_AGENT_KERNEL_VENV": "$persist_dir\\kernel",
-        "PI_PACKAGE_DIR": "$dir"
+        "PRIME_AGENT_KERNEL_VENV": "$persist_dir\\kernel"
     },
     "persist": "agent",
     "checkver": {
