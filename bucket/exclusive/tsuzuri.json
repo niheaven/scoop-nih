@@ -1,12 +1,12 @@
 {
-    "version": "0.3.1",
+    "version": "0.4.0",
     "description": "Block-based notebook for the terminal",
     "homepage": "https://tsuzuri-site-eyla.vercel.app",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/jaisuriya-11/tsuzuri/releases/download/v0.3.1/tsuzuri-windows.zip",
-            "hash": "3f65c281aac7563b83252237c5b21266f98495608b340332701c8c1632f669e5"
+            "url": "https://github.com/jaisuriya-11/tsuzuri/releases/download/v0.4.0/tsuzuri-windows.zip",
+            "hash": "6d744714145e36dd2b31c7871db630bc9384aca391af5df13c28e8508b332ca9"
         }
     },
     "bin": "tsuzuri.exe",
