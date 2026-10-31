@@ -13,9 +13,9 @@
             "hash": "325614b343d983b038932fb6554eaefb5838bdc127b8a05b722d1a0d3fd77e95"
         }
     },
-    "pre_install": "Copy-Item \"$dir\\bin\\nub.exe\" \"$dir\\bin\\nubx.exe\" -Force",
     "bin": [
         "bin\\nub.exe",
+        "bin\\nubr.exe",
         "bin\\nubx.exe"
     ],
     "checkver": {
