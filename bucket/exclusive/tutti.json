@@ -1,0 +1,42 @@
+{
+    "version": "0.2.33",
+    "description": "Where people and agents build in tune",
+    "homepage": "https://tutti.sh",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/tutti-os/tutti/releases/download/v0.2.33/Tutti-0.2.33-win-x64.exe#/dl.7z",
+            "hash": "818268072ac11d9486b38ab0cd407bfcdc647a55af88244204d6053e42efc892",
+            "pre_install": [
+                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+                "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\`$R0\" -Recurse"
+            ]
+        }
+    },
+    "env_set": {
+        "TUTTI_STATE_DIR": "$dir\\state",
+        "TUTTI_AGENT_RUNTIME_DIR": "$dir\\agent-runtime",
+        "TUTTI_DESKTOP_USER_DATA_DIR": "$dir\\user-data"
+    },
+    "shortcuts": [
+        [
+            "tutti.exe",
+            "Tutti"
+        ]
+    ],
+    "persist": [
+        "state",
+        "agent-runtime",
+        "user-data"
+    ],
+    "checkver": {
+        "github": "https://github.com/tutti-os/tutti"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/tutti-os/tutti/releases/download/v$version/Tutti-$version-win-x64.exe#/dl.7z"
+            }
+        }
+    }
+}
