@@ -1,5 +1,5 @@
 {
-    "version": "0.16.0",
+    "version": "0.17.0",
     "description": "Mission control for agent-driven development",
     "homepage": "https://gitkraken.com/kepler",
     "license": {
@@ -8,16 +8,16 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://kepler.gitkraken.com/production/0.16.0/kepler-x64-setup.exe#/dl.7z",
-            "hash": "sha512:b782d8df2e4e9aadaa75e97998e1634c0d6e076f6ae3c8b1b68af992f6fb72bc2050e4a271e01107c61b41ba30970f121c0f14d8b01def0fb71de98ad1b2700e",
+            "url": "https://kepler.gitkraken.com/production/0.17.0/kepler-x64-setup.exe#/dl.7z",
+            "hash": "sha512:19edd78edd710fb0a66483b020bb4c59987afac5975fffd154f1b75b70372462934329911c5c3cca995cf6b3ceadb39b64aa9d387a4f518a9590c204dbcd7f1f",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\" -Recurse"
             ]
         },
         "arm64": {
-            "url": "https://kepler.gitkraken.com/production/0.16.0/kepler-arm64-setup.exe#/dl.7z",
-            "hash": "sha512:8751a8cc59ae6dffc39bd802dd89dc9e077fd41d69f43a11ece1f30f86b2bcb53cf797b7e55e4e796430d00d63dba720ff3976f7e969c6f7aa290290e4a5be53",
+            "url": "https://kepler.gitkraken.com/production/0.17.0/kepler-arm64-setup.exe#/dl.7z",
+            "hash": "sha512:1cbed9471b74f9ffa4f5a9311a2d6c3c3e3339be7d3d2325a4c871a30977fac945cc65249f8b18c2e6e52aa6a1432536157827592632e43840cb6a141817b16c",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-arm64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\" -Recurse"
