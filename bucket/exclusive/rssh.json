@@ -1,13 +1,13 @@
 {
-    "version": "1.0.5",
+    "version": "1.0.8",
     "description": "The SSH client built to be an AI ops copilot",
     "homepage": "https://github.com/shihuili1218/rssh",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/shihuili1218/rssh/releases/download/v1.0.5/rssh-1.0.5-windows-x86_64-portable.zip",
-            "hash": "e6266a37ef14864b1f7066231d8da059ae0222a894625eacc96d0ae834a099c5",
-            "extract_dir": "rssh-1.0.5-windows-x86_64-portable"
+            "url": "https://github.com/shihuili1218/rssh/releases/download/v1.0.8/rssh-1.0.8-windows-x86_64-portable.zip",
+            "hash": "98474629e11b895e279f6f34cde7eff464868adfbf21c0d3bd264a9102d9740d",
+            "extract_dir": "rssh-1.0.8-windows-x86_64-portable"
         }
     },
     "bin": [
