@@ -1,16 +1,16 @@
 {
-    "version": "3.6.1",
+    "version": "3.6.2",
     "description": "Persistent memory system for AI coding agents",
     "homepage": "https://github.com/Gentleman-Programming/engram",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Gentleman-Programming/engram/releases/download/v3.6.1/engram_3.6.1_windows_amd64.zip",
-            "hash": "129026b49e51db2453d28a5fbb915893ff7a8f4764b3ebc83e1ed80f72c3dedf"
+            "url": "https://github.com/Gentleman-Programming/engram/releases/download/v3.6.2/engram_3.6.2_windows_amd64.zip",
+            "hash": "2e1b2355ce6e21c14733e3dd7736a88a729f84fa9ec26f0f87747e71922a4491"
         },
         "arm64": {
-            "url": "https://github.com/Gentleman-Programming/engram/releases/download/v3.6.1/engram_3.6.1_windows_amd64.zip",
-            "hash": "129026b49e51db2453d28a5fbb915893ff7a8f4764b3ebc83e1ed80f72c3dedf"
+            "url": "https://github.com/Gentleman-Programming/engram/releases/download/v3.6.2/engram_3.6.2_windows_amd64.zip",
+            "hash": "2e1b2355ce6e21c14733e3dd7736a88a729f84fa9ec26f0f87747e71922a4491"
         }
     },
     "bin": "engram.exe",
