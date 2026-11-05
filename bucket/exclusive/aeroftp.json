@@ -1,15 +1,13 @@
 {
-    "version": "4.2.5",
+    "version": "4.2.6",
     "description": "Cross-platform desktop client for FTP, FTPS, SFTP, WebDAV, S3-compatible storage, GitHub, and Cloud providers",
     "homepage": "https://www.aeroftp.app",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/axpdev-lab/aeroftp/releases/download/v4.2.5/AeroFTP_4.2.5_x64-setup.exe#/dl.7z",
-            "hash": "986fcc6a832dd6cc472f52fbef404a89f8a4de2f25b637c0c83904ddddff10e0",
-            "pre_install": [
-                "Remove-Item \"$dir\\`$*\", \"$dir\\uninst*\" -Recurse"
-            ]
+            "url": "https://github.com/axpdev-lab/aeroftp/releases/download/v4.2.6/AeroFTP_4.2.6_x64-setup.exe#/dl.7z",
+            "hash": "6c945f7c7251fdec1fbd6f3bc004ee127728045b50fa67a4354f2f42f7b6709e",
+            "pre_install": "Remove-Item \"$dir\\`$*\", \"$dir\\uninst*\" -Recurse"
         }
     },
     "post_install": "New-Item -ItemType File -Force \"$dir\\portable.marker\" | Out-Null",
