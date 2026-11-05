@@ -1,5 +1,5 @@
 {
-    "version": "3.4.14",
+    "version": "3.4.15",
     "description": "Integrated platform that supports the entire development lifecycle.",
     "homepage": "https://www.trae.cn/ide",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/app/releases/stable/2.3.99936/win32/TRAE_CN-Setup-x64.exe",
-            "hash": "47defb020bf17babf2120600302544f9a8e7a635aad5d694547fffb855630004",
+            "url": "https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/app/releases/stable/2.3.100185/win32/TRAE_CN-Setup-x64.exe",
+            "hash": "4d573501c80917b7aa9eafea9eee9d7a90a16c700df3a27581ffcbae592cd16a",
             "extract_dir": "{code_GetDestDir}"
         }
     },
