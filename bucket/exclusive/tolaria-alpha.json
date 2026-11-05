@@ -1,12 +1,12 @@
 {
-    "version": "2026.11.4.12",
+    "version": "2026.11.5.1",
     "description": "Desktop app to manage markdown knowledge bases",
     "homepage": "https://tolaria.md",
     "license": "AGPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/refactoringhq/tolaria/releases/download/alpha-v2026.11.4-alpha.0012/Tolaria_2026.11.4-alpha.12_x64-setup.exe#/dl.7z",
-            "hash": "04276d21342d078429d93b8bd72d46a30223fb5699f6a5b5b2423b4cab4c30dc",
+            "url": "https://github.com/refactoringhq/tolaria/releases/download/alpha-v2026.11.5-alpha.0001/Tolaria_2026.11.5-alpha.1_x64-setup.exe#/dl.7z",
+            "hash": "575c08c8ad322f6caa54b311a764a38f5b5cd7fb71e32e610ad5d9fea7771698",
             "pre_install": "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\", \"$dir\\uninstall.exe\" -Recurse"
         }
     },
