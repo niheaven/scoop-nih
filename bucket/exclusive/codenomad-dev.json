@@ -1,12 +1,12 @@
 {
-    "version": "1.0.1-dev-20261104-c8fb4f13",
+    "version": "1.0.1-dev-20261106-5939d4c9",
     "description": "The command center that puts AI coding on steroids.",
     "homepage": "https://github.com/NeuralNomadsAI/CodeNomad",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/NeuralNomadsAI/CodeNomad/releases/download/v1.0.1-dev-20261104-c8fb4f13/CodeNomad-Tauri-windows-x64-1.0.1-dev-20261104-c8fb4f13.exe",
-            "hash": "4560c3d8025500aeba2643c289a133399f6eb5ebdc0d4fcc44c94d82961b465d",
+            "url": "https://github.com/NeuralNomadsAI/CodeNomad/releases/download/v1.0.1-dev-20261106-5939d4c9/CodeNomad-Tauri-windows-x64-1.0.1-dev-20261106-5939d4c9.exe",
+            "hash": "9da7c394c3ae02bb943c7515b89d5e994f9a536b0610577558429b79b5d3e6f8",
             "pre_install": [
                 "Get-Item \"$dir\\nsis\\CodeNomad_*_x64-setup.exe\" | Expand-7zipArchive -DestinationPath \"$dir\"",
                 "Remove-Item \"$dir\\nsis\", \"$dir\\`$*\", \"$dir\\uninst*\" -Recurse"
