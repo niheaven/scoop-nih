@@ -1,5 +1,5 @@
 {
-    "version": "0.40.0",
+    "version": "0.40.1",
     "description": "CLI / Framework for Agent Skills",
     "homepage": "https://microsoft.github.io/waza",
     "license": "MIT",
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/microsoft/waza/releases/download/v0.40.0/waza-windows-amd64.exe#/waza.exe",
-            "hash": "a388f5577ecbf10d4edd775a5e2c37a7a5cbdd0758e66d8718992942687dd2e4"
+            "url": "https://github.com/microsoft/waza/releases/download/v0.40.1/waza-windows-amd64.exe#/waza.exe",
+            "hash": "3dddc02642ff92916a3c9d03a793e170c5af6d3a17f9a23ed3fe4fa70918608e"
         },
         "arm64": {
-            "url": "https://github.com/microsoft/waza/releases/download/v0.40.0/waza-windows-arm64.exe#/waza.exe",
-            "hash": "8e17674f7c161add85e079a8259d3e4d30667ff28805e264227a99dfe7dbc8dd"
+            "url": "https://github.com/microsoft/waza/releases/download/v0.40.1/waza-windows-arm64.exe#/waza.exe",
+            "hash": "a1319a0edc7d72066d965c46f131b4b564c93f430ff6d0667b684e974c2c7197"
         }
     },
     "bin": "waza.exe",
