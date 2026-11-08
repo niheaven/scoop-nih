@@ -1,13 +1,13 @@
 {
-    "version": "0.6.9",
+    "version": "0.6.10",
     "description": "The ripgrep of AI context: a zero-dependency C++23 CLI + MCP server for coding agents.",
     "homepage": "https://github.com/redhat-et/ripwire",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/redhat-et/ripwire/releases/download/v0.6.9/ripwire-0.6.9-windows-x64.zip",
-            "hash": "f4a5f0c746834113770003cd1f2ca9ceb27efbe34a37139106e90b4356b944e8",
-            "extract_dir": "ripwire-0.6.9-windows-x64"
+            "url": "https://github.com/redhat-et/ripwire/releases/download/v0.6.10/ripwire-0.6.10-windows-x64.zip",
+            "hash": "1a535e1db0b43f23496a7631856c9d782901eea57253c58c3f28b42de5d3a560",
+            "extract_dir": "ripwire-0.6.10-windows-x64"
         }
     },
     "bin": "ripwire.exe",
