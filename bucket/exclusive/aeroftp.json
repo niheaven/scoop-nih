@@ -1,12 +1,12 @@
 {
-    "version": "4.2.6",
+    "version": "4.2.7",
     "description": "Cross-platform desktop client for FTP, FTPS, SFTP, WebDAV, S3-compatible storage, GitHub, and Cloud providers",
     "homepage": "https://www.aeroftp.app",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/axpdev-lab/aeroftp/releases/download/v4.2.6/AeroFTP_4.2.6_x64-setup.exe#/dl.7z",
-            "hash": "6c945f7c7251fdec1fbd6f3bc004ee127728045b50fa67a4354f2f42f7b6709e",
+            "url": "https://github.com/axpdev-lab/aeroftp/releases/download/v4.2.7/AeroFTP_4.2.7_x64-setup.exe#/dl.7z",
+            "hash": "f2cbacf754c80e5d7d5777aa49697869b92132a6f45a8fedcb2636d51ad2c2cc",
             "pre_install": "Remove-Item \"$dir\\`$*\", \"$dir\\uninst*\" -Recurse"
         }
     },
