@@ -1,12 +1,12 @@
 {
-    "version": "3.3.0",
+    "version": "3.3.1",
     "description": "The open-source AI workspace & Skills for creators",
     "homepage": "https://www.open-creator.ai/en/",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/krillinai/OpenCreator/releases/download/v3.3.0/OpenCreator-3.3.0-win-x64.exe#/dl.7z",
-            "hash": "sha512:511ff3ae23d52ef0ea2eb3061467a726ca67c30614e0551443c0e24ee7e6200cd2393be214c84e4c1a8e0726e88b0ab52913d0c01f20f1d5b2bd9842b1b43cb0",
+            "url": "https://github.com/krillinai/OpenCreator/releases/download/v3.3.1/OpenCreator-3.3.1-win-x64.exe#/dl.7z",
+            "hash": "sha512:63dbdc2158156718f72ce3f9a8fb8690ae8f2cf871eec54c24f8998255c1c2412cd7ddf0198eabfe630d67f3a1d4d7025ed2a145d1891ca6c84bf4e713be9ab5",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.zip\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\Uninst*\" -Recurse"
