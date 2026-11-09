@@ -1,12 +1,12 @@
 {
-    "version": "1.5.2",
+    "version": "1.5.3",
     "description": "Open desktop AI agent for Windows, macOS and Linux, written from scratch",
     "homepage": "https://github.com/ANDRETRIPOL/OpenGhost",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ANDRETRIPOL/OpenGhost/releases/download/v1.5.2/OpenGhost-1.5.2-Setup.exe#/dl.7z",
-            "hash": "a521bd0451a26649bd04221d69aec694e6aca463ccba43a1ad36e2d7ffa9f340",
+            "url": "https://github.com/ANDRETRIPOL/OpenGhost/releases/download/v1.5.3/OpenGhost-1.5.3-Setup.exe#/dl.7z",
+            "hash": "ccb5e341143c7b554e0f3215cd78d77816883e622ff5c44c6d95a3a4547aa92f",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\", \"$dir\\Uninst*\" -Recurse"
