@@ -1,0 +1,40 @@
+{
+    "version": "0.4.11",
+    "description": "LaTeX and Typst editor with live collaboration and AI agents.",
+    "homepage": "https://oleafly.com",
+    "license": "AGPL-3.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Oleafly/Oleafly/releases/download/v0.4.11/Oleafly_0.4.11_x64-setup.exe#/dl.7z",
+            "hash": "facae782df972506e0e499929f284269f7db448b55c060831833853b0c8deaac",
+            "pre_install": [
+                "Remove-Item \"$dir\\`$*\", \"$dir\\uninst*\" -Recurse"
+            ]
+        }
+    },
+    "bin": [
+        [
+            "oleafly-cli.exe",
+            "oleafly"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "oleafly.exe",
+            "Oleafly"
+        ]
+    ],
+    "env_set": {
+        "OLEAFLY_DATA_DIR": "$persist_dir\\data"
+    },
+    "checkver": {
+        "github": "https://github.com/Oleafly/Oleafly"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Oleafly/Oleafly/releases/download/v$version/Oleafly_$version_x64-setup.exe#/dl.7z"
+            }
+        }
+    }
+}
