@@ -1,0 +1,27 @@
+{
+    "version": "0.1.10",
+    "description": "A Markdown linter that uses mq queries to enforce both built-in rules and custom project-specific content checks",
+    "homepage": "https://github.com/harehare/mq-content-lint",
+    "license": "MIT",
+    "suggest": {
+        "mq": "nih/mq"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/harehare/mq-content-lint/releases/download/v0.1.10/mq-content-lint-x86_64-pc-windows-msvc.exe#/mq-content-lint.exe",
+            "hash": "2b2407d1493efce5dd0eccca4885b42a788baa8998a03dac70defacfd01df9c5"
+        }
+    },
+    "bin": "mq-content-lint.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/harehare/mq-content-lint/releases/download/v$version/mq-content-lint-x86_64-pc-windows-msvc.exe#/mq-content-lint.exe"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/checksums.txt"
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "version": "0.10.1",
+    "description": "Debugger for mq (jq-like Markdown processor)",
+    "homepage": "https://mqlang.org/book/start/debugger.html",
+    "license": "MIT",
+    "suggest": {
+        "mq": "nih/mq"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/harehare/mq/releases/download/v0.10.1/mq-dbg-x86_64-pc-windows-msvc.exe#/mq-dbg.exe",
+            "hash": "31314e63bd2fbfa565276dbc07d11ff9d3ad2f7e7e2fa239904a7bd51257b0ed"
+        },
+        "arm64": {
+            "url": "https://github.com/harehare/mq/releases/download/v0.10.1/mq-dbg-aarch64-pc-windows-msvc.exe#/mq-dbg.exe",
+            "hash": "5618a0133417d97cef4e76ebecc272984550eedc6afe4baa0d76d0070a7e4abe"
+        }
+    },
+    "bin": "mq-dbg.exe",
+    "checkver": {
+        "github": "https://github.com/harehare/mq"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/harehare/mq/releases/download/v$version/mq-dbg-x86_64-pc-windows-msvc.exe#/mq-dbg.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/harehare/mq/releases/download/v$version/mq-dbg-aarch64-pc-windows-msvc.exe#/mq-dbg.exe"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/checksums.txt"
+        }
+    }
+}

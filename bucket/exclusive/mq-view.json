@@ -1,0 +1,27 @@
+{
+    "version": "0.2.8",
+    "description": "Viewer for Markdown content",
+    "homepage": "https://github.com/harehare/mq-view",
+    "license": "MIT",
+    "suggest": {
+        "mq": "nih/mq"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/harehare/mq-view/releases/download/v0.2.8/mq-view-x86_64-pc-windows-msvc.exe#/mq-view.exe",
+            "hash": "df1287606a2f939f3a6bb787c458ad6067eab98acd6657724a0679789c7d0aa5"
+        }
+    },
+    "bin": "mq-view.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/harehare/mq-view/releases/download/v$version/mq-view-x86_64-pc-windows-msvc.exe#/mq-view.exe"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/checksums.txt"
+        }
+    }
+}

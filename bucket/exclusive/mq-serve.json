@@ -1,0 +1,27 @@
+{
+    "version": "0.1.25",
+    "description": "A browser-based Markdown viewer with mq query support",
+    "homepage": "https://github.com/harehare/mq-serve",
+    "license": "MIT",
+    "suggest": {
+        "mq": "nih/mq"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/harehare/mq-serve/releases/download/v0.1.25/mq-serve-x86_64-pc-windows-msvc.exe#/mq-serve.exe",
+            "hash": "bb023f64c0103425e9ea428687169719ac5d349a179adc3dcbd3b513c48e4eb2"
+        }
+    },
+    "bin": "mq-serve.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/harehare/mq-serve/releases/download/v$version/mq-serve-x86_64-pc-windows-msvc.exe#/mq-serve.exe"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/checksums.txt"
+        }
+    }
+}

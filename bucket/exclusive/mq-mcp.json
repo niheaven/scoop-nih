@@ -1,0 +1,27 @@
+{
+    "version": "0.2.2",
+    "description": "Model Context Protocol (MCP) server implementation for AI assistants.",
+    "homepage": "https://github.com/harehare/mq-mcp",
+    "license": "MIT",
+    "suggest": {
+        "mq": "nih/mq"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/harehare/mq-mcp/releases/download/v0.2.2/mq-mcp-x86_64-pc-windows-msvc.exe#/mq-mcp.exe",
+            "hash": "54ec0c89a4626f2b0720b5613dcc52d3b0ef20a21123840726f26640358d4287"
+        }
+    },
+    "bin": "mq-mcp.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/harehare/mq-mcp/releases/download/v$version/mq-mcp-x86_64-pc-windows-msvc.exe#/mq-mcp.exe"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/checksums.txt"
+        }
+    }
+}

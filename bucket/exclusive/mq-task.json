@@ -1,0 +1,29 @@
+{
+    "version": "0.2.5",
+    "description": "Task runner using mq for Markdown-based task definitions",
+    "homepage": "https://task.mqlang.org",
+    "license": "MIT",
+    "suggest": {
+        "mq": "nih/mq"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/harehare/mq-task/releases/download/v0.2.5/mq-task-x86_64-pc-windows-msvc.exe#/mq-task.exe",
+            "hash": "1bef618579553e235631b5481edbebef993966fe29ec0bd01d22efd6b8643b86"
+        }
+    },
+    "bin": "mq-task.exe",
+    "checkver": {
+        "github": "https://github.com/harehare/mq-task"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/harehare/mq-task/releases/download/v$version/mq-task-x86_64-pc-windows-msvc.exe#/mq-task.exe"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/checksums.txt"
+        }
+    }
+}

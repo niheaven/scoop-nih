@@ -1,0 +1,29 @@
+{
+    "version": "0.2.1",
+    "description": "Mounts Markdown files as a virtual filesystem",
+    "homepage": "https://mount.mqlang.org",
+    "license": "MIT",
+    "suggest": {
+        "mq": "nih/mq"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/harehare/mq-mount/releases/download/v0.2.1/mq-mount-x86_64-pc-windows-msvc.exe#/mq-mount.exe",
+            "hash": "3b8246aed57b0034a586e4747c89fab44b1bfe1730d53f6090b2ee18f2028e0c"
+        }
+    },
+    "bin": "mq-mount.exe",
+    "checkver": {
+        "github": "https://github.com/harehare/mq-mount"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/harehare/mq-mount/releases/download/v$version/mq-mount-x86_64-pc-windows-msvc.exe#/mq-mount.exe"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/checksums.txt"
+        }
+    }
+}
