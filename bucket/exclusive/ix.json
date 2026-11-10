@@ -1,13 +1,13 @@
 {
-    "version": "0.13.0",
+    "version": "0.14.0",
     "description": "Understand any codebase instantly. System intelligence for codebases, built for humans and AI.",
     "homepage": "https://www.ix-infra.com",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ix-infrastructure/Ix/releases/download/v0.13.0/ix-0.13.0-windows-amd64.zip",
-            "hash": "30a5069dada8c4a62e3427f4bf8601fe59aca91d2496d3415c09c5b3540dbb8d",
-            "extract_dir": "ix-0.13.0-windows-amd64"
+            "url": "https://github.com/ix-infrastructure/Ix/releases/download/v0.14.0/ix-0.14.0-windows-amd64.zip",
+            "hash": "c20b4e8e08624de54fa533aec98b88c20a6ef74e97e5d7d1208d0beaffa6f57d",
+            "extract_dir": "ix-0.14.0-windows-amd64"
         }
     },
     "bin": "ix.cmd",
