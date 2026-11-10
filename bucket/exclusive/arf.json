@@ -14,6 +14,15 @@
         }
     },
     "bin": "arf.exe",
+    "pre_install": "if (!(Test-Path \"$persist_dir\\arf.toml\")) { New-Item \"$dir\\arf.toml\" -ItemType File | Out-Null }",
+    "env_set": {
+        "ARF_CONFIG": "$dir\\arf.toml",
+        "ARF_HISTORY_DIR": "$dir\\history"
+    },
+    "persist": [
+        "arf.toml",
+        "history"
+    ],
     "checkver": "github",
     "autoupdate": {
         "architecture": {
