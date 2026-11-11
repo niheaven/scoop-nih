@@ -1,5 +1,5 @@
 {
-    "version": "0.9.4",
+    "version": "0.9.5",
     "description": "Review, prioritize, understand, and secure agent-generated changes",
     "homepage": "https://www.coderabbit.ai",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://cli.coderabbit.ai/releases/0.9.4/coderabbit-windows-x64.zip",
-            "hash": "4efe94e2c6f33ebb0f53cb37eb67f9b267883b0585a5711fce152c0c8b081502"
+            "url": "https://cli.coderabbit.ai/releases/0.9.5/coderabbit-windows-x64.zip",
+            "hash": "1e86db9cbd66acd4c4f1a3e0c3665b3ff90ec6668069fa95bcc27d2428d1b48d"
         }
     },
     "bin": "coderabbit.exe",
