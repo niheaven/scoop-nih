@@ -1,0 +1,69 @@
+{
+    "version": "6.2.0",
+    "description": "A tool for managing OCI containers and pods.",
+    "homepage": "https://podman.io/",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/podman-container-tools/podman/releases/download/v6.2.0/podman-installer-windows-amd64.msi",
+            "hash": "e4070491d0dba7138a06afd8e89e87a54b75b997801b5a81c911bc2869a743e9"
+        },
+        "arm64": {
+            "url": "https://github.com/podman-container-tools/podman/releases/download/v6.2.0/podman-installer-windows-arm64.msi",
+            "hash": "59fe8cd676a69ac0c7aaa1afdaabe1d46499f4dc4efa9f911ab6e9348892493a"
+        }
+    },
+    "bin": "podman.exe",
+    "extract_dir": "PFiles64\\Podman",
+    "pre_install": [
+        "if (Get-Command -ErrorAction SilentlyContinue podman) {",
+        "    if ((podman machine info --format '{{.Host.MachineState}}') -like '*ing') {",
+        "        error 'Podman virtual machine is still running. Stop it and try again.'; break",
+        "    }",
+        "}",
+        "if (Test-Path \"$persist_dir\\config\\*\") {",
+        "    New-Item \"$Env:UserProfile\\.config\\containers\" -ItemType Directory -Force | Out-Null",
+        "    Copy-Item \"$persist_dir\\config\\*\" \"$Env:UserProfile\\.config\\containers\" -Recurse",
+        "}"
+    ],
+    "post_install": [
+        "if ((Test-Path \"$Env:AppData\\containers\\podman-connections*\") -and !(Test-Path \"$dir\\connections\\podman-connections*\")) {",
+        "    # [Persist Data]: Moving connections from default data directory to scoop persist directory ...",
+        "    Move-Item \"$Env:AppData\\containers\\podman-connections*\" \"$dir\\connections\"",
+        "}"
+    ],
+    "pre_uninstall": [
+        "if (Get-Command -ErrorAction SilentlyContinue podman) {",
+        "    if ((podman machine info --format '{{.Host.MachineState}}') -like '*ing') {",
+        "        abort 'Podman virtual machine is still running. Stop it and try again.'",
+        "    }",
+        "}",
+        "if (Test-Path \"$Env:UserProfile\\.config\\containers\\*\") {",
+        "    Remove-Item \"$dir\\config\\*\" -Recurse -Force",
+        "    Move-Item \"$Env:UserProfile\\.config\\containers\\*\" \"$dir\\config\"",
+        "}"
+    ],
+    "env_set": {
+        "PODMAN_CONNECTIONS_CONF": "$dir\\connections\\podman-connections.json"
+    },
+    "persist": [
+        "config",
+        "connections"
+    ],
+    "checkver": {
+        "github": "https://github.com/podman-container-tools/podman"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/podman-container-tools/podman/releases/download/v$version/podman-installer-windows-amd64.msi"
+            },
+            "arm64": {
+                "url": "https://github.com/podman-container-tools/podman/releases/download/v$version/podman-installer-windows-arm64.msi"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/shasums"
+        }
+    }
+}
