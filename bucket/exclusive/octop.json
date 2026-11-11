@@ -1,17 +1,17 @@
 {
-    "version": "1.0.3b4",
+    "version": "1.0.3b5",
     "description": "A smarter, self-hosted AI assistant — multi-user, multi-agent.",
     "homepage": "https://octop.cloud",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/TencentCloud/Octop/releases/download/v1.0.3b4/Octop-portable-windows-amd64-1.0.3b4.zip",
-            "hash": "aa62c8fd78e591944fe5b7bfd470add2787b5880da82a74c770be365c02d9931",
+            "url": "https://github.com/TencentCloud/Octop/releases/download/v1.0.3b5/Octop-portable-windows-amd64-1.0.3b5.zip",
+            "hash": "8599e85a69e9f4ee0d85488bb079e9de7469de3fb6fcfef184782af7470ac34c",
             "extract_dir": "Octop-windows-amd64"
         },
         "arm64": {
-            "url": "https://github.com/TencentCloud/Octop/releases/download/v1.0.3b4/Octop-portable-windows-arm64-1.0.3b4.zip",
-            "hash": "cb31f9452628ef38ab847241807aaa07512e54d42a4d51021125b67be13d2402",
+            "url": "https://github.com/TencentCloud/Octop/releases/download/v1.0.3b5/Octop-portable-windows-arm64-1.0.3b5.zip",
+            "hash": "fc102d1a9f39488de992587fbd4a1743c72edf6f3c19fd85812da1f894fe1a8a",
             "extract_dir": "Octop-windows-arm64"
         }
     },
