@@ -1,0 +1,42 @@
+{
+    "version": "0.5.8",
+    "description": "Token-Efficient AI Agent with same budget, higher intelligence density",
+    "homepage": "https://opensquilla.ai",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/TokenRhythm/opensquilla/releases/download/v0.5.8/OpenSquilla-0.5.8-win-x64.exe#/dl.7z",
+            "hash": "sha512:27b74f9a0ca4c289a563617aa8bdefe1029b875024a9d6f39d07692834e5653d0879d301013d91992badc16a6fecaccb14b252a3f60e0f810a0d69b468730535",
+            "pre_install": [
+                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+                "Remove-Item \"$dir\\`$*\", \"$dir\\uninst*\" -Recurse"
+            ]
+        }
+    },
+    "bin": "OpenSquilla.exe",
+    "shortcuts": [
+        [
+            "OpenSquilla.exe",
+            "OpenSquilla"
+        ]
+    ],
+    "pre_install": "if (!(Test-Path \"$persist_dir\\opensquilla.toml\")) { New-Item \"$dir\\opensquilla.toml\" | Out-Null }",
+    "env_set": {
+        "OPENSQUILLA_GATEWAY_CONFIG_PATH": "$dir\\opensquilla.toml"
+    },
+    "persist": "opensquilla.toml",
+    "checkver": {
+        "github": "https://github.com/TokenRhythm/opensquilla"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/TokenRhythm/opensquilla/releases/download/v$version/OpenSquilla-$version-win-x64.exe#/dl.7z",
+                "hash": {
+                    "url": "$baseurl/latest.yml",
+                    "regex": "sha512:\\s*$base64"
+                }
+            }
+        }
+    }
+}
