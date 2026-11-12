@@ -1,20 +1,20 @@
 {
-    "version": "dev-994528891",
+    "version": "dev-028dda1ae",
     "description": "A small, well-rounded JS engine.",
     "homepage": "https://kiesel.dev",
     "license": "MIT",
     "architecture": {
         "64bit": {
             "url": "https://files.kiesel.dev/kiesel-windows-x86_64.exe#/kiesel.exe",
-            "hash": "0ba193b8626fef952b42d4f67262fb3a8ed7212074fbec5e20b375cdff1595a6"
+            "hash": "fa210fd7034eb2799299b930d6fdaaa710a16fc9ceaf6f7d690151311615f3b3"
         },
         "32bit": {
             "url": "https://files.kiesel.dev/kiesel-windows-x86.exe#/kiesel.exe",
-            "hash": "7cd1e75319ef452ec5ca44a1403168dd318c861104db3c2b7a4c68ef9100e62e"
+            "hash": "9d40247a41dd7d4d67ceaa951f6ec68b152b391efa4f6ee747dd7e694e9a903d"
         },
         "arm64": {
             "url": "https://files.kiesel.dev/kiesel-windows-aarch64.exe#/kiesel.exe",
-            "hash": "af4105a289d76d4413ad91f8ce1781c0887d3185076ec996f31d63f561c9ddb1"
+            "hash": "ce08590c3d41d67f8e48f1f8d3dd7521dc8a3b7949293bacec533795a66aa5e6"
         }
     },
     "bin": "kiesel.exe",
