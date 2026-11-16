@@ -1,0 +1,37 @@
+{
+    "version": "0.2.1",
+    "description": "A small, fast container runtime for macOS, Windows and Linux with free Ngrok alternative",
+    "homepage": "https://runkiri.com",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/libracoder/kiri/releases/download/v0.2.1/Kiri-0.2.1-x86_64.msi",
+            "hash": "784314423a5f4723415d7ca08799d3700399a8e3f9d8d026b18a5b15cdfeccf5"
+        },
+        "arm64": {
+            "url": "https://github.com/libracoder/kiri/releases/download/v0.2.1/Kiri-0.2.1-arm64.msi",
+            "hash": "b5c52546eaf2e667e1a3dacb2ad400c051eb1e7832345c33d831c3c315cdb36e"
+        }
+    },
+    "extract_dir": "LocalApp\\Kiri",
+    "bin": "bin\\kiri.exe",
+    "shortcuts": [
+        [
+            "kiri-win.exe",
+            "Kiri"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/libracoder/kiri"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/libracoder/kiri/releases/download/v$version/Kiri-$version-x86_64.msi"
+            },
+            "arm64": {
+                "url": "https://github.com/libracoder/kiri/releases/download/v$version/Kiri-$version-arm64.msi"
+            }
+        }
+    }
+}
