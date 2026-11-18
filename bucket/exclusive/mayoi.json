@@ -1,0 +1,47 @@
+{
+    "version": "0.22.4",
+    "description": "A small, fast code editor written in Go, with a native GPU-drawn UI",
+    "homepage": "https://usemayoi.com",
+    "license": "MIT",
+    "suggest": {
+        "herdr-core": "herdr-core"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/sorrycc/Mayoi/releases/download/v0.22.4/mayoi-setup-0.22.4-amd64.exe#/dl.7z",
+            "hash": "cd9147bb9dc5314318f23578db6fd9c73df67f5ad6184cadcc90731f0d68bbd9"
+        },
+        "arm64": {
+            "url": "https://github.com/sorrycc/Mayoi/releases/download/v0.22.4/mayoi-setup-0.22.4-arm64.exe#/dl.7z",
+            "hash": "2bd3157a9319484a4bc59735c52f4c45fc3f9548878c0add74b344d30101b805"
+        }
+    },
+    "pre_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\uninstall.exe\" -Recurse",
+    "bin": "Mayoi.exe",
+    "shortcuts": [
+        [
+            "Mayoi.exe",
+            "Mayoi"
+        ]
+    ],
+    "env_set": {
+        "MAYOI_DATA_DIR": "$dir\\data"
+    },
+    "persist": "data",
+    "checkver": {
+        "github": "https://github.com/sorrycc/Mayoi"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/sorrycc/Mayoi/releases/download/v$version/mayoi-setup-$version-amd64.exe#/dl.7z"
+            },
+            "arm64": {
+                "url": "https://github.com/sorrycc/Mayoi/releases/download/v$version/mayoi-setup-$version-arm64.exe#/dl.7z"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/SHA256SUMS"
+        }
+    }
+}
