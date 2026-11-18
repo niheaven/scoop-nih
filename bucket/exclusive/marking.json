@@ -1,5 +1,5 @@
 {
-    "version": "1.6.4",
+    "version": "1.6.5",
     "description": "Modern cross-platform Markdown editor with professional editing, visual table editor, and powerful export",
     "homepage": "https://markingmd.com/index-en.html",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/l06066hb/MarKing/releases/download/v1.6.4/MarKing_1.6.4_x64-setup.exe#/dl.7z",
-            "hash": "8c997c95e82b93188f85b9aa0ac075e2f87f09bbc108555dfd435a4d6da8010e",
+            "url": "https://github.com/l06066hb/MarKing/releases/download/v1.6.5/MarKing_1.6.5_x64-setup.exe#/dl.7z",
+            "hash": "b1469d943b1fd6743ba23277efb6c89376fda86fcd6d56decff513e11d113d1a",
             "pre_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\*.nsi\", \"$dir\\uninstall.exe\" -Recurse"
         }
     },
