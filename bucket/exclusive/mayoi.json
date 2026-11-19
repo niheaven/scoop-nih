@@ -1,5 +1,5 @@
 {
-    "version": "0.22.4",
+    "version": "0.23.0",
     "description": "A small, fast code editor written in Go, with a native GPU-drawn UI",
     "homepage": "https://usemayoi.com",
     "license": "MIT",
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/sorrycc/Mayoi/releases/download/v0.22.4/mayoi-setup-0.22.4-amd64.exe#/dl.7z",
-            "hash": "cd9147bb9dc5314318f23578db6fd9c73df67f5ad6184cadcc90731f0d68bbd9"
+            "url": "https://github.com/sorrycc/Mayoi/releases/download/v0.23.0/mayoi-setup-0.23.0-amd64.exe#/dl.7z",
+            "hash": "ad60cb5d33d92fe4b76b88667bad29ad95128f7844f12ee17ad473c97c9f67c3"
         },
         "arm64": {
-            "url": "https://github.com/sorrycc/Mayoi/releases/download/v0.22.4/mayoi-setup-0.22.4-arm64.exe#/dl.7z",
-            "hash": "2bd3157a9319484a4bc59735c52f4c45fc3f9548878c0add74b344d30101b805"
+            "url": "https://github.com/sorrycc/Mayoi/releases/download/v0.23.0/mayoi-setup-0.23.0-arm64.exe#/dl.7z",
+            "hash": "6e4f9a475c4b3d7f54c816a93fa0acf6491b8f5a3667f4a6d98712e38de94538"
         }
     },
     "pre_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\uninstall.exe\" -Recurse",
