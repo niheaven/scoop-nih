@@ -1,13 +1,13 @@
 {
-    "version": "0.10.4",
+    "version": "0.10.5",
     "description": "A self-improving RLM agent for coding workflows and long-running autonomous tasks.",
     "homepage": "https://www.primeintellect.ai/blog/prime-agent",
     "license": "MIT",
     "depends": "uv",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/PrimeIntellect-ai/prime-agent/releases/download/v0.10.4/prime-agent-0.10.4-win32-x64.tar.gz",
-            "hash": "04fd780344451d2a806a8470be0ca0143070055957666ad5c9642f65008d0a5e"
+            "url": "https://github.com/PrimeIntellect-ai/prime-agent/releases/download/v0.10.5/prime-agent-0.10.5-win32-x64.tar.gz",
+            "hash": "37d1878c3871d5660cad9197585f64ba63c97b254d1789ba7176171eba48c67b"
         }
     },
     "bin": "prime-agent.exe",
