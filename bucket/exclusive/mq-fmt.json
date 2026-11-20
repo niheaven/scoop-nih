@@ -1,5 +1,5 @@
 {
-    "version": "0.10.1",
+    "version": "0.10.2",
     "description": "Formatter for mq query language (.mq) files",
     "homepage": "https://github.com/harehare/mq/blob/main/crates/mq-formatter",
     "license": "MIT",
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/harehare/mq/releases/download/v0.10.1/mq-fmt-x86_64-pc-windows-msvc.exe#/mq-fmt.exe",
-            "hash": "c1557942fa70c26e1d295ef84cb9565796ea481760194ce0d1bd3c10df3de728"
+            "url": "https://github.com/harehare/mq/releases/download/v0.10.2/mq-fmt-x86_64-pc-windows-msvc.exe#/mq-fmt.exe",
+            "hash": "3a7d966f2920930fdf11edb3ef98d51fb950a9646edaac3f7175dc24731f5f46"
         },
         "arm64": {
-            "url": "https://github.com/harehare/mq/releases/download/v0.10.1/mq-fmt-aarch64-pc-windows-msvc.exe#/mq-fmt.exe",
-            "hash": "288f1f3e416ff498a5c42b609238ad2b539bf0a5882c0c04eb35dd96f0ff8db8"
+            "url": "https://github.com/harehare/mq/releases/download/v0.10.2/mq-fmt-aarch64-pc-windows-msvc.exe#/mq-fmt.exe",
+            "hash": "967a64b5f3a2e6a38501ac0c8f55d8e69aa6d7a173a71074a50144b471413d09"
         }
     },
     "bin": "mq-fmt.exe",
