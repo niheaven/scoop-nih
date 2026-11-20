@@ -1,5 +1,5 @@
 {
-    "version": "0.10.1",
+    "version": "0.10.2",
     "description": "Language Server Protocol (LSP) implementation for mq query files",
     "homepage": "https://github.com/harehare/mq/blob/main/crates/mq-lsp",
     "license": "MIT",
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/harehare/mq/releases/download/v0.10.1/mq-lsp-x86_64-pc-windows-msvc.exe#/mq-lsp.exe",
-            "hash": "a1caee5d1d6a88e92adbf05821ea5903d4c2515596b6a3b1cddb98db637ab551"
+            "url": "https://github.com/harehare/mq/releases/download/v0.10.2/mq-lsp-x86_64-pc-windows-msvc.exe#/mq-lsp.exe",
+            "hash": "6af4fcb356767581ee6593a083f926355e47a210b5457a321d8beb7a083ef925"
         },
         "arm64": {
-            "url": "https://github.com/harehare/mq/releases/download/v0.10.1/mq-lsp-aarch64-pc-windows-msvc.exe#/mq-lsp.exe",
-            "hash": "07f548bc78ff751417a319abdd9852a3a7054bcf26170c7cc27183503e6e94af"
+            "url": "https://github.com/harehare/mq/releases/download/v0.10.2/mq-lsp-aarch64-pc-windows-msvc.exe#/mq-lsp.exe",
+            "hash": "fa3f3f5b3c347b3d110654e90f7ac017de16435c7a0c829a2ebe688206ee5b69"
         }
     },
     "bin": "mq-lsp.exe",
