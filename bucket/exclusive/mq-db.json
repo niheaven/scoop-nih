@@ -1,5 +1,5 @@
 {
-    "version": "0.4.0",
+    "version": "0.4.1",
     "description": "Markdown-specialized embedded database with interval-indexed block storage and hierarchical query support",
     "homepage": "https://db.mqlang.org",
     "license": "MIT",
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/harehare/mq-db/releases/download/v0.4.0/mq-db-x86_64-pc-windows-msvc.exe#/mq-db.exe",
-            "hash": "ab3b9198a782fd63cb4c33b940c4ee7dd4071e42f64241b93c7ad01bf9824b2a"
+            "url": "https://github.com/harehare/mq-db/releases/download/v0.4.1/mq-db-x86_64-pc-windows-msvc.exe#/mq-db.exe",
+            "hash": "05ff61364ebc502a3eab79085f14201af0378c12e1e3c776add8f42f56bc3822"
         }
     },
     "bin": "mq-db.exe",
