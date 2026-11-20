@@ -1,5 +1,5 @@
 {
-    "version": "0.10.1",
+    "version": "0.10.2",
     "description": "Static analysis linter for mq files (correctness, style, complexity, selector, and module rules)",
     "homepage": "https://github.com/harehare/mq/blob/main/crates/mq-lint",
     "license": "MIT",
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/harehare/mq/releases/download/v0.10.1/mq-lint-x86_64-pc-windows-msvc.exe#/mq-lint.exe",
-            "hash": "73adf989a6ab6ceb68db70a0b6a861990bcee0c597d475d5ce3de783e2a04aa3"
+            "url": "https://github.com/harehare/mq/releases/download/v0.10.2/mq-lint-x86_64-pc-windows-msvc.exe#/mq-lint.exe",
+            "hash": "c50a659e3a35c1d74c7e96c40093457ad4f3e6d4a9b900a38b3cffb0ef07a280"
         },
         "arm64": {
-            "url": "https://github.com/harehare/mq/releases/download/v0.10.1/mq-lint-aarch64-pc-windows-msvc.exe#/mq-lint.exe",
-            "hash": "50ff0d5df7c802826138f1dd1ddbb6649bdbebc4a6a7d3f1900fdc24bfbcf52b"
+            "url": "https://github.com/harehare/mq/releases/download/v0.10.2/mq-lint-aarch64-pc-windows-msvc.exe#/mq-lint.exe",
+            "hash": "fa96476efb91ab75e694b09fac66d364140142561a45844f5f2ca05f0f9664f2"
         }
     },
     "bin": "mq-lint.exe",
