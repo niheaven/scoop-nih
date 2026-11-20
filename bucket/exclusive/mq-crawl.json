@@ -1,5 +1,5 @@
 {
-    "version": "0.10.1",
+    "version": "0.10.2",
     "description": "A web crawler that extracts structured data from websites and outputs it in Markdown format",
     "homepage": "https://github.com/harehare/mq/tree/main/crates/mq-crawler",
     "license": "MIT",
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/harehare/mq/releases/download/v0.10.1/mq-crawl-x86_64-pc-windows-msvc.exe#/mq-crawl.exe",
-            "hash": "68b2d070879c38ffeab9a5fb185932afd3af450de4afc195a44fc03f3ff9d65e"
+            "url": "https://github.com/harehare/mq/releases/download/v0.10.2/mq-crawl-x86_64-pc-windows-msvc.exe#/mq-crawl.exe",
+            "hash": "4c07437d4b5b81529e68a684f0a838fd899a77caeb771b6ba87c3109fc3d850f"
         },
         "arm64": {
-            "url": "https://github.com/harehare/mq/releases/download/v0.10.1/mq-crawl-aarch64-pc-windows-msvc.exe#/mq-crawl.exe",
-            "hash": "0aa473aee06d9367c2caa426b2b1bd4d5bb590f65f8e6740053e2264a033308d"
+            "url": "https://github.com/harehare/mq/releases/download/v0.10.2/mq-crawl-aarch64-pc-windows-msvc.exe#/mq-crawl.exe",
+            "hash": "63d34a5b8fe6d611cc4a4208cd3e900c48b73ebab3761b6be1a462dadd56bfc3"
         }
     },
     "bin": "mq-crawl.exe",
