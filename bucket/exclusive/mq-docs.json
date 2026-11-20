@@ -1,5 +1,5 @@
 {
-    "version": "0.2.12",
+    "version": "0.2.13",
     "description": "A documentation generator for mq functions and selectors",
     "homepage": "https://github.com/harehare/mq-docs",
     "license": "MIT",
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/harehare/mq-docs/releases/download/v0.2.12/mq-docs-x86_64-pc-windows-msvc.exe#/mq-docs.exe",
-            "hash": "7c6518033ae198190ee79434b9b145af1e03116e97476a0cc110864fa314018e"
+            "url": "https://github.com/harehare/mq-docs/releases/download/v0.2.13/mq-docs-x86_64-pc-windows-msvc.exe#/mq-docs.exe",
+            "hash": "d48b264199485ea3aae2260017b02ab4f3a700cab9f86d0204d23828474059a0"
         }
     },
     "bin": "mq-docs.exe",
