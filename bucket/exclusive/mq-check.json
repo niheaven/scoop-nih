@@ -1,5 +1,5 @@
 {
-    "version": "0.10.1",
+    "version": "0.10.2",
     "description": "A syntax and semantic checker for mq files",
     "homepage": "https://github.com/harehare/mq/tree/main/crates/mq-check",
     "license": "MIT",
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/harehare/mq/releases/download/v0.10.1/mq-check-x86_64-pc-windows-msvc.exe#/mq-check.exe",
-            "hash": "98d24c6a79acbab30f8d72371707757bed5aa38c76525b2fe6c785de6e44403c"
+            "url": "https://github.com/harehare/mq/releases/download/v0.10.2/mq-check-x86_64-pc-windows-msvc.exe#/mq-check.exe",
+            "hash": "b040c60e7c173d7b90243359dc8e3f4517a98958c6941329244142395a5debfe"
         },
         "arm64": {
-            "url": "https://github.com/harehare/mq/releases/download/v0.10.1/mq-check-aarch64-pc-windows-msvc.exe#/mq-check.exe",
-            "hash": "c867f7acc06d9cc2c18c63c2743d2410a5ea651381a027caf8732312ee2a97f0"
+            "url": "https://github.com/harehare/mq/releases/download/v0.10.2/mq-check-aarch64-pc-windows-msvc.exe#/mq-check.exe",
+            "hash": "8cb148a9102ae7170a0d88c19868172fd8ff91edf24d5a88a000e7ab7c5363c0"
         }
     },
     "bin": "mq-check.exe",
