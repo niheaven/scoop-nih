@@ -1,5 +1,5 @@
 {
-    "version": "0.1.10",
+    "version": "0.1.11",
     "description": "Language Server Protocol (LSP) implementation for mq content lint",
     "homepage": "https://github.com/harehare/mq-content-lint",
     "license": "MIT",
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/harehare/mq-content-lint/releases/download/v0.1.10/mq-content-lint-lsp-x86_64-pc-windows-msvc.exe#/mq-content-lint-lsp.exe",
-            "hash": "a3e978f447cbdb8942306c570a3f864333371948f63d3a6742594b47031ed1bd"
+            "url": "https://github.com/harehare/mq-content-lint/releases/download/v0.1.11/mq-content-lint-lsp-x86_64-pc-windows-msvc.exe#/mq-content-lint-lsp.exe",
+            "hash": "abc3dc92c5b06a4364c3bb86acd5f3cc8d28b455f20ee40300a49169b56f96e1"
         }
     },
     "bin": "mq-content-lint-lsp.exe",
