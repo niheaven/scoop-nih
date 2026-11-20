@@ -1,16 +1,16 @@
 {
-    "version": "0.10.1",
+    "version": "0.10.2",
     "description": "jq-like CLI for Markdown processing",
     "homepage": "https://mqlang.org",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/harehare/mq/releases/download/v0.10.1/mq-x86_64-pc-windows-msvc.exe#/mq.exe",
-            "hash": "3c2a1ea8bc27af55178045a4d5e1a987a380c2972477456303ac0a9a5d51801f"
+            "url": "https://github.com/harehare/mq/releases/download/v0.10.2/mq-x86_64-pc-windows-msvc.exe#/mq.exe",
+            "hash": "f0087fe659975131f962851e7bab21861b8797d678231b612888dccc07124082"
         },
         "arm64": {
-            "url": "https://github.com/harehare/mq/releases/download/v0.10.1/mq-aarch64-pc-windows-msvc.exe#/mq.exe",
-            "hash": "493f106633a7929b4700b426550c87cb9dc36bf387dcea95fb17e0a217d4fc1e"
+            "url": "https://github.com/harehare/mq/releases/download/v0.10.2/mq-aarch64-pc-windows-msvc.exe#/mq.exe",
+            "hash": "ada54de0e8e858a6654621f6701e1a44c5909869d995cefb37d68485d9e9d076"
         }
     },
     "bin": "mq.exe",
