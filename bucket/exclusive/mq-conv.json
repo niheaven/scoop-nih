@@ -1,5 +1,5 @@
 {
-    "version": "0.3.1",
+    "version": "0.3.2",
     "description": "A CLI tool for converting various file formats to Markdown",
     "homepage": "https://conv.mqlang.org",
     "license": "MIT",
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/harehare/mq-conv/releases/download/v0.3.1/mq-conv-x86_64-pc-windows-msvc.exe#/mq-conv.exe",
-            "hash": "94bdf489df3c2f4ab690fe6d7a1bb593df530ce8d599375a6adf6f2858ec1390"
+            "url": "https://github.com/harehare/mq-conv/releases/download/v0.3.2/mq-conv-x86_64-pc-windows-msvc.exe#/mq-conv.exe",
+            "hash": "4fb88b9821a0dba865c4cdb60230652bf4d76be290e7612f1a0486afb843182a"
         }
     },
     "bin": "mq-conv.exe",
