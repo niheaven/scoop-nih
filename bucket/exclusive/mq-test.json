@@ -1,5 +1,5 @@
 {
-    "version": "0.10.1",
+    "version": "0.10.2",
     "description": "Standalone test runner for mq",
     "homepage": "https://github.com/harehare/mq/blob/main/crates/mq-test",
     "license": "MIT",
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/harehare/mq/releases/download/v0.10.1/mq-test-x86_64-pc-windows-msvc.exe#/mq-test.exe",
-            "hash": "e5ae53dbc9228fe8463020b4f596efded125eceee8c371ddd8008cfb00406a5c"
+            "url": "https://github.com/harehare/mq/releases/download/v0.10.2/mq-test-x86_64-pc-windows-msvc.exe#/mq-test.exe",
+            "hash": "3172902b3187c96de685ee3fe86c72dd66915b3cb4a9020da602bd29d9f120b0"
         },
         "arm64": {
-            "url": "https://github.com/harehare/mq/releases/download/v0.10.1/mq-test-aarch64-pc-windows-msvc.exe#/mq-test.exe",
-            "hash": "92c3c5f031b0b04a7be0776077cbb6d8469666879a4b72f36744e0fdbfb3f14d"
+            "url": "https://github.com/harehare/mq/releases/download/v0.10.2/mq-test-aarch64-pc-windows-msvc.exe#/mq-test.exe",
+            "hash": "9938f5ab2dea0183c79497e300d9960d7e4a2206e2a26437e7d036897a145163"
         }
     },
     "bin": "mq-test.exe",
