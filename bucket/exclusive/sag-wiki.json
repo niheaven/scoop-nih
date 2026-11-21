@@ -1,12 +1,12 @@
 {
-    "version": "0.4.1",
+    "version": "0.4.2",
     "description": "A lightweight knowledge base for people and agents",
     "homepage": "https://sag-wiki.zleap.com",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Zleap-AI/SAG-Wiki/releases/download/v0.4.1/SAG-Wiki-0.4.1-Windows-x64-setup.exe#/dl.7z",
-            "hash": "f674a9996723df934f03def03cdb140d5305e7b6de7a9f0698c14b0d1d401fd9",
+            "url": "https://github.com/Zleap-AI/SAG-Wiki/releases/download/v0.4.2/SAG-Wiki-0.4.2-Windows-x64-setup.exe#/dl.7z",
+            "hash": "ae9a80a3e74e970cdd3e9da1015092d977adb581195a21c2bd0c00c891f96c3c",
             "pre_install": "Remove-Item \"$dir\\`$*\", \"$dir\\uninst*\" -Recurse"
         }
     },
