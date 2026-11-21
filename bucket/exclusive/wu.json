@@ -1,0 +1,31 @@
+{
+    "version": "1.4.0",
+    "description": "The fast, native code editor and agent workspace",
+    "homepage": "https://wu.dstrml.org",
+    "license": "GPL-3.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/dstrml/wu/releases/download/v1.4.0/Wu-x86_64.exe",
+            "hash": "9d3a570165273bfeb5add53d63edc5b55031901f38bb6135354951da1962edef"
+        }
+    },
+    "innosetup": true,
+    "extract_dir": "{code_GetInstallDir}",
+    "bin": "Wu.exe",
+    "shortcuts": [
+        [
+            "Wu.exe",
+            "Wu"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/dstrml/wu"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/dstrml/wu/releases/download/v$version/Wu-x86_64.exe"
+            }
+        }
+    }
+}
