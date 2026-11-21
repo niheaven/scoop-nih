@@ -5,8 +5,8 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/andychao217/FileCompare/releases/download/v0.6.0/wincmp-0.6.0-windows-x64.zip",
-            "hash": "b9c19813475afe91a2b8a35bedd27cdbb7a4d3232cb4d3bd4a25b7f8dbbd990d"
+            "url": "https://github.com/andychao217/FileCompare/releases/download/v0.7.1/wincmp-0.7.1-windows-x64.zip",
+            "hash": "599920bf88016c4e216a69d1de5d1a12caa1e3a877a11e74f7888162bddd4d12"
         }
     },
     "bin": "wincmp.exe",
@@ -16,7 +16,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/andychao217/FileCompare/releases/download/v0.6.0/wincmp-0.6.0-windows-x64.zip"
+                "url": "https://github.com/andychao217/FileCompare/releases/download/v$version/wincmp-$version-windows-x64.zip"
             }
         }
     }
