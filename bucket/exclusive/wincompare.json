@@ -5,8 +5,8 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/andychao217/FileCompare/releases/download/v0.6.0/WinCompare-0.6.0-windows-x64.zip",
-            "hash": "19e9417829e95bbee53893a9fe4b5fad6ef49b08f4d5d6da22fd048c12593a21"
+            "url": "https://github.com/andychao217/FileCompare/releases/download/v0.7.1/WinCompare-0.7.1-windows-x64.zip",
+            "hash": "9969eea0ae9182d458835e8d5856dfb3aab7b0e7daffcf0090d40832557dcb0c"
         }
     },
     "bin": "wincmp.exe",
@@ -22,7 +22,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/andychao217/FileCompare/releases/download/v0.6.0/WinCompare-0.6.0-windows-x64.zip"
+                "url": "https://github.com/andychao217/FileCompare/releases/download/v$version/WinCompare-$version-windows-x64.zip"
             }
         }
     }
