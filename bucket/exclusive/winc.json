@@ -1,0 +1,33 @@
+{
+    "version": "0.1.789",
+    "description": "A modern, high-performance native file & directory comparison and merge suite (CLI only)",
+    "homepage": "https://winc.si",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/DEEIX-AI/Winc/releases/download/v0.1.789/Winc-0.1.789-windows-x64-portable.zip",
+            "hash": "b2aede017abcbef9466397183ad7766fd1af7716f95b5e884fa68a5168345070"
+        }
+    },
+    "bin": "Winc.exe",
+    "shortcuts": [
+        [
+            "Winc.exe",
+            "Winc"
+        ]
+    ],
+    "persist": "data",
+    "checkver": {
+        "github": "https://github.com/DEEIX-AI/Winc"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/DEEIX-AI/Winc/releases/download/v$version/Winc-$version-windows-x64-portable.zip"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/SHA256SUMS"
+        }
+    }
+}
