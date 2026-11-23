@@ -1,21 +1,21 @@
 {
-    "version": "2.10.4",
+    "version": "2.10.5",
     "description": "The official command-line interface for Aliyun Model Studio (DashScope) AI Platform",
     "homepage": "https://bailian.console.aliyun.com/cli",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/modelstudioai/cli/releases/download/v2.10.4/bl-2.10.4-windows-x64.zip",
-            "hash": "912111d62fa86874a1408d487f8f8e917c1a3889165d1743293fe90655e7e2ef"
+            "url": "https://github.com/modelstudioai/cli/releases/download/v2.10.5/bl-2.10.5-windows-x64.zip",
+            "hash": "47bce5afbe409dec000f6fc291dc6ead19435c5a4be8ec1dff2cf5966bf1303c"
         }
     },
     "bin": [
         [
-            "bl-2.10.4-windows-x64.exe",
+            "bl-2.10.5-windows-x64.exe",
             "bl"
         ],
         [
-            "bl-2.10.4-windows-x64.exe",
+            "bl-2.10.5-windows-x64.exe",
             "bailian"
         ]
     ],
