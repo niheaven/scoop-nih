@@ -1,0 +1,33 @@
+{
+    "version": "0.1.1",
+    "description": "A persistent, Git-versioned map of your entire codebase",
+    "homepage": "https://www.aoci.ai",
+    "license": "FSL-1.1-MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/aoci-spec/aoci-code/releases/download/v0.1.1/aoci_0.1.1_windows_amd64.zip",
+            "hash": "3c9eb072d43ba19184cab3fb1ff704290d88c6398f34f8d3cee10c8ff480b9b6"
+        },
+        "arm64": {
+            "url": "https://github.com/aoci-spec/aoci-code/releases/download/v0.1.1/aoci_0.1.1_windows_arm64.zip",
+            "hash": "6dc32e7daafabff70f52ea6ec5e2413ee9b9409694d7706dd0f5671453a9e99d"
+        }
+    },
+    "bin": "aoci.exe",
+    "checkver": {
+        "github": "https://github.com/aoci-spec/aoci-code"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/aoci-spec/aoci-code/releases/download/v$version/aoci_$version_windows_amd64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/aoci-spec/aoci-code/releases/download/v$version/aoci_$version_windows_arm64.zip"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/SHA256SUMS"
+        }
+    }
+}
