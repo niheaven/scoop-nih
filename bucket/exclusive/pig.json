@@ -1,0 +1,37 @@
+{
+    "version": "0.7.0",
+    "description": "A faithful Go implementation of Pi",
+    "homepage": "https://pi-in-go.dev",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/MichaelKinsy/PiG/releases/download/v0.7.0/pig-0.7.0-windows-amd64.zip",
+            "hash": "c73deb7f6036962d9bcb4ff53e9935011b06ccf0b62513d85b728b94de2e2cd2",
+            "extract_dir": "pig-0.7.0-windows-amd64"
+        },
+        "arm64": {
+            "url": "https://github.com/MichaelKinsy/PiG/releases/download/v0.7.0/pig-0.7.0-windows-arm64.zip",
+            "hash": "08d4ac99c0e2486269ce4048f892123854b3648e87b0d25c145791935ce96ce4",
+            "extract_dir": "pig-0.7.0-windows-arm64"
+        }
+    },
+    "bin": "pig.exe",
+    "checkver": {
+        "github": "https://github.com/MichaelKinsy/PiG"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/MichaelKinsy/PiG/releases/download/v$version/pig-$version-windows-amd64.zip",
+                "extract_dir": "pig-$version-windows-amd64"
+            },
+            "arm64": {
+                "url": "https://github.com/MichaelKinsy/PiG/releases/download/v$version/pig-$version-windows-arm64.zip",
+                "extract_dir": "pig-$version-windows-arm64"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/SHA256SUMS"
+        }
+    }
+}
