@@ -1,12 +1,12 @@
 {
-    "version": "0.2.18",
+    "version": "0.2.19",
     "description": "A free, open-source desktop client for Claude Code / Codex / coding agents.",
     "homepage": "https://github.com/huangbh2020/mcode",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/huangbh2020/mcode/releases/download/v0.2.18/Mcode-0.2.18-x64.exe#/dl.7z",
-            "hash": "sha512:ed45e2f2e7c31fa63db63184e27ba016ece5d7b32da72708dbb01ca653b9875506170ed0d97718032150edc397edcdaaf0fce98e2641fb047be8d1f11b703e7c",
+            "url": "https://github.com/huangbh2020/mcode/releases/download/v0.2.19/Mcode-0.2.19-x64.exe#/dl.7z",
+            "hash": "sha512:dcea7d905d57a122b12c8466297a881c404af442b06fc09c120fc2538152d14343fb4b44f3f8d70ebcb3616ff63977db7e3113876b059ceb8771cad9c154a65e",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\Uninst*\" -Recurse"
