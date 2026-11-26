@@ -1,13 +1,13 @@
 {
-    "version": "0.2.21",
+    "version": "0.2.22",
     "description": "Minimal backend for open-source end-to-end encrypted Claude Code clients.",
     "homepage": "https://happier.dev",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/happier-dev/happier/releases/download/server-v0.2.21/happier-server-v0.2.21-windows-x64.tar.gz",
-            "hash": "9f1350a9a65a52791e0a673628b38651307599ec5d4c2b48a8685aad78eed2a1",
-            "extract_dir": "happier-server-v0.2.21-windows-x64"
+            "url": "https://github.com/happier-dev/happier/releases/download/server-v0.2.22/happier-server-v0.2.22-windows-x64.tar.gz",
+            "hash": "404ccedb573e92dc27132d2dd556a91e590d86ae0682ad13dc03b8a8ca1a7c11",
+            "extract_dir": "happier-server-v0.2.22-windows-x64"
         }
     },
     "bin": "happier-server.exe",
