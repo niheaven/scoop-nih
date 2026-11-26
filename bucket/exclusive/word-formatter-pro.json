@@ -1,0 +1,28 @@
+{
+    "version": "2.7.9",
+    "description": "一款桌面应用程序，可将格式混乱的 Word 文档（及兼容格式）一键转换为符合规范的专业文档，实现排版工作自动化",
+    "homepage": "https://github.com/cwyalpha/Word-Formatter-Pro",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/cwyalpha/Word-Formatter-Pro/releases/download/v2.7.9/Word-Formatter-Pro.v2.7.9.exe#/Word-Formatter-Pro.exe",
+            "hash": "34bcf2ddc700e05e9f340b68e0f64f844b480a1a6708b584706026545deee5b7"
+        }
+    },
+    "pre_install": "if (!(Test-Path \"$persist_dir\\default_config.json\")) { Set-Content \"$dir\\default_config.json\" '{}' -Encoding Ascii }",
+    "shortcuts": [
+        [
+            "Word-Formatter-Pro.exe",
+            "Word 文档智能排版工具"
+        ]
+    ],
+    "persist": "default_config.json",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/cwyalpha/Word-Formatter-Pro/releases/download/v$version/Word-Formatter-Pro.v$version.exe#/Word-Formatter-Pro.exe"
+            }
+        }
+    }
+}
