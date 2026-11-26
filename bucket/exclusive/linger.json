@@ -1,0 +1,33 @@
+{
+    "version": "0.1.10",
+    "description": " An Open-Source Personal Agent That Runs Fully on Your PC",
+    "homepage": "https://heylinger.com",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/simplexai-labs/linger/releases/download/desktop-v0.1.10/Linger-0.1.10-windows-x64-portable.zip",
+            "hash": "461db164bed7bd05c6418ac87d1b42576b10684e5b3183c4feb793ab2ef8afb3",
+            "extract_dir": "Linger"
+        }
+    },
+    "shortcuts": [
+        [
+            "Linger.exe",
+            "Linger"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/simplexai-labs/linger",
+        "regex": "desktop-v([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/simplexai-labs/linger/releases/download/desktop-v$version/Linger-$version-windows-x64-portable.zip"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/SHA256SUMS.txt"
+        }
+    }
+}
